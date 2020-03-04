@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <base href="./"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+    <meta name="description" content="Grace London live stream app">
+    <meta name="author" content="W.A. (Andries) Salm">
+    <meta name="keyword" content="Grace London live stream app">
+    <title>Grace London live stream app</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link href="assets/stylesheets/site.css" rel="stylesheet">
+    <link href="assets/stylesheets/card-right.css" rel="stylesheet">
+    
+</head>
+
+<body class="app">
+    <div class="mask">
+    <div class="main">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body py-5 p-4" id='logincard'>
+                    <h1>Login</h1>
+                    <p class="text-muted">Sign in with your MACS linux account details</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="icon-user"></i>
+                            </span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="icon-lock"></i>
+                            </span>
+                        </div>
+                        <input class="form-control" type="password" placeholder="Password" id="password">
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="form-check form-check-inline mr-1">
+                          <input class="form-check-input" id="save-credentials" type="checkbox">
+                          <label class="form-check-label" for="save-credentials">Save credentials</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-primary px-4" type="button" id="loginBtn">Login</button>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class="btn btn-link px-0" type="button" id="forgetBtn">Forgot password?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body" id="printercard">
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-close btn-sm btn-danger float-right" type="button" id="logoffBtn" style="margin-bottom: 15px;"><i class="icon-close"></i> Logoff</button>
+                        </div>
+                    </div>
+                    <h1>Printer enabled</h1>
+                    <br/>
+                    <label for="select1">Select Printer:</label>    
+                    <div class="input-group mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="icon-printer"></i>
+                            </span>
+                        </div>
+                        <select class="form-control" id="select-printer" name="select-printer">
+                            <option value="-1">No Printers found</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-footer" id='statusbar'>
+                    <span id="isPrinting"><i class="icon-drawer"></i>&nbsp;&nbsp;&nbsp;Printer is ready on ipp://localhost:1631</span>
+                    <span id="isNotPrinting"><i class="icon-layers"></i>&nbsp;&nbsp;&nbsp;Printing...</span>
+                </div>
+            </div>
+            <div class="card text-white"  id='rhs'>
+                <div class="mask"></div>
+                <div class="card-body" style="position: relative;">
+                    <div id="qrcode"></div>
+                    <img src="assets/images/logo.png" alt="Logo" id="logo" />
+                    <p id='rhs-invalid-msg'>An error occurred. Check your credentials<br/> and your network connection.</p>
+                    <h2 id='rhs-qrcode-msg'>Scan me for access</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+    <script type="text/javascript">
+        // const { ipcRenderer } = require('electron');
+        // const { dialog } = require('electron').remote
+
+        // /*
+        //  *  Forgot password button click event
+        //  */        
+        // document.getElementById("forgetBtn").addEventListener("click", () => {
+        //     dialog.showMessageBox({type: "info", buttons: ["Ok"], title: "MACS Printer bridge", message: "Forget password?", detail: "Please contact ICT for new login credentials."})
+        // });
+
+        // /*
+        //  *  Login button click event
+        //  */        
+        // document.getElementById("loginBtn").addEventListener("click", () => {
+        //     ipcRenderer.send('login', {
+        //         //State for login card
+        //         username: document.getElementById("username").value,
+        //         password: document.getElementById("password").value,
+        //         saveCredentials: document.getElementById("save-credentials").checked
+        //     });
+        // });
+
+        // /*
+        //  *  Logoff button click event
+        //  */
+        // document.getElementById("logoffBtn").addEventListener("click", () => {
+        //     ipcRenderer.send('logoff');
+        // });
+
+        // /*
+        //  *  change printer event
+        //  */
+        // document.getElementById("select-printer").addEventListener("change", () => {
+        //     ipcRenderer.send('changePrinter', document.getElementById("select-printer").value);
+        // });
+
+        // /*
+        //  *  State update event
+        //  */
+        // ipcRenderer.on("setState", (event, arg) => {
+        //     updatePage(arg);
+        // });
+
+        // /*
+        //  *  On load, request current state and then show it
+        //  */
+        // updatePage(ipcRenderer.sendSync('getState'));
+        // ipcRenderer.send('show');
+
+        /*
+         *  Update the page with current status
+         */
+        function updatePage(state) {
+            //Default set right hand side(rhs) to valid state
+
+            // Printer is always valid if logged in
+            document.getElementById("rhs").classList.remove("invalid");
+            // document.getElementById("rhs-valid-msg").style.display = "";
+            document.getElementById("rhs-invalid-msg").style.display = "none";
+
+
+            if (state.enabled) {
+                //Show Printer Card
+                document.getElementById("logincard").style.display = "none";
+                document.getElementById("printercard").style.display = "";
+                document.getElementById("statusbar").style.display = "";
+
+                //Update Printer Card
+                if(state.isPrinting) {
+                    document.getElementById("isPrinting").style.display = "none";
+                    document.getElementById("isNotPrinting").style.display = "";
+                } else {
+                    document.getElementById("isPrinting").style.display = "";
+                    document.getElementById("isNotPrinting").style.display = "none";
+                }
+
+                let select = document.getElementById("select-printer");
+                select.innerHTML = "";
+                for(let i=0; i<state.printers.length; i++) {
+                    if(state.printers[i] == state.selectedPrinter) {
+                        select.innerHTML += "<option value="+i+" selected>"+state.printers[i]+"</option>";
+                    } else {
+                        select.innerHTML += "<option value="+i+">"+state.printers[i]+"</option>";
+                    }    
+                }
+
+            } else {
+                //Show Login Card
+                document.getElementById("logincard").style.display = "";
+                document.getElementById("printercard").style.display = "none";
+                document.getElementById("statusbar").style.display = "none";
+
+                //Update Login Card
+                document.getElementById("username").value = state.username;
+                document.getElementById("password").value = state.password;
+                document.getElementById("save-credentials").checked = state.saveCredentials;
+
+                if(!state.isValid) {
+                    document.getElementById("rhs").classList.add("invalid");
+                    // document.getElementById("rhs-valid-msg").style.display = "none";
+                    document.getElementById("rhs-invalid-msg").style.display = "";
+                } 
+            }
+        }
+
+        updatePage({enabled: false, isValid: true, username: "asfasf", password: "safasf", saveCredentials: true});
+
+        document.getElementById("rhs").classList.add("qrcode");
+
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "http://grace.london",
+            width: 128,
+            height: 128,
+            colorDark : "#000000",
+            colorLight : "#ffffff00",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+
+</html>

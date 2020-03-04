@@ -1,0 +1,45 @@
+/*
+ * Right hand side
+ */
+
+.rhs {
+  background-image: url('../images/album-cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.rhs .mask {
+  border-radius: 0 10px 10px 0;
+}
+
+.rhs .logo {
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+ * Rhs invalid message
+ */
+
+#main.invalid .mask {
+  background-color: rgba(112,0,0,.54);
+}
+
+.rhs-invalid-msg {
+  position: absolute;
+  width: 75%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  color: white;
+}
+
+#main.invalid .rhs-invalid-msg {
+  display: block;
+}

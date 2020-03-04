@@ -1,0 +1,60 @@
+body,
+body > .view {
+  height: 100%;
+}
+
+body {
+  background: url("../images/background-100.jpg");
+}
+
+@media (min-height: 200px) {
+  body {
+    background: url("../images/background-300.jpg");
+  }
+}
+
+@media (min-height: 333px) {
+  body {
+    background: url("../images/background-500.jpg");
+  }
+}
+
+@media (min-height: 500px) {
+  body {
+    background: url("../images/background-750.jpg");
+  }
+}
+
+@media (min-height: 667px) {
+  body {
+    background: url("../images/background-1000.jpg");
+  }
+}
+
+@media (min-height: 1000px) {
+  body {
+    background: url("../images/background-1500.jpg");
+  }
+}
+
+@media (min-height: 1667px) {
+  body {
+    background: url("../images/background-2500.jpg");
+  }
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+
+#mobile-box {
+  width: 360px;
+}
+
+.color-overlay {
+  background-color: rgba(56,56,56,.54);
+}

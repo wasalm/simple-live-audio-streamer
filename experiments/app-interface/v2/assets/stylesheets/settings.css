@@ -1,0 +1,11 @@
+#settings {
+	display: none;
+}
+
+#main.settings #settings {
+	display: flex;
+}
+
+#main.settings .card-group {
+	display: none;
+}
