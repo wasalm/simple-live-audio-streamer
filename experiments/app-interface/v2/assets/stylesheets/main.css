@@ -25,7 +25,7 @@
   border: none;
 }
 
-.card, .card select {
+.card, .card select, .card input {
   background-color: #f2f2f2;
 }
 

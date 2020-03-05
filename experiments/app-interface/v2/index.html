@@ -56,8 +56,50 @@
                     </div>
                     <h1 class="hide-when-running">Live stream</h1>
                     <br/>
-                    <label for="select1" class="hide-when-running">Select audio device:</label>    
+
+                    <label for="title" class="hide-when-running">Sermon title:</label>    
+                    <div class="input-group mb-3 hide-when-running">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="icon-bubble"></i>
+                            </span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Title" id="title">
+                    </div>
+
+                    <div class="form-row hide-when-running">
+                         <div class="form-group col-md-6">
+                            <label for="title" class="hide-when-running">Spreaker:</label>    
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="icon-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Name" id="speaker">
+                            </div>
+                         </div>
+
+                         <div class="form-group col-md-6">
+                            <label for="title" class="hide-when-running">Bible verse:</label>    
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="icon-notebook"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Book and chapter" id="bible-text">
+                            </div>
+                         </div>
+                     </div>
+
+                    <label for="select1" class="hide-when-running">Audio device:</label>    
                     <div class="input-group mb-4 hide-when-running">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="icon-volume-1"></i>
+                            </span>
+                        </div>
                         <select class="form-control" id="select-printer" name="select-printer">
                             <option value="-1">No audio devices found</option>
                         </select>
@@ -67,11 +109,16 @@
                             </button>
                         </div>
                     </div>
-                    <div class="mb-4 text-center hide-when-running">
-                        <button class="btn btn-outline-danger btn-grace-large" type="button" id="startBtn" >Start stream</button>
+                    <div class="text-center">
+                        <button class="btn btn-outline-danger btn-grace-large" type="button" id="startBtn" >
+                            <div class="remove-when-running">
+                                Start stream
+                            </div>
+                            <div class="add-when-running">
+                                Stop stream
+                            </div
+                        </button>
                     </div>
-
-                    <button class="btn btn-outline-danger btn-grace-large show-when-running" type="button" id="stopBtn">Stop stream</button>
                 </div>
                 <!-- <div class="card-body py-5 p-4" id='logincard'>
                     <h1>Login</h1>
@@ -159,8 +206,8 @@
                     ecclevel: "M",
                     fillcolor: "#ffffff", //f2f2f2
                     textcolor: "#000000",
-                    margin: 15,
-                    modulesize: 6
+                    margin: 20, //15
+                    modulesize: 6 //6
                 });
 
             
@@ -176,11 +223,11 @@
             document.getElementById('main').classList.remove("settings");
         });
 
-        document.getElementById('stopBtn').addEventListener('click', () => {
-            document.getElementById('main').classList.remove("invalid");
-            document.getElementById('main').classList.remove("running");
-            document.getElementById('main').classList.remove("settings");
-        });
+        // document.getElementById('stopBtn').addEventListener('click', () => {
+        //     document.getElementById('main').classList.remove("invalid");
+        //     document.getElementById('main').classList.remove("running");
+        //     document.getElementById('main').classList.remove("settings");
+        // });
 
         document.getElementById('settingsBtn').addEventListener('click', () => {
             document.getElementById('main').classList.remove("invalid");
