@@ -1,5 +1,5 @@
 var dataUriSvgImage = document.createElement("img");
-var u = "http://wasalm-60086.portmap.io:60086/1234/index.html";
+var u = "http://wasalm-34538.portmap.io:34538/1234/index.html";
 var s = QRCode.generateSVG(u, {
     ecclevel: "M",
     fillcolor: "#ffffff",
