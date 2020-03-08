@@ -207,9 +207,9 @@
             <div class="card-group">
                 <div class="card" id='qrcode-bg'>
                     <div class="card-body py-5 p-4 lhs">
-                        <div class="row hide-when-running">
+                        <div class="row">
                             <div class="col-12">
-                                <button class="btn btn-sm btn-outline-secondary float-right" type="button" id="btn-settings"><i class="icon-settings"></i> Settings</button>
+                                <button class="btn btn-sm btn-outline-secondary float-right hide-when-running" type="button" id="btn-settings"><i class="icon-settings"></i> Settings</button>
                             </div>
                         </div>
                         <h1 class="hide-when-running">Live stream</h1>
@@ -262,6 +262,11 @@
                     <div class="card-body" style="position: relative;">
                         <img src="assets/images/logo.png" alt="Logo" class="logo" />
                         <p class='rhs-invalid-msg'>An error occurred. Check your credentials<br /> and your network connection.</p>
+
+                        <div class="btn-group btn-type-qr" role="group">
+                            <button type="button" class="btn btn-light active">Live</button>
+                            <button type="button" class="btn btn-light">Share</button>
+                        </div>
                     </div>
                 </div>
             </div>
