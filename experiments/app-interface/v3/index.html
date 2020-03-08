@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <base href="./"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+    <meta name="description" content="Grace London live stream app">
+    <meta name="author" content="W.A. (Andries) Salm">
+    <meta name="keyword" content="Grace London live stream app">
+    <title>Grace London live stream app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="assets/stylesheets/site.css" rel="stylesheet">
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <link href="assets/stylesheets/card-right.css" rel="stylesheet">
+    <link href="assets/stylesheets/card-left.css" rel="stylesheet">
+    <link href="assets/stylesheets/settings.css" rel="stylesheet">
+</head>
+<!--
+
+    class main states : 
+        - (none): normal paused
+        - running: running mode
+        - invalid: error mode
+        - settings: settings screen
+
+-->
+
+<body class="app">
+    <div class="mask">
+        <div class="main" id="main">
+            <div class="card-group" id='settings'>
+                <div class="card">
+                    <div class="card-body py-5 p-4 lhs">
+                        <h1>Audio</h1>
+                        <label for="audio-device">Audio device:</label>
+                        <div class="input-group mb-3">
+                            <select class="form-control" id="audio-device">
+                                <option value="-1">No audio devices found</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-danger" type="button" id="btn-audio-device-refresh">
+                                    <i class="icon-refresh"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="audio-channels">
+                                    <label class="form-check-label" for="audio-channels">
+                                        Map audio channels
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="audio-volume">
+                                    <label class="form-check-label" for="audio-volume">
+                                        Increase volume
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="audio-channels-left">Left:</label>
+                                <select class="form-control" id="audio-channels-left">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="audio-channels-right">Right:</label>
+                                <select class="form-control" id="audio-channels-right">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="audio-volume-val">Volume:</label>
+                                <div class="input-group">
+                                    <input class="form-control" type="number" placeholder="0" id="audio-volume-val">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            dB
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="audio-bitrate">Bitrate:</label>
+                        <select class="form-control mb-3" id="audio-bitrate">
+                            <option value="32">32 kbit/s</option>
+                            <option value="96">96 kbit/s</option>
+                            <option value="128">128 kbit/s</option>
+                            <option value="192" selected>192 kbit/s</option>
+                            <option value="256">256 kbit/s</option>
+                            <option value="320">320 kbit/s</option>
+                        </select>
+                        <h1>Webserver</h1>
+                        <div class="form-row">
+                            <div class="form-group col-sm-8">
+                                <label for="webserver-host">Host</label>
+                                <div class="input-group" disabled>
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            http://
+                                        </span>
+                                    </div>
+                                    <input class="form-control disabled-no-opacity" type="text" placeholder="localhost" id="webserver-host">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="webserver-port">Port</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            :
+                                        </span>
+                                    </div>
+                                    <input class="form-control" type="number" placeholder="80" id="webserver-port">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="webserver-ban-ip" checked>
+                            <label class="form-check-label" for="webserver-ban-ip">
+                                Ban users who guesses urls.
+                            </label>
+                        </div> -->
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="webserver-local" checked>
+                            <label class="form-check-label" for="webserver-local">
+                                Enable access from local network.
+                            </label>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body py-5 p-4 lhs">
+                        <h1>SSH Proxy</h1>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="proxy">
+                            <label class="form-check-label" for="proxy">
+                                Enable access via an SSH proxy.
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-5">
+                                <label for="proxy-user">Username</label>
+                                <div class="input-group">
+                                    <input class="form-control" type="text" id="proxy-user">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            @
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="proxy-host">Host</label>
+                                <input type="text" class="form-control" placeholder="portmap.io" id="proxy-host">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <label for="proxy-port">Port</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            :
+                                        </span>
+                                    </div>
+                                    <input class="form-control" type="number" placeholder="22" id="proxy-port">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="proxy-key">Private key</label>
+                            <textarea class="form-control" id="proxy-key" placeholder="-----BEGIN RSA PRIVATE KEY-----&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#10;----END RSA PRIVATE KEY-----" rows="8"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+
+                                <button class="btn btn-outline-secondary btn-grace-large" type="button" id="btn-cancel">
+                                    Cancel
+                                </button>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <button class="btn btn-outline-danger btn-grace-large" type="button" id="btn-update">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card" id='qrcode-bg'>
+                    <div class="card-body py-5 p-4 lhs">
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-sm btn-outline-secondary float-right hide-when-running" type="button" id="btn-settings"><i class="icon-settings"></i> Settings</button>
+                            </div>
+                        </div>
+                        <h1 class="hide-when-running">Live stream</h1>
+                        <br />
+                        <label for="info-title" class="hide-when-running">Sermon title:</label>
+                        <div class="input-group mb-3 hide-when-running">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="icon-bubble"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Title" id="info-title">
+                        </div>
+                        <div class="form-row hide-when-running mb-3">
+                            <div class="form-group col-sm-6">
+                                <label for="info-speaker" class="hide-when-running">Spreaker:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="icon-user"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control" type="text" placeholder="Name" id="info-speaker">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="info-text" class="hide-when-running">Bible verse:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="icon-notebook"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control" type="text" placeholder="Book and chapter" id="info-text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center hide-when-running">
+                            <button class="btn btn-outline-danger btn-grace-large" type="button" id="btn-start">
+                                Start stream
+                            </button>
+                        </div>
+                        <button class="btn btn-outline-danger btn-grace-large mb-4 add-when-running" type="button" id="btn-stop">
+                            Stop stream
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-white rhs">
+                    <div class="mask"></div>
+                    <div class="card-body" style="position: relative;">
+                        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+                        <p class='rhs-invalid-msg'>An error occurred. Check your credentials<br /> and your network connection.</p>
+
+                        <div class="btn-group btn-type-qr" role="group">
+                            <button type="button" class="btn btn-light active">Live</button>
+                            <button type="button" class="btn btn-light">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/qrjs2@0.1.7/js/qrjs2.min.js"></script>
+        <script src="assets/scripts/settings.js"></script>
+        <script type="text/javascript">
+        // Temporary
+        // document.getElementById('btn-audio-device-refresh').addEventListener('click', () => {
+        //     document.getElementById('main').classList.add("invalid");
+        //     document.getElementById('main').classList.remove("running");
+        //     document.getElementById('main').classList.remove("settings");
+        // });
+
+        // document.getElementById('btn-start').addEventListener('click', () => {
+
+
+        //     u = "http://wasalm-34538.portmap.io:34538/1234/index.html",
+        //         s = QRCode.generateSVG(u, {
+        //             ecclevel: "M",
+        //             fillcolor: "#ffffff", //f2f2f2
+        //             textcolor: "#000000",
+        //             margin: 20, //15
+        //             modulesize: 6 //6
+        //         });
+
+
+        //     var XMLS = new XMLSerializer();
+        //     s = XMLS.serializeToString(s);
+        //     s = transformQRCode(s);
+
+        //     s = "data:image/svg+xml;base64," + window.btoa(unescape(encodeURIComponent(s)));
+        //     document.getElementById('qrcode-bg').style.backgroundImage = "url('" + s + "')";
+
+        //     document.getElementById('main').classList.remove("invalid");
+        //     document.getElementById('main').classList.add("running");
+        //     document.getElementById('main').classList.remove("settings");
+        // });
+
+        // document.getElementById('btn-stop').addEventListener('click', () => {
+        //     document.getElementById('main').classList.remove("invalid");
+        //     document.getElementById('main').classList.remove("running");
+        //     document.getElementById('main').classList.remove("settings");
+        // });
+
+        // document.getElementById('btn-settings').addEventListener('click', () => {
+        //     document.getElementById('main').classList.remove("invalid");
+        //     document.getElementById('main').classList.remove("running");
+        //     document.getElementById('main').classList.add("settings");
+        // });
+
+
+        // function transformQRCode(s) {
+
+        //     //Replace colors
+        //     s = s.replace("</style>", ".bg2{fill:#f2f2f2}</style><rect class=\"bg2\" fill=\"none\" x=\"0\" y=\"0\" width=\"1000\" height=\"1000\" mask=\"url(#mask)\"/><mask id='mask'>");
+        //     s = s.replace("</svg>", "</mask></svg>");
+
+
+        //     return s;
+        // }
+        </script>
+</body>
+
+</html>

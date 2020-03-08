@@ -1,0 +1,27 @@
+#settings {
+	display: none;
+}
+
+#main.settings #settings {
+	display: flex;
+}
+
+#main.settings .card-group {
+	display: none;
+}
+
+#settings input:disabled, #settings textarea:disabled, #settings select:disabled {
+	opacity: 0.3;
+}
+
+#settings .input-group.disabled {
+	opacity: 0.3;	
+}
+
+#settings .input-group.disabled input:disabled {
+	opacity: 1.0;	
+}
+
+#settings .disabled-no-opacity {
+	opacity: 1.0 !important;
+}
