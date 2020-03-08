@@ -136,14 +136,14 @@ if(conf.usePortmap) {
 			console.log('Listening for connections on server on http://' + conf.ssh.host + ":" + conf.webserver.port + ".");
 		});
 	}).on('tcp connection', function(info, accept, reject) {
-		if(blockedIPs.indexOf(info.srcIP) != -1 && conf.blockIP) {
-			console.log("Blocked connection");
-			reject();
-		} else {
+		// if(blockedIPs.indexOf(info.srcIP) != -1 && conf.blockIP) {
+			// console.log("Blocked connection");
+			// reject();
+		// } else {
 			socket = accept();
 			socket.sshSocketInformation = info;
 			httpServer.emit("connection", socket);
-		}
+		// }
 	}).connect(conf.ssh);
 } else {
 	httpServer.listen(conf.webserver.port);
