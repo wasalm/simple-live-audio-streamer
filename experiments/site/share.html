@@ -39,14 +39,20 @@
             </div>
 
             <!-- Card content -->
-            <div class="card-body text-center">
-
-              <h5 class="sermon-title">
-                An interesting sermon title
-              </h5>
-              <p class="mb-0 sermon-subtitle">
-                Andrew Haslam &middot; Psalm 151
-              </p>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2 text-right p-0 my-auto">
+                  <i id="pButton" class="fas fa-lg fa-play cursor"></i>
+                </div>
+                <div class="col-md-10 text-center">
+                  <h5 class="sermon-title">
+                    An interesting sermon title
+                  </h5>
+                  <p class="mb-0 sermon-subtitle">
+                    Andrew Haslam &middot; Psalm 151
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Card -->
@@ -56,9 +62,11 @@
     </div>
     <!-- Mask & flexbox options-->
   </div>
+  <audio id="music"></audio>
   <!-- Full Page Intro -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/qrjs2@0.1.7/js/qrjs2.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/audio-player.js"></script>
   <script type="text/javascript" src="assets/scripts/share.js"></script>
 </body>
 

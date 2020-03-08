@@ -24,12 +24,12 @@ window.addEventListener("pageshow", () => {
 function updateBtn() {
   // start music
   if (music.paused) {
-    pButton.className = "";
-    pButton.className = "fas fa-play";
+    pButton.classList.remove("fa-pause");
+    pButton.classList.add("fa-play");
   } else { // pause music
     // remove pause, add play
-    pButton.className = "";
-    pButton.className = "fas fa-pause";
+    pButton.classList.add("fa-pause");
+    pButton.classList.remove("fa-play");
   }  
 }
 
