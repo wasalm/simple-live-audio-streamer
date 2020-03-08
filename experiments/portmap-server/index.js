@@ -89,6 +89,9 @@ httpServer = http.createServer(function (req, res) {
         case '.js':
             contentType = 'text/javascript';
             break;
+        case '.json':
+            contentType = 'application/json';
+            break;
         case '.css':
             contentType = 'text/css';
             break;
