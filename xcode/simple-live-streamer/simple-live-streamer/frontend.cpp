@@ -18,9 +18,10 @@
 // Run this in main thread
 void frontend() {
     webview::webview w(true, nullptr);
-    w.set_title("Minimal example");
-    w.set_size(480, 320, WEBVIEW_HINT_NONE);
-      w.navigate("https://en.m.wikipedia.org/wiki/Main_Page");
-      w.run();
+    w.set_title("Simple live streaming");
+    w.set_size(1200, 700, WEBVIEW_HINT_NONE);
+//    w.navigate("http://grace.london");
+    w.navigate("file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v2/index.html");
+    w.run();
 
 }
