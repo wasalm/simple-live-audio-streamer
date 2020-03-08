@@ -7,8 +7,8 @@ if (Hls.isSupported()) {
     hls.loadSource('stream/live.m3u8');
     hls.attachMedia(music);
 }
-else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    music.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+else if (music.canPlayType('application/vnd.apple.mpegurl')) {
+    music.src = 'stream/live.m3u8';
 }
 
 
@@ -34,7 +34,7 @@ function updateBtn() {
 }
 
 //Play and Pause
-function play() {
+function play(ev) {
   // start music
   if (music.paused) {
     music.play();
