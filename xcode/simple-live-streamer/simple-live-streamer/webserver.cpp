@@ -7,14 +7,14 @@
 //
 
 #include <iostream>
-#include "server.hpp"
+#include "webserver.hpp"
 #include <assert.h>
 #include <atomic>
 #include <string>
 
 #include <libssh/libssh.h>
 
-#include "picohttpparser.hpp"
+#include "libs/pico-http-parser/picohttpparser.hpp"
 
 /*
  * Configuration

@@ -10,7 +10,7 @@
 #include <assert.h>
 #include <pthread.h>
 
-#include "server.hpp"
+#include "webserver.hpp"
 #include "frontend.hpp"
 
 pthread_t webserverThread;
@@ -23,9 +23,8 @@ int main(int argc, const char * argv[]) {
 
     rc = pthread_create(&webserverThread, NULL, server, NULL);
     assert(rc == 0);
-
-//
-//    frontend();
+    
+    frontend();
     
 
     pthread_exit(NULL);
