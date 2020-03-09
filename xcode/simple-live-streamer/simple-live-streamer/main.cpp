@@ -24,7 +24,8 @@ int main(int argc, const char * argv[]) {
     rc = pthread_create(&webserverThread, NULL, server, NULL);
     assert(rc == 0);
 
-    frontend();
+//
+//    frontend();
     
 
     pthread_exit(NULL);

@@ -10,9 +10,11 @@
 #include "server.hpp"
 #include <assert.h>
 #include <atomic>
+#include <string>
 
-//#define LIBSSH_STATIC 1
 #include <libssh/libssh.h>
+
+#include "picohttpparser.hpp"
 
 /*
  * Configuration
@@ -21,6 +23,8 @@ std::string sshHost = "wasalm-34538.portmap.io";
 std::string sshUser = "wasalm.first";
 int sshPort = 22;
 int webPort = 34538;
+std::string baseUrl = "/1234/";
+std::string webPath = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/site";
 
 std::string b64_key = "-----BEGIN RSA PRIVATE KEY-----\n"
 "MIIEowIBAAKCAQEAxj607vwuNJrHgYvd501HBTsDDzA84As0SSlYuuGixC+8mrHA\n"
@@ -49,6 +53,19 @@ std::string b64_key = "-----BEGIN RSA PRIVATE KEY-----\n"
 "Wl+6xGcsYglYVQNd/M1L3GtGQGZczmNPqs6HA43j4J3QwVfIiWbsZWOyBUdFUR4P\n"
 "yHDnhAT3SACPJFgMCzljZS3re8Tg/AananFuO7vWGSEr12zaKjnt\n"
 "-----END RSA PRIVATE KEY-----";
+
+
+std::string notFoundPage = ""
+"HTTP/1.1 404 Not Found\n"
+"Content-Type: text/plain\n"
+"\n"
+"Not Found\n";
+
+std::string forbiddenPage = ""
+"HTTP/1.1 403 Forbidden\n"
+"Content-Type: text/plain\n"
+"\n"
+"Not Found\n";
 
 std::atomic<bool> serverRunning(true);
 
@@ -131,25 +148,129 @@ void disconnectSSH(ssh_session* sessionP, ssh_key* privKeyP) {
     ssh_free(*sessionP);
 }
 
+bool handleChannel(ssh_channel * channelP) {
+    char buf[4096] = "";
+    const char *method, *path;
+    int pret, minor_version;
+    struct phr_header headers[100];
+    size_t buflen = 0, prevbuflen = 0, method_len, path_len, num_headers;
+    ssize_t rret;
+
+    while (serverRunning) {
+        /* read the request */
+        rret = ssh_channel_read(*channelP, &buf + buflen, sizeof(buf) - buflen, 0);
+
+        if (rret <= 0){
+            printf("Http parser error: IOError");
+            return false; //IOError;
+        }
+        prevbuflen = buflen;
+        buflen += rret;
+        /* parse the request */
+        num_headers = sizeof(headers) / sizeof(headers[0]);
+        pret = phr_parse_request(buf, buflen, &method, &method_len, &path, &path_len, &minor_version, headers, &num_headers, prevbuflen);
+
+        if (pret > 0)
+            break; /* successfully parsed the request */
+        else if (pret == -1) {
+            printf("Http parser error: ParseError");
+            return false;
+        }
+            
+        /* request is incomplete, continue the loop */
+        assert(pret == -2);
+        if (buflen == sizeof(buf)) {
+            printf("Http parser error: RequestIsTooLongError");
+            return false;
+        }
+            
+    }
+
+    /*
+     * Check if path starts with the password
+     */
+    if(strncmp(path,baseUrl.c_str(), baseUrl.length())) {
+        // Path doesn't start with the base URL.
+        // Hence send 403 Forbidden
+        int nbytes = forbiddenPage.length();
+        int nwritten = ssh_channel_write(*channelP, forbiddenPage.c_str(), nbytes);
+        if (nwritten != nbytes)
+        {
+            fprintf(stderr, "Error sending answer.\n");
+            ssh_channel_send_eof(*channelP);
+            ssh_channel_free(*channelP);
+            return false;
+        }
+        return true;
+    }
+    
+    
+//    /path?query#frag
+//    TODO: REMOVE QUERY
+//    TODO: normalize path
+//    IF file exists, then return file, else return noting
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    printf("request is %d bytes long\n", pret);
+    printf("method is %.*s\n", (int)method_len, method);
+    printf("path is %.*s\n", (int)path_len, path);
+    printf("HTTP version is 1.%d\n", minor_version);
+    printf("headsers:\n");
+    for (int i = 0; i != num_headers; ++i) {
+        printf("%.*s: %.*s\n", (int)headers[i].name_len, headers[i].name,
+               (int)headers[i].value_len, headers[i].value);
+    }
+
+    std::string helloworld = ""
+    "HTTP/1.1 200 OK\n"
+    "Content-Type: text/html\n"
+    "Content-Length: 113\n"
+    "\n"
+    "<html>\n"
+    "  <head>\n"
+    "    <title>Hello, World!</title>\n"
+    "  </head>\n"
+    "  <body>\n"
+    "    <h1>Hello, World!</h1>\n"
+    "  </body>\n"
+    "</html>\n";
+     
+    int nbytes = helloworld.length();
+    int nwritten = ssh_channel_write(*channelP, helloworld.c_str(), nbytes);
+    if (nwritten != nbytes)
+    {
+        fprintf(stderr, "Error sending answer.\n");
+        ssh_channel_send_eof(*channelP);
+        ssh_channel_free(*channelP);
+        return false;
+    }
+    printf("Sent answer\n");
+    return true;
+}
+
 int remote_web_server(ssh_session * sessionP) {
     int rc;
     ssh_channel channel;
-    char buffer[256];
-    int nbytes, nwritten;
     int port = 0;
-    std::string helloworld = ""
-        "HTTP/1.1 200 OK\n"
-        "Content-Type: text/html\n"
-        "Content-Length: 113\n"
-        "\n"
-        "<html>\n"
-        "  <head>\n"
-        "    <title>Hello, World!</title>\n"
-        "  </head>\n"
-        "  <body>\n"
-        "    <h1>Hello, World!</h1>\n"
-        "  </body>\n"
-        "</html>\n";
     
     rc = ssh_channel_listen_forward(*sessionP, NULL, webPort, NULL);
     if (rc != SSH_OK) {
@@ -158,40 +279,23 @@ int remote_web_server(ssh_session * sessionP) {
         return rc;
     }
 
-    channel = ssh_channel_accept_forward(*sessionP, 60000, &port);
-    if (channel == NULL) {
-        fprintf(stderr, "Error waiting for incoming connection: %s\n",
-                ssh_get_error(*sessionP));
-        return SSH_ERROR;
-    }
-    
     while (serverRunning) {
-        nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
-        if (nbytes < 0) {
-            fprintf(stderr, "Error reading incoming data: %s\n",
-                    ssh_get_error(*sessionP));
-            ssh_channel_send_eof(channel);
-            ssh_channel_free(channel);
-            return SSH_ERROR;
-        }
+        channel = ssh_channel_accept_forward(*sessionP, 10000, &port);
+        if (channel == NULL) {
+            //No request received probably. Just ignore the error and try again.
+//            fprintf(stderr, "Error waiting for incoming connection: %s\n",
+//                    ssh_get_error(*sessionP));
+//            return SSH_ERROR;
+        } else {
         
-        if (strncmp(buffer, "GET /", 5)) continue;
-
-        nbytes = helloworld.length();
-        nwritten = ssh_channel_write(channel, helloworld.c_str(), nbytes);
-        if (nwritten != nbytes)
-        {
-            fprintf(stderr, "Error sending answer: %s\n",
-                    ssh_get_error(*sessionP));
+            if(!handleChannel(&channel)) {
+                return SSH_ERROR;
+            }
+            
             ssh_channel_send_eof(channel);
             ssh_channel_free(channel);
-            return SSH_ERROR;
         }
-        printf("Sent answer\n");
     }
-
-    ssh_channel_send_eof(channel);
-    ssh_channel_free(channel);
     return SSH_OK;
 }
 

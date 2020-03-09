@@ -10,6 +10,7 @@
 		293540B4241408BE00BD082D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293540B3241408BE00BD082D /* main.cpp */; };
 		293540BE2414093F00BD082D /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293540BC2414093F00BD082D /* server.cpp */; };
 		293540C224140C4D00BD082D /* frontend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293540C024140C4D00BD082D /* frontend.cpp */; };
+		294DB1752416E04F0089F622 /* picohttpparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 294DB1732416E04F0089F622 /* picohttpparser.cpp */; };
 		2988660824145FA600E6329E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; };
 		2988660924145FA600E6329E /* WebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -44,6 +45,8 @@
 		293540BD2414093F00BD082D /* server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
 		293540C024140C4D00BD082D /* frontend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frontend.cpp; sourceTree = "<group>"; };
 		293540C124140C4D00BD082D /* frontend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frontend.hpp; sourceTree = "<group>"; };
+		294DB1732416E04F0089F622 /* picohttpparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = picohttpparser.cpp; sourceTree = "<group>"; };
+		294DB1742416E04F0089F622 /* picohttpparser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = picohttpparser.hpp; sourceTree = "<group>"; };
 		2988660124145F0600E6329E /* webview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = webview.h; sourceTree = "<group>"; };
 		2988660324145F9300E6329E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -86,6 +89,8 @@
 				293540C024140C4D00BD082D /* frontend.cpp */,
 				293540C124140C4D00BD082D /* frontend.hpp */,
 				2988660124145F0600E6329E /* webview.h */,
+				294DB1732416E04F0089F622 /* picohttpparser.cpp */,
+				294DB1742416E04F0089F622 /* picohttpparser.hpp */,
 			);
 			path = "simple-live-streamer";
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				293540C224140C4D00BD082D /* frontend.cpp in Sources */,
 				293540BE2414093F00BD082D /* server.cpp in Sources */,
 				293540B4241408BE00BD082D /* main.cpp in Sources */,
+				294DB1752416E04F0089F622 /* picohttpparser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
