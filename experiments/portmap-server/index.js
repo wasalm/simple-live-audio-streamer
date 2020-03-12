@@ -95,6 +95,9 @@ httpServer = http.createServer(function (req, res) {
         case '.css':
             contentType = 'text/css';
             break;
+        case '.svg':
+            contentType = 'image/svg+xml';
+            break;
         case '.png':
             contentType = 'image/png';
             break;      
