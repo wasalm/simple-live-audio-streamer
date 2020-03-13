@@ -1,0 +1,18 @@
+Compile programs:
+
+*
+*	Lighttpd
+*
+
+To compile lighthttpd static use
+ccmake -Wno-dev -DWITH_OPENSSL=0 -DWITH_LUA=0 -DWITH_ZLIB=0 -DWITH_BZIP2=0 -DWITH_WEBDAV_PROPS=0 ..
+and set PRCE support off
+
+To handle plugin-static.h not found see:
+https://redmine.lighttpd.net/boards/3/topics/5912
+
+*
+*	FFmpeg
+*
+To compile ffmpeg
+see https://github.com/albinoz/ffmpeg-static-OSX
