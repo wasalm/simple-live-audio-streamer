@@ -11,8 +11,6 @@
 
 #include <stdio.h>
 
-#include <libssh/libssh.h>
-
 void * server(void*);
 
 #endif /* server_hpp */

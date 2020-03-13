@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <!-- start at 16-06 12:25 -->
+    <title>Cordova image creator</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jszip.min.js"></script>
+    <script type="text/javascript" src="FileSaver.min.js"></script>
+    <script type="text/javascript">
+    let sourceSet = false;
+
+    let images = [];
+
+    let source = null;
+
+    window.onload = function() {
+        parseConfig();
+
+        var sourceInput = document.getElementById('image');
+        sourceInput.addEventListener("change", parseImage);
+
+        var zipButton = document.getElementById('zip');
+        zipButton.addEventListener("click", createImages);
+    };
+
+    function createZip() {
+        var zip = new JSZip();
+
+        for (let i = 0; i < images.length; i++) {
+            let image = images[i];
+            zip.file(image.src, image.blob.split(",")[1], { base64: true });
+        }
+
+        zip.generateAsync({ type: "blob" }).then(function(content) {
+            // see FileSaver.js
+            saveAs(content, "icons.zip");
+        });
+    }
+
+    function createImages(e) {
+
+        if (sourceSet != true) {
+            alert("Not all data is set");
+            return;
+        }
+
+        let n = 0;
+        for (let i = 0; i < images.length; i++) {
+            let image = images[i];
+
+            let canvas = document.createElement('canvas');
+            let context = canvas.getContext('2d');
+            context.imageSmoothingEnabled = true;
+
+            canvas.width = image.width;
+            canvas.height = image.height;
+
+            context.width = image.width;
+            context.height = image.height;
+
+            let img = new Image();
+            img.onload = function() {
+                context.drawImage(img, 0, 0, image.width, image.height);
+                image.blob = canvas.toDataURL("image/png");
+
+                n++;
+
+                if (n == images.length) {
+                    createZip();
+                }
+            }
+
+            img.src = source;
+        }
+    }
+
+    function parseConfig(e) {
+
+        images = [{
+                src: "16.png",
+                width: 16,
+                height: 16,
+                blob: null
+            },
+            {
+                src: "32.png",
+                width: 32,
+                height: 32,
+                blob: null
+            },
+            {
+                src: "64.png",
+                width: 64,
+                height: 64,
+                blob: null
+            },
+            {
+                src: "128.png",
+                width: 128,
+                height: 128,
+                blob: null
+            },
+            {
+                src: "256.png",
+                width: 256,
+                height: 256,
+                blob: null
+            },
+            {
+                src: "512.png",
+                width: 512,
+                height: 512,
+                blob: null
+            },
+            {
+                src: "1024.png",
+                width: 1024,
+                height: 1024,
+                blob: null
+            },
+        ];
+
+        return true
+    }
+
+    function parseImage(e) {
+        var url = URL.createObjectURL(e.target.files[0]);
+
+        source = url;
+        sourceSet = true;
+    }
+    </script>
+</head>
+
+<body>
+    <h1>SVG to PNG demo</h1>
+    <h2>Select svg source image</h2>
+    <input type="file" id="image" /> <br />
+    <h2>Run code</h2>
+    <input type="button" id="zip" value="Create images" /> <br />
+    <h2>Canvas:</h2>
+</body>
+<html>

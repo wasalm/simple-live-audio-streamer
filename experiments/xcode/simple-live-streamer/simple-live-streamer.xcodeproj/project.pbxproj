@@ -12,7 +12,6 @@
 		2988660824145FA600E6329E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; };
 		2988660924145FA600E6329E /* WebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		29FCEA572416F1BE00BFCB11 /* webserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29FCEA562416F1BE00BFCB11 /* webserver.cpp */; };
-		29FCEA5C2416F1F800BFCB11 /* picohttpparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29FCEA5B2416F1F800BFCB11 /* picohttpparser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,8 +45,6 @@
 		2988660324145F9300E6329E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		29FCEA552416F1BE00BFCB11 /* webserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = webserver.hpp; sourceTree = "<group>"; };
 		29FCEA562416F1BE00BFCB11 /* webserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = webserver.cpp; sourceTree = "<group>"; };
-		29FCEA5A2416F1F800BFCB11 /* picohttpparser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = picohttpparser.hpp; sourceTree = "<group>"; };
-		29FCEA5B2416F1F800BFCB11 /* picohttpparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = picohttpparser.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,18 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				29FCEA5D2416F21400BFCB11 /* webview */,
-				29FCEA592416F1D800BFCB11 /* pico-http-parser */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		29FCEA592416F1D800BFCB11 /* pico-http-parser */ = {
-			isa = PBXGroup;
-			children = (
-				29FCEA5B2416F1F800BFCB11 /* picohttpparser.cpp */,
-				29FCEA5A2416F1F800BFCB11 /* picohttpparser.hpp */,
-			);
-			path = "pico-http-parser";
 			sourceTree = "<group>";
 		};
 		29FCEA5D2416F21400BFCB11 /* webview */ = {
@@ -186,7 +173,6 @@
 				293540C224140C4D00BD082D /* frontend.cpp in Sources */,
 				293540B4241408BE00BD082D /* main.cpp in Sources */,
 				29FCEA572416F1BE00BFCB11 /* webserver.cpp in Sources */,
-				29FCEA5C2416F1F800BFCB11 /* picohttpparser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,11 +295,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 65AVNWLCFY;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/libssh/0.9.3/include;
-				OTHER_LDFLAGS = (
-					"-L/usr/local/Cellar/libssh/0.9.3/lib",
-					"-lssh",
-				);
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -325,11 +308,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 65AVNWLCFY;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/libssh/0.9.3/include;
-				OTHER_LDFLAGS = (
-					"-L/usr/local/Cellar/libssh/0.9.3/lib",
-					"-lssh",
-				);
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

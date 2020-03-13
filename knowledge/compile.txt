@@ -16,3 +16,9 @@ https://redmine.lighttpd.net/boards/3/topics/5912
 *
 To compile ffmpeg
 see https://github.com/albinoz/ffmpeg-static-OSX
+
+*
+* Test for shared libraries
+*
+
+otool -L {FILENAME}
