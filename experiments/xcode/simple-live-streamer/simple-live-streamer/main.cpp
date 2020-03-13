@@ -8,36 +8,86 @@
 
 #include <iostream>
 #include <assert.h>
+#include <vector>
 
 #include "webview.h"
 #include "pstream.h"
 
-std::string test(std::string input) {
-    std::cout << input << std::endl;
+#include <CoreGraphics/CoreGraphics.h>
+#include <objc/objc-runtime.h>
+/*
+ * Configuration
+ */
+
+std::string frontEndUrl = "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v3/index.html";
+std::string ffmpegPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffmpeg";
+std::string ffprobePath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffprobe";
+std::string lighttpdPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd";
+std::string lighttpdConfPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd.conf";
+
+webview_t w;
+
+std::string getAudioDevices(std::string input) {
+    // print names of all header files in current directory
+    std::cout << ffmpegPath + " -f avfoundation -list_devices true -i \"\"" << std::endl;
+        redi::ipstream in(ffmpegPath + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
+        std::string str;
+        while (std::getline(in, str)) {
+            std::cout << "MESSAGE: " << str << std::endl << std::endl;
+        }
+    
+    //TODO PARSE and return
     
     return input;
 }
 
+std::string getSettings(std::string input) {
+    //TODO
+    return input;
+}
+
+std::string setSettings(std::string input) {
+    //TODO
+    return input;
+}
+
+std::string startStream(std::string input) {
+    //TODO
+    std::string liveUrl = "http://wasalm-34538.portmap.io:34538/index.html";
+    std::string shareUrl = "http://wasalm-34538.portmap.io:34538/share.html";
+    return "{liveUrl: \"" + liveUrl + "\", shareUrl: \"" + shareUrl + "\"}";
+}
+
+std::string stopStream(std::string input) {
+    //TODO
+
+//    w.eval("window.dispatchEvent(new Event(\"appError\"))");
+    return input;
+}
+
+//std::string test(std::string input) {
+//    std::cout << input << std::endl;
+//
+//    return input;
+//}
 
 int main(int argc, const char * argv[]) {
 
-    // print names of all header files in current directory
-    redi::ipstream in("pwd");
-    std::string str;
-    while (in >> str) {
-        std::cout << str << std::endl;
-    }
+    w = webview_create(true, nullptr);
+    webview_set_title(w, "Grace Livestream");
+    webview_set_size(w, 1200, 700, WEBVIEW_HINT_NONE);
+    webview_navigate(w, frontEndUrl.c_str());
+
+//    (NSWindow *) window = webview_get_window(w);
+//    window->center();
     
+    static_cast<webview::webview *>(w)->bind("getAudioDevices", getAudioDevices);
+    static_cast<webview::webview *>(w)->bind("getSettings", getSettings);
+    static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
+    static_cast<webview::webview *>(w)->bind("startStream", startStream);
+    static_cast<webview::webview *>(w)->bind("stopStream", stopStream);
     
-    webview::webview w(true, nullptr);
-    w.set_title("Simple live streaming");
-    w.set_size(1200, 700, WEBVIEW_HINT_NONE);
-    w.navigate(
-               "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v2/index.html"
-    );
-    
-    w.bind("appTest", test);
-    w.run();
+    webview_run(w);
     
 
     return 0;

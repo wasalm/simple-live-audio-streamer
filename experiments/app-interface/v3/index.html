@@ -264,71 +264,18 @@
                         <p class='rhs-invalid-msg'>An error occurred. Check your credentials<br /> and your network connection.</p>
 
                         <div class="btn-group btn-type-qr" role="group">
-                            <button type="button" class="btn btn-light active">Live</button>
-                            <button type="button" class="btn btn-light">Share</button>
+                            <button type="button" id="btn-qr-live" class="btn btn-light active">Live</button>
+                            <button type="button" id="btn-qr-share" class="btn btn-light">Share</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/qrjs2@0.1.7/js/qrjs2.min.js"></script>
+        <script src="assets/scripts/app.js"></script>
         <script src="assets/scripts/settings.js"></script>
-        <script type="text/javascript">
-        // Temporary
-        // document.getElementById('btn-audio-device-refresh').addEventListener('click', () => {
-        //     document.getElementById('main').classList.add("invalid");
-        //     document.getElementById('main').classList.remove("running");
-        //     document.getElementById('main').classList.remove("settings");
-        // });
-
-        // document.getElementById('btn-start').addEventListener('click', () => {
-
-
-        //     u = "http://wasalm-34538.portmap.io:34538/1234/index.html",
-        //         s = QRCode.generateSVG(u, {
-        //             ecclevel: "M",
-        //             fillcolor: "#ffffff", //f2f2f2
-        //             textcolor: "#000000",
-        //             margin: 20, //15
-        //             modulesize: 6 //6
-        //         });
-
-
-        //     var XMLS = new XMLSerializer();
-        //     s = XMLS.serializeToString(s);
-        //     s = transformQRCode(s);
-
-        //     s = "data:image/svg+xml;base64," + window.btoa(unescape(encodeURIComponent(s)));
-        //     document.getElementById('qrcode-bg').style.backgroundImage = "url('" + s + "')";
-
-        //     document.getElementById('main').classList.remove("invalid");
-        //     document.getElementById('main').classList.add("running");
-        //     document.getElementById('main').classList.remove("settings");
-        // });
-
-        // document.getElementById('btn-stop').addEventListener('click', () => {
-        //     document.getElementById('main').classList.remove("invalid");
-        //     document.getElementById('main').classList.remove("running");
-        //     document.getElementById('main').classList.remove("settings");
-        // });
-
-        // document.getElementById('btn-settings').addEventListener('click', () => {
-        //     document.getElementById('main').classList.remove("invalid");
-        //     document.getElementById('main').classList.remove("running");
-        //     document.getElementById('main').classList.add("settings");
-        // });
-
-
-        // function transformQRCode(s) {
-
-        //     //Replace colors
-        //     s = s.replace("</style>", ".bg2{fill:#f2f2f2}</style><rect class=\"bg2\" fill=\"none\" x=\"0\" y=\"0\" width=\"1000\" height=\"1000\" mask=\"url(#mask)\"/><mask id='mask'>");
-        //     s = s.replace("</svg>", "</mask></svg>");
-
-
-        //     return s;
-        // }
-        </script>
+        <script src="assets/scripts/bindings.js"></script>
+        
 </body>
 
 </html>
