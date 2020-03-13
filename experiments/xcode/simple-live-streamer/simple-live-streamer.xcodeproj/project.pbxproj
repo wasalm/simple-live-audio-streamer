@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		293540B4241408BE00BD082D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293540B3241408BE00BD082D /* main.cpp */; };
-		293540C224140C4D00BD082D /* frontend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293540C024140C4D00BD082D /* frontend.cpp */; };
 		2988660824145FA600E6329E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; };
-		2988660924145FA600E6329E /* WebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2988660324145F9300E6329E /* WebKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		29FCEA572416F1BE00BFCB11 /* webserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29FCEA562416F1BE00BFCB11 /* webserver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,27 +21,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		2988660A24145FA600E6329E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2988660924145FA600E6329E /* WebKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		293540B0241408BE00BD082D /* simple-live-streamer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-live-streamer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		293540B3241408BE00BD082D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		293540C024140C4D00BD082D /* frontend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frontend.cpp; sourceTree = "<group>"; };
-		293540C124140C4D00BD082D /* frontend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frontend.hpp; sourceTree = "<group>"; };
 		2988660324145F9300E6329E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		29FCEA552416F1BE00BFCB11 /* webserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = webserver.hpp; sourceTree = "<group>"; };
-		29FCEA562416F1BE00BFCB11 /* webserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = webserver.cpp; sourceTree = "<group>"; };
+		29C3FA4E241C292E00B74C52 /* pstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstream.h; sourceTree = "<group>"; };
+		29C3FA4F241C292E00B74C52 /* webview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webview.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +63,9 @@
 		293540B2241408BE00BD082D /* simple-live-streamer */ = {
 			isa = PBXGroup;
 			children = (
-				29FCEA582416F1CF00BFCB11 /* libs */,
+				29C3FA4E241C292E00B74C52 /* pstream.h */,
+				29C3FA4F241C292E00B74C52 /* webview.h */,
 				293540B3241408BE00BD082D /* main.cpp */,
-				29FCEA562416F1BE00BFCB11 /* webserver.cpp */,
-				29FCEA552416F1BE00BFCB11 /* webserver.hpp */,
-				293540C024140C4D00BD082D /* frontend.cpp */,
-				293540C124140C4D00BD082D /* frontend.hpp */,
 			);
 			path = "simple-live-streamer";
 			sourceTree = "<group>";
@@ -97,21 +78,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		29FCEA582416F1CF00BFCB11 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				29FCEA5D2416F21400BFCB11 /* webview */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		29FCEA5D2416F21400BFCB11 /* webview */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = webview;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,7 +88,6 @@
 				293540AC241408BE00BD082D /* Sources */,
 				293540AD241408BE00BD082D /* Frameworks */,
 				293540AE241408BE00BD082D /* CopyFiles */,
-				2988660A24145FA600E6329E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293540C224140C4D00BD082D /* frontend.cpp in Sources */,
 				293540B4241408BE00BD082D /* main.cpp in Sources */,
-				29FCEA572416F1BE00BFCB11 /* webserver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

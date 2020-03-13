@@ -8,24 +8,37 @@
 
 #include <iostream>
 #include <assert.h>
-#include <pthread.h>
 
-#include "webserver.hpp"
-#include "frontend.hpp"
+#include "webview.h"
+#include "pstream.h"
 
-pthread_t webserverThread;
-pthread_t frontendThread;
+std::string test(std::string input) {
+    std::cout << input << std::endl;
+    
+    return input;
+}
+
 
 int main(int argc, const char * argv[]) {
-    // Start threads
 
-    int rc;
-
-    rc = pthread_create(&webserverThread, NULL, server, NULL);
-    assert(rc == 0);
+    // print names of all header files in current directory
+    redi::ipstream in("pwd");
+    std::string str;
+    while (in >> str) {
+        std::cout << str << std::endl;
+    }
     
-    frontend();
+    
+    webview::webview w(true, nullptr);
+    w.set_title("Simple live streaming");
+    w.set_size(1200, 700, WEBVIEW_HINT_NONE);
+    w.navigate(
+               "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v2/index.html"
+    );
+    
+    w.bind("appTest", test);
+    w.run();
     
 
-    pthread_exit(NULL);
+    return 0;
 }
