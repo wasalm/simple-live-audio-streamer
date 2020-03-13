@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+config.h
+/Users/andries/Downloads/lighttpd-1.4.55/src/config.h
+sys/types.h
+-
+stddef.h
+-
+stdint.h
+-
+inttypes.h
+-
+limits.h
+-
+
+/Users/andries/Downloads/lighttpd-1.4.55/src/lighttpd-angel.c
+first.h
+/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+sys/wait.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+errno.h
+-
+unistd.h
+-
+time.h
+-
+signal.h
+-
+
+build/config.h
+

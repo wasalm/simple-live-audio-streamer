@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andries/Downloads/lighttpd-1.4.55/tests/scgi-responder.c
+sys/types.h
+-
+sys/socket.h
+-
+assert.h
+-
+errno.h
+-
+fcntl.h
+-
+limits.h
+-
+poll.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+

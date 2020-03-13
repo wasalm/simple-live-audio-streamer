@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andries/Downloads/lighttpd-1.4.55/src/lemon.c
+stdio.h
+-
+stdarg.h
+-
+string.h
+-
+ctype.h
+-
+stdlib.h
+-
+inttypes.h
+-
+unistd.h
+-
+
