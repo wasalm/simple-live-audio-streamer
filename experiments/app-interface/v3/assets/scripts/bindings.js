@@ -49,11 +49,21 @@ document.getElementById('btn-start').addEventListener('click', () => {
 
 document.getElementById('btn-stop').addEventListener('click', () => {
     stopStream().then(() => {
-        // document.getElementById('main').classList.remove("invalid");
-        // document.getElementById('main').classList.remove("running");
-        // document.getElementById('main').classList.remove("settings");
+        document.getElementById('main').classList.remove("invalid");
+        document.getElementById('main').classList.remove("running");
+        document.getElementById('main').classList.remove("settings");
     });
 });
+
+document.onkeyup = (e) => {
+	console.log(e.which);
+	console.log(e);
+  if (e.which == 99 && e.keyIdentifier == "Meta") {
+    console.log("Cmd + Q is pressed");
+  } else if(e.which == 91 && e.keyIdentifier == "Meta") {
+    console.log("Cmd + W is pressed");
+  } 
+};
 
 
 // Listen for the event.

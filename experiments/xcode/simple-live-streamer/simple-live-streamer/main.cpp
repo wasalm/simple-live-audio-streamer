@@ -59,17 +59,10 @@ std::string startStream(std::string input) {
 }
 
 std::string stopStream(std::string input) {
-    //TODO
-
-//    w.eval("window.dispatchEvent(new Event(\"appError\"))");
+    //TODO    
     return input;
 }
 
-//std::string test(std::string input) {
-//    std::cout << input << std::endl;
-//
-//    return input;
-//}
 
 int main(int argc, const char * argv[]) {
 
@@ -78,9 +71,6 @@ int main(int argc, const char * argv[]) {
     webview_set_size(w, 1200, 700, WEBVIEW_HINT_NONE);
     webview_navigate(w, frontEndUrl.c_str());
 
-//    (NSWindow *) window = webview_get_window(w);
-//    window->center();
-    
     static_cast<webview::webview *>(w)->bind("getAudioDevices", getAudioDevices);
     static_cast<webview::webview *>(w)->bind("getSettings", getSettings);
     static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
@@ -89,6 +79,7 @@ int main(int argc, const char * argv[]) {
     
     webview_run(w);
     
+//    webview_eval(w, "window.dispatchEvent(new Event(\"appError\"))");
 
     return 0;
 }
