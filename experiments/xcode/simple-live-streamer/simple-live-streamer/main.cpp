@@ -13,8 +13,6 @@
 #include "webview.h"
 #include "pstream.h"
 
-#include <CoreGraphics/CoreGraphics.h>
-#include <objc/objc-runtime.h>
 /*
  * Configuration
  */
@@ -24,6 +22,7 @@ std::string ffmpegPath = "/Users/andries/Development/Git/Grace\\ London/simple-l
 std::string ffprobePath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffprobe";
 std::string lighttpdPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd";
 std::string lighttpdConfPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd.conf";
+
 
 webview_t w;
 
@@ -59,7 +58,7 @@ std::string startStream(std::string input) {
 }
 
 std::string stopStream(std::string input) {
-    //TODO    
+    //TODO
     return input;
 }
 
@@ -76,9 +75,10 @@ int main(int argc, const char * argv[]) {
     static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
     static_cast<webview::webview *>(w)->bind("startStream", startStream);
     static_cast<webview::webview *>(w)->bind("stopStream", stopStream);
-    
+
     webview_run(w);
     
+    // readlink /proc/self/exe
 //    webview_eval(w, "window.dispatchEvent(new Event(\"appError\"))");
 
     return 0;
