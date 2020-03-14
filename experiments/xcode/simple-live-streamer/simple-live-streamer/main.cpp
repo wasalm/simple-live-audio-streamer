@@ -17,6 +17,13 @@
  * Configuration
  */
 
+struct programManager {
+    programManager() {};
+    ~programManager() {
+        std::cout << "goodBye" << std::endl;
+    }
+};
+
 struct filePathsT {
     std::string frontEnd;
     std::string ffmpeg;
@@ -56,6 +63,10 @@ filePathsT filePaths {
 };
     
 std::string passcode = "";
+    
+programManager ffmpeg;
+programManager lighttpd;
+programManager ssh;
 
 //TODO LOAD DATA FROM FILE
 configT config{
@@ -215,7 +226,7 @@ std::string stopStream(std::string input) {
  * Main
  */
 int main(int argc, const char * argv[]) {
-
+    
     loadSettings();
     
     w = webview_create(true, nullptr);
@@ -231,6 +242,7 @@ int main(int argc, const char * argv[]) {
 
     webview_run(w);
     
+    std::cout << "Goodbye.." << std::endl;
 //    webview_eval(w, "window.dispatchEvent(new Event(\"appError\"))");
 // readlink /proc/self/exe
     return 0;
