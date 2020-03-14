@@ -95,8 +95,28 @@ document.getElementById('btn-audio-device-refresh').addEventListener('click', ()
 });
 
 document.getElementById('btn-update').addEventListener('click', () => {
-    // Load settings
-    setSettings({ /*TODO*/ }).then((data) => {
+    let config = {
+    	"audioDevice": document.getElementById("audio-device").options.item(document.getElementById("audio-device").selectedIndex).value,
+    	
+    	"audioChannels": document.getElementById("audio-channels").checked,
+    	"audioChannelsLeft": parseInt(document.getElementById("audio-channels-left").value),
+    	"audioChannelsRight": parseInt(document.getElementById("audio-channels-right").value),
+
+    	"audioVolume": document.getElementById("audio-volume").checked,
+    	"audioVolumeVal": parseInt(document.getElementById("audio-volume-val").value),
+    	
+    	"audioBitrate": parseInt(document.getElementById("audio-bitrate").value),
+
+    	"webserverHost": document.getElementById("webserver-host").value,
+    	"webserverPort": parseInt(document.getElementById("webserver-port").value),
+
+    	"proxy": document.getElementById("proxy").checked,
+    	"proxyUser": document.getElementById("proxy-user").value,
+    	"proxyHost": document.getElementById("proxy-host").value,
+    	"proxyPort": parseInt(document.getElementById("proxy-port").value),
+    	"proxyKey": document.getElementById("proxy-key").value
+    };
+    setSettings(config).then((data) => {
         //Show Main
         document.getElementById('main').classList.remove("invalid");
         document.getElementById('main').classList.remove("running");

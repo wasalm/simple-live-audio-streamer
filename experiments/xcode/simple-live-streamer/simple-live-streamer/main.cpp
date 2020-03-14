@@ -78,7 +78,7 @@ configT config{
     .proxyHost = "wasalm-34538.portmap.io",
     .proxyPort = 22,
     
-    .proxyKey = "TODO\nA\nB\nc"
+    .proxyKey = "TODO"
 };
     
 /*
@@ -128,7 +128,7 @@ void loadSettings() {
     //TODO:
     //Load settings from a file
     
-    // readlink /proc/self/exe
+    
 }
     
 std::string getSettings(std::string input) {
@@ -195,6 +195,7 @@ std::string getSettings(std::string input) {
 
 std::string setSettings(std::string input) {
     //TODO
+//    std::cout<< webview::json_parse(input.substr(1,input.size()-2), "proxyUser", 0) << std::endl;
     return input;
 }
 
@@ -231,6 +232,6 @@ int main(int argc, const char * argv[]) {
     webview_run(w);
     
 //    webview_eval(w, "window.dispatchEvent(new Event(\"appError\"))");
-
+// readlink /proc/self/exe
     return 0;
 }
