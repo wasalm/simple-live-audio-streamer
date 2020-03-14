@@ -563,9 +563,13 @@ using browser_engine = gtk_webkit_engine;
 #define NSWindowStyleMaskTitled 1
 #define NSWindowStyleMaskClosable 2
 
+#define NSEventModifierFlagCommand (1 << 20)
+#define NSEventModifierFlagOption (1 << 19)
+
 #define NSApplicationActivationPolicyRegular 0
 
 #define WKUserScriptInjectionTimeAtDocumentStart 0
+
 
 namespace webview {
 
@@ -575,6 +579,17 @@ SEL operator"" _sel(const char *s, std::size_t) { return sel_registerName(s); }
 id operator"" _str(const char *s, std::size_t) {
   return objc_msgSend("NSString"_cls, "stringWithUTF8String:"_sel, s);
 }
+
+static id create_menu_item(id title, const char *action, const char *key) {
+    id item = objc_msgSend("NSMenuItem"_cls, "alloc"_sel);
+   
+    objc_msgSend(item, "initWithTitle:action:keyEquivalent:"_sel, title, sel_registerName(action),  objc_msgSend("NSString"_cls, "stringWithUTF8String:"_sel, key));
+
+    objc_msgSend(item, "autorelease"_sel);
+                 
+    return item;
+}
+
 
 class cocoa_wkwebview_engine {
 public:
@@ -608,10 +623,91 @@ public:
 
     // Main window
     if (window == nullptr) {
-      m_window = objc_msgSend("NSWindow"_cls, "alloc"_sel);
-      m_window = objc_msgSend(
-          m_window, "initWithContentRect:styleMask:backing:defer:"_sel,
+        m_window = objc_msgSend("NSWindow"_cls, "alloc"_sel);
+        m_window = objc_msgSend(m_window, "initWithContentRect:styleMask:backing:defer:"_sel,
           CGRectMake(0, 0, 0, 0), 0, NSBackingStoreBuffered, 0);
+        
+        /**
+        Create menubar
+        ***/
+        id menubar = objc_msgSend("NSMenu"_cls, "alloc"_sel);
+        objc_msgSend(menubar, "initWithTitle:"_sel, ""_str);
+        objc_msgSend(menubar, "autorelease"_sel);
+
+        id appName = objc_msgSend(objc_msgSend("NSProcessInfo"_cls,"processInfo"_sel),
+                 "processName"_sel);
+    
+        /*
+         * Main menu
+         */
+        
+        id appMenuItem = objc_msgSend("NSMenuItem"_cls, "alloc"_sel);
+        objc_msgSend(appMenuItem, "initWithTitle:action:keyEquivalent:"_sel, appName, NULL, ""_str);
+
+        id appMenu = objc_msgSend("NSMenu"_cls, "alloc"_sel);
+        objc_msgSend(appMenu, "initWithTitle:"_sel, appName);
+        objc_msgSend(appMenu, "autorelease"_sel);
+        
+        objc_msgSend(appMenuItem, "setSubmenu:"_sel, appMenu);
+        objc_msgSend(menubar, "addItem:"_sel, appMenuItem);
+            
+        id title = objc_msgSend("Hide "_str, "stringByAppendingString:"_sel, appName);
+        id item = create_menu_item(title, "hide:", "h");
+        objc_msgSend(appMenu, "addItem:"_sel, item);
+
+        item = create_menu_item("Hide Others"_str,"hideOtherApplications:", "h");
+        objc_msgSend(item, "setKeyEquivalentModifierMask:"_sel, (NSEventModifierFlagOption | NSEventModifierFlagCommand));
+        objc_msgSend(appMenu, "addItem:"_sel, item);
+        
+        item = create_menu_item("Show all"_str, "unhideAllApplications:", "");
+        objc_msgSend(appMenu, "addItem:"_sel, item);
+
+        objc_msgSend(appMenu, "addItem:"_sel,
+                     objc_msgSend("NSMenuItem"_cls, "separatorItem"_sel));
+        
+        title = objc_msgSend("Quit "_str, "stringByAppendingString:"_sel, appName);
+        item = create_menu_item(title, "terminate:", "q");
+        objc_msgSend(appMenu, "addItem:"_sel, item);
+
+        /*
+         * Edit menu
+         */
+        id editMenuItem = objc_msgSend("NSMenuItem"_cls, "alloc"_sel);
+        objc_msgSend(editMenuItem, "initWithTitle:action:keyEquivalent:"_sel, "Edit"_str, NULL, ""_str);
+        
+        id editMenu = objc_msgSend("NSMenu"_cls, "alloc"_sel);
+        objc_msgSend(editMenu, "initWithTitle:"_sel, "Edit"_str);
+        objc_msgSend(editMenu, "autorelease"_sel);
+        
+        objc_msgSend(editMenuItem, "setSubmenu:"_sel, editMenu);
+        objc_msgSend(menubar, "addItem:"_sel, editMenuItem);
+        
+        item = create_menu_item("Undo"_str, "undo:", "z");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        item = create_menu_item("Undo"_str, "redo:", "y");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        objc_msgSend(editMenu, "addItem:"_sel,
+        objc_msgSend("NSMenuItem"_cls, "separatorItem"_sel));
+
+        item = create_menu_item("Cut"_str, "cut:", "x");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        item = create_menu_item("Copy"_str, "copy:", "c");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        item = create_menu_item("Paste"_str, "paste:", "v");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        item = create_menu_item("Select All"_str, "selectAll:", "a");
+        objc_msgSend(editMenu, "addItem:"_sel, item);
+        
+        /*
+         * Finalize menubar
+         */
+        objc_msgSend(app,"setMainMenu:"_sel, menubar);
+        
     } else {
       m_window = (id)window;
     }
