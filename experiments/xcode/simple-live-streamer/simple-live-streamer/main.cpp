@@ -9,6 +9,7 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
+#include <regex>
 
 #include "webview.h"
 #include "pstream.h"
@@ -19,25 +20,41 @@
 
 std::string frontEndUrl = "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v3/index.html";
 std::string ffmpegPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffmpeg";
-std::string ffprobePath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffprobe";
 std::string lighttpdPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd";
-std::string lighttpdConfPath = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd.conf";
-
 
 webview_t w;
 
 std::string getAudioDevices(std::string input) {
-    // print names of all header files in current directory
     std::cout << ffmpegPath + " -f avfoundation -list_devices true -i \"\"" << std::endl;
-        redi::ipstream in(ffmpegPath + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
-        std::string str;
-        while (std::getline(in, str)) {
-            std::cout << "MESSAGE: " << str << std::endl << std::endl;
+    redi::ipstream in(ffmpegPath + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
+    std::string line;
+    
+    bool found = false;
+    bool first = true;
+    std::string result = "[";
+    while (std::getline(in, line)) {
+        if(line.find("AVFoundation audio devices:") != -1) {
+            found = true;
         }
+        
+        if(found) {
+            std::regex re("\\[AVFoundation(.*)\\] \\[([0-9]+)\\] (.*)$");
+            std::smatch match;
+            if(std::regex_search(line, match, re))
+            {
+                if(first) {
+                    first = false;
+                } else {
+                    result += ", ";
+                }
+                result += "{id: " + match.str(2) + ",name: \"" + match.str(3) + "\"}";
+            }
+        }
+        
+    }
     
-    //TODO PARSE and return
-    
-    return input;
+    result += "]";
+    return result;
 }
 
 std::string getSettings(std::string input) {

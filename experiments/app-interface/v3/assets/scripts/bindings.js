@@ -17,7 +17,23 @@ document.getElementById('btn-settings').addEventListener('click', () => {
 document.getElementById('btn-audio-device-refresh').addEventListener('click', () => {
     getAudioDevices().then((data) => {
         // TODO: Set fields
-        console.log(data);
+        let select = document.getElementById("audio-device");
+        select.innerHTML = "";
+
+        if(data.length == 0) {
+        	var el = document.createElement("option");
+    		el.value = -1;
+    		el.textContent = "No audio devices found";
+    		select.appendChild(el);
+        }	else {
+        	
+        	for(let i=0; i< data.length; i++) {
+        		var el = document.createElement("option");
+        		el.value = data[i].id;
+        		el.textContent = data[i].name;
+        		select.appendChild(el);
+        	}
+        }
     });
 });
 
