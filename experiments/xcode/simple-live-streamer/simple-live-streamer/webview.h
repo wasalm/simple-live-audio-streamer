@@ -317,8 +317,30 @@ inline int json_parse_c(const char *s, size_t sz, const char *key, size_t keysz,
 }
 
 inline std::string json_escape(std::string s) {
-  // TODO: implement
-  return '"' + s + '"';
+    std::string result = "\"";
+    
+    for(int i=0; i< s.size(); i++ )
+    {
+        switch ((char) s.at(i)) {
+            case '\\':
+                result += "\\\\";
+                break;
+            case '\r':
+                result += "\\r";
+                break;
+            case '\n':
+                result += "\\n";
+                break;
+            case '"':
+                result += "\\\"";
+                break;
+            default:
+                result += s.at(i);
+        }
+    }
+    
+    result += "\"";
+    return result;
 }
 
 inline int json_unescape(const char *s, size_t n, char *out) {

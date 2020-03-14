@@ -78,7 +78,7 @@ configT config{
     .proxyHost = "wasalm-34538.portmap.io",
     .proxyPort = 22,
     
-    .proxyKey = "TODO"
+    .proxyKey = "TODO\nA\nB\nc"
 };
     
 /*
@@ -161,9 +161,9 @@ std::string getSettings(std::string input) {
     result += std::to_string(config.audioBitrate);
     result += ", ";
     
-    result += "webserverHost: \"";
-    result += config.webserverHost;
-    result += "\", ";
+    result += "webserverHost: ";
+    result += webview::json_escape(config.webserverHost);
+    result += ", ";
     
     result += "webserverPort: ";
     result += std::to_string(config.webserverPort);
@@ -173,22 +173,23 @@ std::string getSettings(std::string input) {
     result += (config.proxy ? "true" : "false");
     result += ", ";
     
-    result += "proxyUser: \"";
-    result += config.proxyUser;
-    result += "\", ";
+    result += "proxyUser: ";
+    result += webview::json_escape(config.proxyUser);
+    result += ", ";
     
-    result += "proxyHost: \"";
-    result += config.proxyHost;
-    result += "\", ";
+    result += "proxyHost: ";
+    result += webview::json_escape(config.proxyHost);
+    result += ", ";
     
     result += "proxyPort: ";
     result += std::to_string(config.proxyPort);
     result += ", ";
     
-    result += "proxyKey: \"";
-    result += config.proxyKey;
+    result += "proxyKey: ";
+    result += webview::json_escape(config.proxyKey);
     
-    result += "\"}";
+    result += "}";
+    std::cout<< result << std::endl;
     return result;
 }
 
