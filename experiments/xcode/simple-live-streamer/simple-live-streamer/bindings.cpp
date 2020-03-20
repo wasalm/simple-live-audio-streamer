@@ -10,15 +10,15 @@
 #include "pstream.h"
 #include <regex>
 
-std::string getSettings(std::string input, Config c) {
-    return c.toJSON();
+std::string getSettings(std::string input, Config * c) {
+    return c ->toJSON();
 }
 
-std::string getAudioDevices(std::string input, FilePaths f) {
+std::string getAudioDevices(std::string input, FilePaths * f) {
     std::string result = "[";
 
-    std::cout << f.ffmpeg + " -f avfoundation -list_devices true -i \"\"" << std::endl;
-    redi::ipstream in(f.ffmpeg + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
+    std::cout << f ->ffmpeg + " -f avfoundation -list_devices true -i \"\"" << std::endl;
+    redi::ipstream in(f ->ffmpeg + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
     std::string line;
 
     bool found = false;
@@ -47,12 +47,11 @@ std::string getAudioDevices(std::string input, FilePaths f) {
     return result;
 }
     
-std::string setSettings(std::string input, Config c, FilePaths f) {
+std::string setSettings(std::string input, Config * c, FilePaths * f) {
     // Parse Data
-    c.fromJSON(input.substr(1,input.size()-2));
-    
+    c -> fromJSON(input.substr(1,input.size()-2));
     // Save to file
-    c.toFile(f.config);
+    c -> toFile(f ->config);
     return "0";
 }
 

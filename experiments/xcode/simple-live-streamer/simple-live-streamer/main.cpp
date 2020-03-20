@@ -41,11 +41,11 @@ int main(int argc, const char * argv[]) {
     webview_set_size(w, 1200, 700, WEBVIEW_HINT_NONE);
     webview_navigate(w, filePaths.frontEnd.c_str());
 
-    static_cast<webview::webview *>(w)->bind("getSettings", std::bind(&getSettings, std::placeholders::_1, config));
+    static_cast<webview::webview *>(w)->bind("getSettings", std::bind(&getSettings, std::placeholders::_1, &config));
     
-    static_cast<webview::webview *>(w)->bind("getAudioDevices", std::bind(&getAudioDevices, std::placeholders::_1, filePaths));
+    static_cast<webview::webview *>(w)->bind("getAudioDevices", std::bind(&getAudioDevices, std::placeholders::_1, &filePaths));
     
-    static_cast<webview::webview *>(w)->bind("setSettings", std::bind(&setSettings, std::placeholders::_1, config, filePaths));
+    static_cast<webview::webview *>(w)->bind("setSettings", std::bind(&setSettings, std::placeholders::_1, &config, &filePaths));
     
 //    static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
 //    static_cast<webview::webview *>(w)->bind("startStream", startStream);

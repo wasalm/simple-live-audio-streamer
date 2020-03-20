@@ -13,9 +13,9 @@
 #include "config.hpp"
 #include "filepaths.hpp"
 
-std::string getAudioDevices(std::string input, FilePaths f);
-std::string getSettings(std::string input, Config c);
-std::string setSettings(std::string input, Config c, FilePaths f);
+std::string getAudioDevices(std::string input, FilePaths * f);
+std::string getSettings(std::string input, Config * c);
+std::string setSettings(std::string input, Config * c, FilePaths * f);
 //std::string startStream(std::string input);
 
 #endif /* bindings_hpp */
