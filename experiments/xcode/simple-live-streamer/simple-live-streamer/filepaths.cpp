@@ -19,7 +19,7 @@
 void FilePaths::generatePaths() {
     //TODO
     
-    config =  "/Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/config.json";
+    config =  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/config.json";
     
     frontEnd = "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/experiments/app-interface/v3/index.html";
     

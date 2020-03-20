@@ -45,6 +45,8 @@ int main(int argc, const char * argv[]) {
     
     static_cast<webview::webview *>(w)->bind("getAudioDevices", std::bind(&getAudioDevices, std::placeholders::_1, filePaths));
     
+    static_cast<webview::webview *>(w)->bind("setSettings", std::bind(&setSettings, std::placeholders::_1, config, filePaths));
+    
 //    static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
 //    static_cast<webview::webview *>(w)->bind("startStream", startStream);
 //    static_cast<webview::webview *>(w)->bind("stopStream", stopStream);

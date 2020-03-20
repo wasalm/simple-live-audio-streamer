@@ -7,67 +7,67 @@
 //
 
 #include "config.hpp"
-
+#include <fstream>
+#include <sstream>
 
 std::string Config::toJSON() {
     std::string result = "{";
-    result += "audioDevice: ";
+    result += "\"audioDevice\": ";
     result += std::to_string(audioDevice);
     result += ", ";
 
-    result += "audioChannels: ";
+    result += "\"audioChannels\": ";
     result += (audioChannels ? "true" : "false");
     result += ", ";
 
-    result += "audioChannelsLeft: ";
+    result += "\"audioChannelsLeft\": ";
     result += std::to_string(audioChannelsLeft);
     result += ", ";
 
-    result += "audioChannelsRight: ";
+    result += "\"audioChannelsRight\": ";
     result += std::to_string(audioChannelsRight);
     result += ", ";
 
-    result += "audioVolume: ";
+    result += "\"audioVolume\": ";
     result += (audioVolume ? "true" : "false");
     result += ", ";
 
-    result += "audioVolumeVal: ";
+    result += "\"audioVolumeVal\": ";
     result += std::to_string(audioVolumeVal);
     result += ", ";
 
-    result += "audioBitrate: ";
+    result += "\"audioBitrate\": ";
     result += std::to_string(audioBitrate);
     result += ", ";
 
-    result += "webserverHost: ";
+    result += "\"webserverHost\": ";
     result += json_escape(webserverHost);
     result += ", ";
 
-    result += "webserverPort: ";
+    result += "\"webserverPort\": ";
     result += std::to_string(webserverPort);
     result += ", ";
 
-    result += "proxy: ";
+    result += "\"proxy\": ";
     result += (proxy ? "true" : "false");
     result += ", ";
 
-    result += "proxyUser: ";
+    result += "\"proxyUser\": ";
     result += json_escape(proxyUser);
     result += ", ";
 
-    result += "proxyHost: ";
+    result += "\"proxyHost\": ";
     result += json_escape(proxyHost);
     result += ", ";
 
-    result += "proxyPort: ";
+    result += "\"proxyPort\": ";
     result += std::to_string(proxyPort);
     result += ", ";
 
-    result += "proxyKey: ";
+    result += "\"proxyKey\": ";
     result += json_escape(proxyKey);
 
     result += "}";
-    std::cout<< result << std::endl;
     return result;
 }
 
@@ -83,31 +83,33 @@ void Config::fromJSON(std::string data) {
 
 void Config::toFile(std::string path) {
     //TODO
+    std::ofstream t;
+    t.open (path, std::ios::out | std::ios::trunc);
+
+    if (t.fail()) {
+        // file could not be opened
+        std::cout << "Error writing config file, ignoring..." << std::endl;
+        return;
+    }
+    
+    t << toJSON();
+    t.close();
 }
 
 void Config::fromFile(std::string path) {
-    // TODO
+
+    std::ifstream t(path);
+    if (t.fail()) {
+        // file could not be opened
+        std::cout << "Error reading config file, ignoring..." << std::endl;
+        return;
+    }
     
-    // Temporary
-    audioDevice = 0;
-    audioChannels = true;
-    audioChannelsLeft = 16;
-    audioChannelsRight = 17;
+    std::stringstream buffer;
+    buffer << t.rdbuf();
     
-    audioVolume = true;
-    audioVolumeVal = 15;
-    
-    audioBitrate = 128;
-    
-    webserverHost = "wasalm-34538.portmap.io";
-    webserverPort = 34538;
-    
-    proxy = true;
-    proxyUser = "wasalm.first";
-    proxyHost = "wasalm-34538.portmap.io";
-    proxyPort = 22;
-    
-    proxyKey = "TODO\nTODO";
+    fromJSON(buffer.str());
+    t.close();
 }
 
 std::string Config::json_escape(std::string s) {

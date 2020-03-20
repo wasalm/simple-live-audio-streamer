@@ -47,11 +47,14 @@ std::string getAudioDevices(std::string input, FilePaths f) {
     return result;
 }
     
-//std::string setSettings(std::string input, Config c, FilePaths f) {
-//    //TODO
-////    std::cout<< webview::json_parse(input.substr(1,input.size()-2), "proxyUser", 0) << std::endl;
-//    return input;
-//}
+std::string setSettings(std::string input, Config c, FilePaths f) {
+    //TODO PARSE DATA
+    
+    c.toFile(f.config);
+    return "0";
+}
+
+
 //
 //std::string startStream(std::string input, Config c) {
 //    //TODO
