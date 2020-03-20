@@ -48,8 +48,10 @@ std::string getAudioDevices(std::string input, FilePaths f) {
 }
     
 std::string setSettings(std::string input, Config c, FilePaths f) {
-    //TODO PARSE DATA
+    // Parse Data
+    c.fromJSON(input.substr(1,input.size()-2));
     
+    // Save to file
     c.toFile(f.config);
     return "0";
 }

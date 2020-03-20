@@ -12,8 +12,6 @@
 #include <iostream>
 
 class Config {
-    std::string json_escape(std::string s);
-    
 public:
     std::string toJSON();
     void toFile(std::string path);
