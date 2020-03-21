@@ -8,6 +8,7 @@
 
 #include "bindings.hpp"
 #include "pstream.h"
+#include <string>
 #include <regex>
 
 std::string getSettings(std::string input, Config * c) {
@@ -17,7 +18,6 @@ std::string getSettings(std::string input, Config * c) {
 std::string getAudioDevices(std::string input, FilePaths * f) {
     std::string result = "[";
 
-    std::cout << f ->ffmpeg + " -f avfoundation -list_devices true -i \"\"" << std::endl;
     redi::ipstream in(f ->ffmpeg + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
     std::string line;
 
@@ -55,16 +55,47 @@ std::string setSettings(std::string input, Config * c, FilePaths * f) {
     return "0";
 }
 
+std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh, std::string code) {
+    
+    
+    //TODO
+    
+    
+    //Return urls for QR codes.
+    std::string liveUrl =
+    "http://"
+        + c->webserverHost
+        + ":" + std::to_string(c->webserverPort)
+        + "/" + code
+        + "/index.html";
+    
+    std::string shareUrl =
+    "http://"
+        + c->webserverHost
+        + ":" + std::to_string(c->webserverPort)
+        + "/" + code
+        + "/share.html";
+    
+    return "{liveUrl: \"" + liveUrl + "\", shareUrl: \"" + shareUrl + "\"}";
+}
 
-//
-//std::string startStream(std::string input, Config c) {
-//    //TODO
-//    std::string liveUrl = "http://wasalm-34538.portmap.io:34538/index.html";
-//    std::string shareUrl = "http://wasalm-34538.portmap.io:34538/share.html";
-//    return "{liveUrl: \"" + liveUrl + "\", shareUrl: \"" + shareUrl + "\"}";
-//}
-//
-//std::string stopStream(std::string input) {
-//    //TODO
-//    return input;
-//}
+std::string stopStream(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
+    
+    ffmpeg -> stop();
+    ssh -> stop();
+    lighttpd -> stop();
+    
+    return "0";
+}
+
+std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
+    
+    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
+        return "true";
+    }
+
+    return "false";
+}
+
+
+

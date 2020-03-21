@@ -234,7 +234,7 @@ int json_parse_c(const char *s, size_t sz, const char *key, size_t keysz, const 
     JSON_STATE_UTF8
   } state = JSON_STATE_VALUE;
   const char *k = NULL;
-  int index = 1;
+  size_t index = 1;
   int depth = 0;
   int utf8_bytes = 0;
 

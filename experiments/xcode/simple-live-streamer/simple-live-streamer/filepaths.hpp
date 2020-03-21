@@ -17,8 +17,8 @@ public:
     std::string config;
     std::string frontEnd;
     std::string ffmpeg;
-    
-//    std::string lighttpd;
+
+    std::string lighttpd;
 //    std::string web;
 };
 

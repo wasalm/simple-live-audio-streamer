@@ -25,5 +25,7 @@ void FilePaths::generatePaths() {
     
     ffmpeg = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/ffmpeg/ffmpeg";
     
+    lighttpd = "/Users/andries/Development/Git/Grace\\ London/simple-live-audio-streamer/experiments/bash/lighttpd/lighttpd";
+    
     // readlink /proc/self/exe
 }

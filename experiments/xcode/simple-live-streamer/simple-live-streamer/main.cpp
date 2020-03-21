@@ -7,8 +7,6 @@
 //
 
 #include <iostream>
-//#include <assert.h>
-//#include <vector>
 #include <functional>
 
 #include "webview.h"
@@ -16,9 +14,9 @@
 #include "config.hpp"
 #include "filepaths.hpp"
 #include "bindings.hpp"
+#include "BackgroundService.hpp"
 
     
-
 /*
  * Globals
  */
@@ -28,11 +26,36 @@ FilePaths filePaths;
 Config config;
 webview_t w;
 
+BackgroundService lighttpdService;
+BackgroundService ffmpegService;
+BackgroundService sshService;
+
+std::string generatePasscode() {
+    static const char alphanum[] =
+        "0123456789abcdefghijklmnopqrstuvwxyz";
+
+    std::string result;
+    result.reserve(35);
+    
+    for(int i = 0; i < 6; i ++) {
+        if(i != 0) {
+            result += '-';
+        }
+        
+        for(int j=0; j< 5; j++) {
+            result += alphanum[rand() % (sizeof(alphanum) - 1)];
+        }
+    }
+
+    return result;
+}
 
 /*
  * Main
  */
 int main(int argc, const char * argv[]) {
+    passcode = generatePasscode();
+    
     filePaths.generatePaths();
     config.fromFile(filePaths.config);
     
@@ -47,12 +70,13 @@ int main(int argc, const char * argv[]) {
     
     static_cast<webview::webview *>(w)->bind("setSettings", std::bind(&setSettings, std::placeholders::_1, &config, &filePaths));
     
-//    static_cast<webview::webview *>(w)->bind("setSettings", setSettings);
-//    static_cast<webview::webview *>(w)->bind("startStream", startStream);
-//    static_cast<webview::webview *>(w)->bind("stopStream", stopStream);
-//
-    webview_run(w);
+    static_cast<webview::webview *>(w)->bind("startStream", std::bind(&startStream, std::placeholders::_1, &config, &filePaths, &lighttpdService, &ffmpegService, &sshService, passcode));
+
+    static_cast<webview::webview *>(w)->bind("stopStream", std::bind(&stopStream, std::placeholders::_1, &lighttpdService, &ffmpegService, &sshService));
+
     
-//    webview_eval(w, "window.dispatchEvent(new Event(\"appError\"))");
+    static_cast<webview::webview *>(w)->bind("isStreaming", std::bind(&isStreaming, std::placeholders::_1, &lighttpdService, &ffmpegService, &sshService));
+    
+    webview_run(w);
     return 0;
 }
