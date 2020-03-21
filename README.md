@@ -48,6 +48,14 @@ Minify frontend site:
 Minify app interface:
     
     build-interface.sh
+    
+Build Backend:
+        
+    build-backend.sh
+
+Bundle in a single app:
+
+    build-app.sh
 
 ## Sources 
 In the code we use the following c++ libraries:
