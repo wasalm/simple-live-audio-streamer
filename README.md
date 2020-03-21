@@ -1,20 +1,24 @@
 # simple-live-audio-streamer
-A simple live stream server for hls audio streams
+A low volume, live streaming audio app over socks5 proxy.
 
-# Install build dependencies
-	- XCode
-	
-	- Nodejs
+## Build Dependencies
+We have the following build dependencies
 
-	- uglify-js
-		npm install uglify-js -g
+1.  XCode
+    Most is written in c++ and hence must be compiled using XCode.
+2. Nodejs
+    For bundling and minifying html files we need the following modules.
+    2.1.    npm install uglify-js -g
+    2.2.    npm install html-minifier -g
+    2.3.    npm install clean-css-cli -g
 
-	- html-minifier
-		npm install html-minifier -g
+## Build scripts    
+Build scripts are in the folder build-scripts.
 
-	- clean-css
-		npm install clean-css-cli -g
+Minify frontend site:
 
-Run the scripts in the build-scripts folder to generate the files
+    build-site.sh
 
-	build-site.sh
+Minify app interface:
+    
+    build-interface.sh
