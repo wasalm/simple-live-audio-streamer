@@ -52,7 +52,32 @@ body {
 
 
 #mobile-box {
-  width: 360px;
+  width: 300px;
+}
+
+.my-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.logo {
+  display: inline;
+  width: 280px;
+}
+
+/*
+ *  Only for spacing
+ */ 
+.logo.hidden {
+  visibility: hidden;
 }
 
 .color-overlay {
