@@ -31,6 +31,12 @@ To compile lighthttpd use
     
 and set PRCE support off. When you get the error *plugin-static.h not found* see https://redmine.lighttpd.net/boards/3/topics/5912.
 
+## Mac App bundle
+For MacOS an application is a folder containing all the resources the app needs.
+To create an application one needs to compile the Objective-C app in *components/bundle/src/Grace Livestream.xcodeproj* and
+export it to *components/bundle/dist/bundle.app*
+
+Later the build scripts will replace the empty program with the correct binaries.
 
 ## Build scripts    
 Build scripts are in the folder build-scripts.
