@@ -58,7 +58,19 @@ std::string setSettings(std::string input, Config * c, FilePaths * f) {
 std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh, std::string code) {
     
     
-    //TODO
+    /*
+     * Temporary test
+     */
+    std::string command = f->lighttpd + " -D -f " + f->lighttpd + ".conf";
+    lighttpd -> start(command);
+    
+
+    
+    
+    
+    
+    
+    
     
     
     //Return urls for QR codes.
@@ -89,10 +101,17 @@ std::string stopStream(std::string input,BackgroundService * lighttpd, Backgroun
 }
 
 std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
-    
-    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
+
+    //Temporary
+    if(lighttpd -> isRunning() ) {
         return "true";
     }
+
+        
+//
+//    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
+//        return "true";
+//    }
 
     return "false";
 }

@@ -2,6 +2,25 @@
  * Open Settings
  */
 
+let intervalAlive;
+let checkAlive = false;
+
+function isAlive() {
+    if(checkAlive){
+        isStreaming().then((state) => {
+            if(checkAlive){
+                if(!state) {
+                    //Something went wrong
+                    stopStream();
+                    document.getElementById('main').classList.add("invalid");
+                    document.getElementById('main').classList.remove("running");
+                    document.getElementById('main').classList.remove("settings");
+                }
+            }
+        });
+    }
+}
+
 function refreshAudiodevices(data, currentVal) {
     let select = document.getElementById("audio-device");
     select.innerHTML = "";
@@ -131,6 +150,9 @@ document.getElementById('btn-start').addEventListener('click', () => {
     	document.getElementById("info-speaker").value,
     	document.getElementById("info-text").value,
     ).then((data) => {
+        checkAlive = true;
+        intervalAlive = setInterval(isAlive, 1000);
+
         qrLinks = data;
         showQrCode(false);
 
@@ -141,27 +163,12 @@ document.getElementById('btn-start').addEventListener('click', () => {
 });
 
 document.getElementById('btn-stop').addEventListener('click', () => {
+    checkAlive = false;
+    clearInterval(intervalAlive);
+
     stopStream().then(() => {
         document.getElementById('main').classList.remove("invalid");
         document.getElementById('main').classList.remove("running");
         document.getElementById('main').classList.remove("settings");
     });
 });
-
-document.onkeyup = (e) => {
-	console.log(e.which);
-	console.log(e);
-  if (e.which == 99 && e.keyIdentifier == "Meta") {
-    console.log("Cmd + Q is pressed");
-  } else if(e.which == 91 && e.keyIdentifier == "Meta") {
-    console.log("Cmd + W is pressed");
-  } 
-};
-
-
-// Listen for the event.
-window.addEventListener('appError', (e) => {
-	document.getElementById('main').classList.add("invalid");
-    document.getElementById('main').classList.remove("running");
-    document.getElementById('main').classList.remove("settings");
-}, false);

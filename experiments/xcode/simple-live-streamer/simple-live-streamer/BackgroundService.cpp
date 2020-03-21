@@ -26,7 +26,7 @@ bool BackgroundService::isRunning() {
     return false;
 }
 
-void BackgroundService::start(std::string file, std::vector<std::string> arguments) {
+void BackgroundService::start(std::string command) {
     if(stream->is_open()) {
         //Stream already initialized
         std::cout << "Stream already initialized, restart" << std::endl;
@@ -34,8 +34,10 @@ void BackgroundService::start(std::string file, std::vector<std::string> argumen
         _stop(true);
     }
     
-    std::cout << "Starting " << file << std::endl;
-    stream ->open(file, arguments, 0);
+    std::cout << "Running: " << command << std::endl;
+    if(stream ->open(command, 0) == NULL) {
+        std::cout << "Error starting program: Error " << std::strerror(stream->error()) << std::endl;
+    }
 }
 
 
