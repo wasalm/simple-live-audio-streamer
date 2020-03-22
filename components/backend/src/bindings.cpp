@@ -101,17 +101,10 @@ std::string stopStream(std::string input,BackgroundService * lighttpd, Backgroun
 }
 
 std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
-
-    //Temporary
-    if(lighttpd -> isRunning() ) {
+        
+    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
         return "true";
     }
-
-        
-//
-//    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
-//        return "true";
-//    }
 
     return "false";
 }
