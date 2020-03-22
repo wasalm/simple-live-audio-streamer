@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.16.5/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andries/Downloads/lighttpd-1.4.55
+CMAKE_SOURCE_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andries/Downloads/lighttpd-1.4.55/build
+CMAKE_BINARY_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build"
 
 # Include any dependencies generated for this target.
 include build/CMakeFiles/test_burl.dir/depend.make
@@ -59,55 +59,55 @@ include build/CMakeFiles/test_burl.dir/flags.make
 
 build/CMakeFiles/test_burl.dir/t/test_burl.c.o: build/CMakeFiles/test_burl.dir/flags.make
 build/CMakeFiles/test_burl.dir/t/test_burl.c.o: ../src/t/test_burl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build/CMakeFiles/test_burl.dir/t/test_burl.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/t/test_burl.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_burl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object build/CMakeFiles/test_burl.dir/t/test_burl.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/t/test_burl.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_burl.c"
 
 build/CMakeFiles/test_burl.dir/t/test_burl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_burl.dir/t/test_burl.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_burl.c > CMakeFiles/test_burl.dir/t/test_burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_burl.c" > CMakeFiles/test_burl.dir/t/test_burl.c.i
 
 build/CMakeFiles/test_burl.dir/t/test_burl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_burl.dir/t/test_burl.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_burl.c -o CMakeFiles/test_burl.dir/t/test_burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_burl.c" -o CMakeFiles/test_burl.dir/t/test_burl.c.s
 
 build/CMakeFiles/test_burl.dir/burl.c.o: build/CMakeFiles/test_burl.dir/flags.make
 build/CMakeFiles/test_burl.dir/burl.c.o: ../src/burl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object build/CMakeFiles/test_burl.dir/burl.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/burl.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/burl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object build/CMakeFiles/test_burl.dir/burl.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/burl.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c"
 
 build/CMakeFiles/test_burl.dir/burl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_burl.dir/burl.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/burl.c > CMakeFiles/test_burl.dir/burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c" > CMakeFiles/test_burl.dir/burl.c.i
 
 build/CMakeFiles/test_burl.dir/burl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_burl.dir/burl.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/burl.c -o CMakeFiles/test_burl.dir/burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c" -o CMakeFiles/test_burl.dir/burl.c.s
 
 build/CMakeFiles/test_burl.dir/buffer.c.o: build/CMakeFiles/test_burl.dir/flags.make
 build/CMakeFiles/test_burl.dir/buffer.c.o: ../src/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object build/CMakeFiles/test_burl.dir/buffer.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/buffer.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object build/CMakeFiles/test_burl.dir/buffer.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/buffer.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c"
 
 build/CMakeFiles/test_burl.dir/buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_burl.dir/buffer.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c > CMakeFiles/test_burl.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" > CMakeFiles/test_burl.dir/buffer.c.i
 
 build/CMakeFiles/test_burl.dir/buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_burl.dir/buffer.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c -o CMakeFiles/test_burl.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" -o CMakeFiles/test_burl.dir/buffer.c.s
 
 build/CMakeFiles/test_burl.dir/base64.c.o: build/CMakeFiles/test_burl.dir/flags.make
 build/CMakeFiles/test_burl.dir/base64.c.o: ../src/base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object build/CMakeFiles/test_burl.dir/base64.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/base64.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object build/CMakeFiles/test_burl.dir/base64.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_burl.dir/base64.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c"
 
 build/CMakeFiles/test_burl.dir/base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_burl.dir/base64.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c > CMakeFiles/test_burl.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" > CMakeFiles/test_burl.dir/base64.c.i
 
 build/CMakeFiles/test_burl.dir/base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_burl.dir/base64.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c -o CMakeFiles/test_burl.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" -o CMakeFiles/test_burl.dir/base64.c.s
 
 # Object files for target test_burl
 test_burl_OBJECTS = \
@@ -125,8 +125,8 @@ build/test_burl: build/CMakeFiles/test_burl.dir/buffer.c.o
 build/test_burl: build/CMakeFiles/test_burl.dir/base64.c.o
 build/test_burl: build/CMakeFiles/test_burl.dir/build.make
 build/test_burl: build/CMakeFiles/test_burl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable test_burl"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_burl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable test_burl"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_burl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 build/CMakeFiles/test_burl.dir/build: build/test_burl
@@ -134,10 +134,10 @@ build/CMakeFiles/test_burl.dir/build: build/test_burl
 .PHONY : build/CMakeFiles/test_burl.dir/build
 
 build/CMakeFiles/test_burl.dir/clean:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && $(CMAKE_COMMAND) -P CMakeFiles/test_burl.dir/cmake_clean.cmake
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && $(CMAKE_COMMAND) -P CMakeFiles/test_burl.dir/cmake_clean.cmake
 .PHONY : build/CMakeFiles/test_burl.dir/clean
 
 build/CMakeFiles/test_burl.dir/depend:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/andries/Downloads/lighttpd-1.4.55 /Users/andries/Downloads/lighttpd-1.4.55/src /Users/andries/Downloads/lighttpd-1.4.55/build /Users/andries/Downloads/lighttpd-1.4.55/build/build /Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : build/CMakeFiles/test_burl.dir/depend
 

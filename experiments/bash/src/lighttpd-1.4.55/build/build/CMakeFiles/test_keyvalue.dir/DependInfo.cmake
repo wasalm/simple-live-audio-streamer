@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/array.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/array.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/base64.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/base64.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/buffer.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/burl.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/burl.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/data_integer.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/data_integer.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/data_string.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/data_string.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/log.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/log.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/t/test_keyvalue.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/array.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/base64.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/buffer.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/burl.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_integer.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/data_integer.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_string.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/data_string.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/log.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/log.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_keyvalue.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

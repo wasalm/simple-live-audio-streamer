@@ -27,9 +27,23 @@ To test if a binary is build statically, use `otool -L ffmpeg`
 ### Lighttpd
 To compile lighthttpd use
     
-    ccmake -Wno-dev -DWITH_OPENSSL=0 -DWITH_LUA=0 -DWITH_ZLIB=0 -DWITH_BZIP2=0 -DWITH_WEBDAV_PROPS=0 ..
+    ccmake -Wno-dev -DBUILD_STATIC=ON -DWITH_OPENSSL=0 -DWITH_LUA=0 -DWITH_ZLIB=0 -DWITH_PCRE=0 -DWITH_BZIP2=0 -DWITH_WEBDAV_PROPS=0 ..
     
-and set PRCE support off. When you get the error *plugin-static.h not found* see https://redmine.lighttpd.net/boards/3/topics/5912.
+When you get the error `plugin-static.h not found` see https://redmine.lighttpd.net/boards/3/topics/5912.
+Namely in the src directory of lighttpd we created a file plugin-static.h with the following contents
+
+    PLUGIN_INIT(mod_auth)
+    PLUGIN_INIT(mod_redirect)
+    PLUGIN_INIT(mod_rewrite)
+    PLUGIN_INIT(mod_cgi)
+    PLUGIN_INIT(mod_fastcgi)
+    PLUGIN_INIT(mod_scgi)
+    PLUGIN_INIT(mod_ssi)
+    PLUGIN_INIT(mod_proxy)
+    PLUGIN_INIT(mod_indexfile)
+    PLUGIN_INIT(mod_dirlisting)
+    PLUGIN_INIT(mod_staticfile)
+    PLUGIN_INIT(mod_setenv)
 
 ## Mac App bundle
 For MacOS an application is a folder containing all the resources the app needs.

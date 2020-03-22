@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/base64.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/base64.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/buffer.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/burl.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/burl.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/t/test_burl.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/t/test_burl.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/base64.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/buffer.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/burl.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_burl.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir/t/test_burl.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

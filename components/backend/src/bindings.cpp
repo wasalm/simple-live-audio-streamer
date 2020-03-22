@@ -98,6 +98,8 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
     lighttpdConfigFile << "server.document-root = \"" << f -> temp + "/public/\"" << std::endl;
     lighttpdConfigFile << "server.port = " << c->webserverPort << std::endl << std::endl;
 
+    lighttpdConfigFile << "server.modules += (\"mod_setenv\")" << std::endl;
+
     lighttpdConfigFile << "setenv.add-response-header += (" << std::endl;
     lighttpdConfigFile << "    \"Expires\" => \"0\"," << std::endl;
     lighttpdConfigFile << "    \"Cache-Control\" => \"no-store, no-cache, must-revalidate\"," << std::endl;
@@ -163,6 +165,20 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
    /*
     * Run SSH
     */
+    // std::vector<std::string> argsSSH;
+    // argsSSH.push_back("ssh");
+    // argsSSH.push_back("-D");
+    // argsSSH.push_back("-f");
+    // argsSSH.push_back(f -> temp + "/config/lighttpd.conf");
+    // ssh -> start("ssh", argsSSH);
+
+// #!/bin/bash
+// chmod 600 ./portmap/wasalm.first.pem
+// ssh -i ./portmap/wasalm.first.pem wasalm.first@wasalm-34538.portmap.io -N -R 34538:localhost:8888
+
+// #"-o", "UserKnownHostsFile=/dev/null", // dont use default hosts file
+// #"-o", "StrictHostKeyChecking=no", // disable hosts checking
+// #BatchMode yes
 
    //TODO
 
@@ -170,6 +186,7 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
     * Run FFMpeg
     */
 
+// ../../ffmpeg/ffmpeg -f avfoundation -i ":1" -acodec libfdk_aac -ac 2 -af "pan=stereo|FL=c16|FR=c17,volume=15dB" -b:a 128k -hls_flags delete_segments -hls_time 15 -hls_list_size 5 -hls_delete_threshold 2 -hls_segment_filename 'file%03d.ts' live.m3u8
    //TODO
     
     

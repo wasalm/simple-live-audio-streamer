@@ -156,13 +156,13 @@ netinet/tcp.h
 sys/un.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 array.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 string.h
 -
 stdlib.h
@@ -176,59 +176,59 @@ assert.h
 stdio.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/base.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 settings.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/settings.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/settings.h
 sys/types.h
 -
 sys/time.h
 -
 base_decls.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base_decls.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base_decls.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 array.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 chunk.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/chunk.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/chunk.h
 http_kv.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/http_kv.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/http_kv.h
 sock_addr.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/sock_addr.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sock_addr.h
 etag.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/etag.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/etag.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/base64.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 base64.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base64.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/base64.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/base_decls.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base_decls.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 settings.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/settings.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/settings.h
 stdlib.h
 -
 string.h
@@ -240,43 +240,43 @@ stdio.h
 libunwind.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/burl.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 burl.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/burl.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.h
 string.h
 -
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 base64.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base64.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/burl.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/burl.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/chunk.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/chunk.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 sys-mmap.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/sys-mmap.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sys-mmap.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 array.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/data_integer.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_integer.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 array.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 stdio.h
 -
 stdlib.h
@@ -284,11 +284,11 @@ stdlib.h
 string.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/data_string.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_string.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 array.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/array.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.h
 string.h
 -
 stdio.h
@@ -296,15 +296,15 @@ stdio.h
 stdlib.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/etag.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/etag.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 config.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/config.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/config.h
 sys/types.h
 -
 stddef.h
@@ -316,19 +316,19 @@ inttypes.h
 limits.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/http_kv.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/http_kv.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/log.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/log.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 base.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base.h
 log.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/log.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/log.h
 sys/types.h
 -
 errno.h
@@ -350,39 +350,39 @@ syslog.h
 sys/time.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/log.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/log.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 base_decls.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base_decls.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base_decls.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/settings.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/settings.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/sock_addr.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sock_addr.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 sys/types.h
 -
 sys-socket.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/sys-socket.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sys-socket.h
 base_decls.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/base_decls.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base_decls.h
 buffer.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.h
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/sys-mmap.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sys-mmap.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 sys/mman.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/sys-socket.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sys-socket.h
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/first.h
 winsock2.h
 -
 sys/socket.h
@@ -394,9 +394,9 @@ netinet/tcp.h
 sys/un.h
 -
 
-/Users/andries/Downloads/lighttpd-1.4.55/src/t/test_keyvalue.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_keyvalue.c
 first.h
-/Users/andries/Downloads/lighttpd-1.4.55/src/t/first.h
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/first.h
 assert.h
 -
 stdio.h
@@ -406,7 +406,7 @@ stdlib.h
 unistd.h
 -
 keyvalue.c
-/Users/andries/Downloads/lighttpd-1.4.55/src/t/keyvalue.c
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/keyvalue.c
 
 build/config.h
 

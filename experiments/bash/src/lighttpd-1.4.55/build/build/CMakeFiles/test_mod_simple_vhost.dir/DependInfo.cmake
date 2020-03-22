@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/array.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/array.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/configfile-glue.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/data_config.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/data_integer.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/data_string.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/http_header.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/http_kv.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/log.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/log.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/sock_addr.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/t/test_mod_simple_vhost.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.o"
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/vector.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/array.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/array.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configfile-glue.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_config.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_integer.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/data_string.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/http_header.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/http_kv.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/log.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/log.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/sock_addr.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_mod_simple_vhost.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/vector.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

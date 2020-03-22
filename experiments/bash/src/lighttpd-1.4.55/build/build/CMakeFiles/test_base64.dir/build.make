@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.16.5/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andries/Downloads/lighttpd-1.4.55
+CMAKE_SOURCE_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andries/Downloads/lighttpd-1.4.55/build
+CMAKE_BINARY_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build"
 
 # Include any dependencies generated for this target.
 include build/CMakeFiles/test_base64.dir/depend.make
@@ -59,42 +59,42 @@ include build/CMakeFiles/test_base64.dir/flags.make
 
 build/CMakeFiles/test_base64.dir/t/test_base64.c.o: build/CMakeFiles/test_base64.dir/flags.make
 build/CMakeFiles/test_base64.dir/t/test_base64.c.o: ../src/t/test_base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build/CMakeFiles/test_base64.dir/t/test_base64.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/t/test_base64.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object build/CMakeFiles/test_base64.dir/t/test_base64.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/t/test_base64.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_base64.c"
 
 build/CMakeFiles/test_base64.dir/t/test_base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_base64.dir/t/test_base64.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_base64.c > CMakeFiles/test_base64.dir/t/test_base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_base64.c" > CMakeFiles/test_base64.dir/t/test_base64.c.i
 
 build/CMakeFiles/test_base64.dir/t/test_base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_base64.dir/t/test_base64.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/t/test_base64.c -o CMakeFiles/test_base64.dir/t/test_base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/t/test_base64.c" -o CMakeFiles/test_base64.dir/t/test_base64.c.s
 
 build/CMakeFiles/test_base64.dir/buffer.c.o: build/CMakeFiles/test_base64.dir/flags.make
 build/CMakeFiles/test_base64.dir/buffer.c.o: ../src/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object build/CMakeFiles/test_base64.dir/buffer.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/buffer.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object build/CMakeFiles/test_base64.dir/buffer.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/buffer.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c"
 
 build/CMakeFiles/test_base64.dir/buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_base64.dir/buffer.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c > CMakeFiles/test_base64.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" > CMakeFiles/test_base64.dir/buffer.c.i
 
 build/CMakeFiles/test_base64.dir/buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_base64.dir/buffer.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/buffer.c -o CMakeFiles/test_base64.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/buffer.c" -o CMakeFiles/test_base64.dir/buffer.c.s
 
 build/CMakeFiles/test_base64.dir/base64.c.o: build/CMakeFiles/test_base64.dir/flags.make
 build/CMakeFiles/test_base64.dir/base64.c.o: ../src/base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object build/CMakeFiles/test_base64.dir/base64.c.o"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/base64.c.o   -c /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object build/CMakeFiles/test_base64.dir/base64.c.o"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_base64.dir/base64.c.o   -c "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c"
 
 build/CMakeFiles/test_base64.dir/base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_base64.dir/base64.c.i"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c > CMakeFiles/test_base64.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" > CMakeFiles/test_base64.dir/base64.c.i
 
 build/CMakeFiles/test_base64.dir/base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_base64.dir/base64.c.s"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/andries/Downloads/lighttpd-1.4.55/src/base64.c -o CMakeFiles/test_base64.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/base64.c" -o CMakeFiles/test_base64.dir/base64.c.s
 
 # Object files for target test_base64
 test_base64_OBJECTS = \
@@ -110,8 +110,8 @@ build/test_base64: build/CMakeFiles/test_base64.dir/buffer.c.o
 build/test_base64: build/CMakeFiles/test_base64.dir/base64.c.o
 build/test_base64: build/CMakeFiles/test_base64.dir/build.make
 build/test_base64: build/CMakeFiles/test_base64.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_base64"
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_base64.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_base64"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_base64.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 build/CMakeFiles/test_base64.dir/build: build/test_base64
@@ -119,10 +119,10 @@ build/CMakeFiles/test_base64.dir/build: build/test_base64
 .PHONY : build/CMakeFiles/test_base64.dir/build
 
 build/CMakeFiles/test_base64.dir/clean:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build/build && $(CMAKE_COMMAND) -P CMakeFiles/test_base64.dir/cmake_clean.cmake
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" && $(CMAKE_COMMAND) -P CMakeFiles/test_base64.dir/cmake_clean.cmake
 .PHONY : build/CMakeFiles/test_base64.dir/clean
 
 build/CMakeFiles/test_base64.dir/depend:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/andries/Downloads/lighttpd-1.4.55 /Users/andries/Downloads/lighttpd-1.4.55/src /Users/andries/Downloads/lighttpd-1.4.55/build /Users/andries/Downloads/lighttpd-1.4.55/build/build /Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_base64.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_base64.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : build/CMakeFiles/test_base64.dir/depend
 

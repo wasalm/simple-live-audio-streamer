@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/andries/Downloads/lighttpd-1.4.55/src/mod_proxy.c" "/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_proxy.dir/mod_proxy.c.o"
+  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/mod_proxy.c" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_proxy.dir/mod_proxy.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 

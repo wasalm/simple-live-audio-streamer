@@ -6,5 +6,5 @@ C_FLAGS =  -std=gnu99 -Wall -g -Wshadow -W -pedantic  -isysroot /Applications/Xc
 
 C_DEFINES = -DHAVE_CONFIG_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES
 
-C_INCLUDES = -I/Users/andries/Downloads/lighttpd-1.4.55/build/build -I/Users/andries/Downloads/lighttpd-1.4.55/src 
+C_INCLUDES = -I"/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build" -I"/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src" 
 

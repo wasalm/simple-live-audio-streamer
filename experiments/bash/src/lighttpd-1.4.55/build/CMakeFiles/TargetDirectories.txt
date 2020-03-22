@@ -1,97 +1,97 @@
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/install/strip.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/install/local.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/list_install_components.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/rebuild_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousCoverage.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousTest.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousBuild.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousStart.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalBuild.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalCoverage.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalSubmit.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousUpdate.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalUpdate.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/install.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalStart.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousSubmit.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalTest.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlySubmit.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyMemCheck.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/test.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalConfigure.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyCoverage.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyTest.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousMemCheck.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyBuild.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyConfigure.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyUpdate.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/edit_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyMemoryCheck.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ContinuousConfigure.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/Nightly.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/NightlyStart.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/ExperimentalMemCheck.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/Continuous.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles/Experimental.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/install/strip.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/install/local.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/install.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/list_install_components.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/rebuild_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_evhost.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_access.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_configfile.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/edit_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_buffer.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_webdav.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_wstunnel.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_usertrack.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_status.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_sockproxy.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_setenv.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_userdir.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_scgi.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_alias.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/lighttpd-angel.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_cgi.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_rewrite.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_compress.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_expire.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_rrdtool.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_flv_streaming.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_simple_vhost.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_proxy.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_extforward.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_accesslog.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_secdownload.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_fastcgi.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_evhost.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_evasive.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_dirlisting.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_deflate.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_redirect.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_vhostdb.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_ssi.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/lighttpd.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_request.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_indexfile.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_auth.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_base64.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_access.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/lemon.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_authn_file.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_staticfile.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/test_array.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/mod_uploadprogress.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/install/strip.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/install.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/list_install_components.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/rebuild_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/edit_cache.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/install/local.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/test.dir
-/Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/scgi-responder.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/install/strip.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/install/local.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/list_install_components.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/rebuild_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousCoverage.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousTest.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousBuild.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousStart.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalBuild.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalCoverage.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalSubmit.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousUpdate.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalUpdate.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/install.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalStart.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousSubmit.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalTest.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlySubmit.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyMemCheck.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/test.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalConfigure.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyCoverage.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyTest.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousMemCheck.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyBuild.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyConfigure.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyUpdate.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/edit_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyMemoryCheck.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ContinuousConfigure.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/Nightly.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/NightlyStart.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/ExperimentalMemCheck.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/Continuous.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles/Experimental.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/install/strip.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/install/local.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/install.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/list_install_components.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/rebuild_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_evhost.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_access.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_configfile.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_burl.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/edit_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_mod_simple_vhost.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_buffer.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_webdav.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_wstunnel.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_usertrack.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_keyvalue.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_status.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_sockproxy.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_setenv.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_userdir.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_scgi.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_alias.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/lighttpd-angel.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_cgi.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_rewrite.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_compress.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_expire.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_rrdtool.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_flv_streaming.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_simple_vhost.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_proxy.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_extforward.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_accesslog.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_secdownload.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_fastcgi.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_evhost.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_evasive.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_dirlisting.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_deflate.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_redirect.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_vhostdb.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_ssi.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/lighttpd.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_request.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_indexfile.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_auth.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_base64.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_access.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/lemon.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_authn_file.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_staticfile.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/test_array.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/mod_uploadprogress.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/install/strip.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/install.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/list_install_components.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/rebuild_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/edit_cache.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/install/local.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/test.dir
+/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/scgi-responder.dir

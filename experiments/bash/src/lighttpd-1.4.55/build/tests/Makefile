@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.16.5/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andries/Downloads/lighttpd-1.4.55
+CMAKE_SOURCE_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andries/Downloads/lighttpd-1.4.55/build
+CMAKE_BINARY_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles /Users/andries/Downloads/lighttpd-1.4.55/build/tests/CMakeFiles/progress.marks
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles 0
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/tests/CMakeFiles/progress.marks"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/scgi-responder.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/scgi-responder.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/scgi-responder.dir/rule
 .PHONY : tests/CMakeFiles/scgi-responder.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ scgi-responder: tests/CMakeFiles/scgi-responder.dir/rule
 
 # fast build rule for target.
 scgi-responder/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/build
 .PHONY : scgi-responder/fast
 
 scgi-responder.o: scgi-responder.c.o
@@ -188,7 +188,7 @@ scgi-responder.o: scgi-responder.c.o
 
 # target to build an object file
 scgi-responder.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.o
 .PHONY : scgi-responder.c.o
 
 scgi-responder.i: scgi-responder.c.i
@@ -197,7 +197,7 @@ scgi-responder.i: scgi-responder.c.i
 
 # target to preprocess a source file
 scgi-responder.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.i
 .PHONY : scgi-responder.c.i
 
 scgi-responder.s: scgi-responder.c.s
@@ -206,7 +206,7 @@ scgi-responder.s: scgi-responder.c.s
 
 # target to generate assembly for a file
 scgi-responder.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f tests/CMakeFiles/scgi-responder.dir/build.make tests/CMakeFiles/scgi-responder.dir/scgi-responder.c.s
 .PHONY : scgi-responder.c.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -5,7 +5,7 @@
 ** in the input file. */
 #include "first.h"
 #include <stdio.h>
-#line 5 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 5 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 
 #include "first.h"
 #include "base.h"
@@ -571,42 +571,42 @@ static void yy_destructor(YYCODETYPE yymajor, YYMINORTYPE *yypminor){
     case 24:
     case 25:
     case 26:
-#line 186 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 186 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { buffer_free((yypminor->yy0)); }
 #line 576 "./configparser.c"
       break;
     case 36:
-#line 177 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 177 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { if ((yypminor->yy91)) (yypminor->yy91)->fn->free((yypminor->yy91)); }
 #line 581 "./configparser.c"
       break;
     case 37:
-#line 178 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 178 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { if ((yypminor->yy91)) (yypminor->yy91)->fn->free((yypminor->yy91)); }
 #line 586 "./configparser.c"
       break;
     case 38:
-#line 179 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 179 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { if ((yypminor->yy91)) (yypminor->yy91)->fn->free((yypminor->yy91)); }
 #line 591 "./configparser.c"
       break;
     case 41:
-#line 180 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 180 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { array_free((yypminor->yy42)); }
 #line 596 "./configparser.c"
       break;
     case 42:
-#line 181 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 181 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { array_free((yypminor->yy42)); }
 #line 601 "./configparser.c"
       break;
     case 43:
-#line 182 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 182 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { buffer_free((yypminor->yy29)); }
 #line 606 "./configparser.c"
       break;
     case 44:
-#line 183 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 183 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { buffer_free((yypminor->yy29)); }
 #line 611 "./configparser.c"
       break;
@@ -885,7 +885,7 @@ static void yy_reduce(
         /* No destructor defined for global */
         break;
       case 5:
-#line 159 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 159 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 { yymsp[-1].minor.yy18 = NULL; }
 #line 890 "./configparser.c"
   yy_destructor(1,&yymsp[0].minor);
@@ -900,7 +900,7 @@ static void yy_reduce(
   yy_destructor(1,&yymsp[0].minor);
         break;
       case 9:
-#line 188 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 188 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     buffer_copy_buffer(yymsp[0].minor.yy91->key, yymsp[-2].minor.yy29);
@@ -928,7 +928,7 @@ static void yy_reduce(
   yy_destructor(2,&yymsp[-1].minor);
         break;
       case 10:
-#line 212 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 212 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     if (strncmp(yymsp[-2].minor.yy29->ptr, "env.", sizeof("env.") - 1) == 0) {
@@ -951,7 +951,7 @@ static void yy_reduce(
   yy_destructor(3,&yymsp[-1].minor);
         break;
       case 11:
-#line 231 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 231 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     array *vars = ctx->current->value;
@@ -986,7 +986,7 @@ static void yy_reduce(
   yy_destructor(4,&yymsp[-1].minor);
         break;
       case 12:
-#line 262 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 262 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (strchr(yymsp[0].minor.yy0->ptr, '.') == NULL) {
     yygotominor.yy29 = buffer_init_string("var.");
@@ -1001,7 +1001,7 @@ static void yy_reduce(
 #line 1001 "./configparser.c"
         break;
       case 13:
-#line 274 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 274 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = NULL;
   if (ctx->ok) {
@@ -1020,7 +1020,7 @@ static void yy_reduce(
   yy_destructor(6,&yymsp[-1].minor);
         break;
       case 14:
-#line 289 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 289 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = yymsp[0].minor.yy91;
   yymsp[0].minor.yy91 = NULL;
@@ -1028,7 +1028,7 @@ static void yy_reduce(
 #line 1028 "./configparser.c"
         break;
       case 15:
-#line 294 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 294 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = NULL;
   if (ctx->ok) {
@@ -1056,7 +1056,7 @@ static void yy_reduce(
 #line 1056 "./configparser.c"
         break;
       case 16:
-#line 319 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 319 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   buffer *b;
   yygotominor.yy91 = (data_unset *)data_string_init();
@@ -1068,7 +1068,7 @@ static void yy_reduce(
 #line 1068 "./configparser.c"
         break;
       case 17:
-#line 328 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 328 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   char *endptr;
   yygotominor.yy91 = (data_unset *)data_integer_init();
@@ -1086,7 +1086,7 @@ static void yy_reduce(
 #line 1086 "./configparser.c"
         break;
       case 18:
-#line 342 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 342 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = (data_unset *)data_array_init();
   array_free(((data_array *)(yygotominor.yy91))->value);
@@ -1096,7 +1096,7 @@ static void yy_reduce(
 #line 1096 "./configparser.c"
         break;
       case 19:
-#line 348 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 348 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy42 = array_init();
 }
@@ -1105,7 +1105,7 @@ static void yy_reduce(
   yy_destructor(10,&yymsp[0].minor);
         break;
       case 20:
-#line 351 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 351 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy42 = yymsp[-1].minor.yy42;
   yymsp[-1].minor.yy42 = NULL;
@@ -1115,7 +1115,7 @@ static void yy_reduce(
   yy_destructor(10,&yymsp[0].minor);
         break;
       case 21:
-#line 356 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 356 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy42 = NULL;
   if (ctx->ok) {
@@ -1141,7 +1141,7 @@ static void yy_reduce(
   yy_destructor(11,&yymsp[-1].minor);
         break;
       case 22:
-#line 378 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 378 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy42 = yymsp[-1].minor.yy42;
   yymsp[-1].minor.yy42 = NULL;
@@ -1150,7 +1150,7 @@ static void yy_reduce(
   yy_destructor(11,&yymsp[0].minor);
         break;
       case 23:
-#line 383 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 383 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy42 = NULL;
   if (ctx->ok) {
@@ -1164,7 +1164,7 @@ static void yy_reduce(
 #line 1164 "./configparser.c"
         break;
       case 24:
-#line 394 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 394 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = yymsp[0].minor.yy91;
   yymsp[0].minor.yy91 = NULL;
@@ -1172,7 +1172,7 @@ static void yy_reduce(
 #line 1172 "./configparser.c"
         break;
       case 25:
-#line 398 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 398 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy91 = NULL;
   if (ctx->ok) {
@@ -1195,7 +1195,7 @@ static void yy_reduce(
       case 27:
         break;
       case 28:
-#line 415 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 415 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   data_config *dc;
   dc = (data_config *)array_get_element_klen(ctx->srv->config_context, CONST_STR_LEN("global"));
@@ -1206,7 +1206,7 @@ static void yy_reduce(
   yy_destructor(13,&yymsp[0].minor);
         break;
       case 29:
-#line 422 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 422 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   force_assert(ctx->current);
   configparser_pop(ctx);
@@ -1219,7 +1219,7 @@ static void yy_reduce(
   yy_destructor(15,&yymsp[0].minor);
         break;
       case 30:
-#line 428 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 428 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy18 = NULL;
   if (ctx->ok) {
@@ -1243,7 +1243,7 @@ static void yy_reduce(
   yy_destructor(16,&yymsp[-1].minor);
         break;
       case 31:
-#line 447 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 447 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy18 = NULL;
   if (ctx->ok) {
@@ -1309,7 +1309,7 @@ static void yy_reduce(
   yy_destructor(16,&yymsp[-1].minor);
         break;
       case 32:
-#line 508 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 508 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy18 = yymsp[0].minor.yy18;
   yymsp[0].minor.yy18 = NULL;
@@ -1317,7 +1317,7 @@ static void yy_reduce(
 #line 1317 "./configparser.c"
         break;
       case 33:
-#line 513 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 513 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy18 = NULL;
   if (ctx->ok) {
@@ -1338,7 +1338,7 @@ static void yy_reduce(
   yy_destructor(15,&yymsp[0].minor);
         break;
       case 34:
-#line 527 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 527 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy18 = NULL;
   if (ctx->ok) {
@@ -1359,7 +1359,7 @@ static void yy_reduce(
   yy_destructor(15,&yymsp[0].minor);
         break;
       case 35:
-#line 541 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 541 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   data_config *dc;
   buffer *b = NULL, *rvalue, *op = NULL;
@@ -1559,7 +1559,7 @@ static void yy_reduce(
   yy_destructor(20,&yymsp[-2].minor);
         break;
       case 36:
-#line 735 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 735 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     data_config *dc = data_config_init();
@@ -1573,7 +1573,7 @@ static void yy_reduce(
 #line 1573 "./configparser.c"
         break;
       case 37:
-#line 746 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 746 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy53 = CONFIG_COND_EQ;
 }
@@ -1581,7 +1581,7 @@ static void yy_reduce(
   yy_destructor(21,&yymsp[0].minor);
         break;
       case 38:
-#line 749 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 749 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy53 = CONFIG_COND_MATCH;
 }
@@ -1589,7 +1589,7 @@ static void yy_reduce(
   yy_destructor(22,&yymsp[0].minor);
         break;
       case 39:
-#line 752 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 752 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy53 = CONFIG_COND_NE;
 }
@@ -1597,7 +1597,7 @@ static void yy_reduce(
   yy_destructor(23,&yymsp[0].minor);
         break;
       case 40:
-#line 755 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 755 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy53 = CONFIG_COND_NOMATCH;
 }
@@ -1605,7 +1605,7 @@ static void yy_reduce(
   yy_destructor(24,&yymsp[0].minor);
         break;
       case 41:
-#line 759 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 759 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   yygotominor.yy29 = NULL;
   if (ctx->ok) {
@@ -1626,7 +1626,7 @@ static void yy_reduce(
 #line 1626 "./configparser.c"
         break;
       case 42:
-#line 777 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 777 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     if (0 != config_parse_file(ctx->srv, ctx, yymsp[0].minor.yy29->ptr)) {
@@ -1640,7 +1640,7 @@ static void yy_reduce(
   yy_destructor(25,&yymsp[-1].minor);
         break;
       case 43:
-#line 787 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 787 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 {
   if (ctx->ok) {
     if (0 != config_parse_cmd(ctx->srv, ctx, yymsp[0].minor.yy29->ptr)) {
@@ -1680,7 +1680,7 @@ static void yy_parse_failed(
   while( yypParser->yyidx>=0 ) yy_pop_parser_stack(yypParser);
   /* Here code is inserted which will be executed whenever the
   ** parser fails */
-#line 150 "/Users/andries/Downloads/lighttpd-1.4.55/src/configparser.y"
+#line 150 "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/src/configparser.y"
 
   ctx->ok = 0;
 

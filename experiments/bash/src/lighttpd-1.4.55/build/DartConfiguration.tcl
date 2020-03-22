@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/andries/Downloads/lighttpd-1.4.55
-BuildDirectory: /Users/andries/Downloads/lighttpd-1.4.55/build
+SourceDirectory: /Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55
+BuildDirectory: /Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: MacBook-Pro-van-Andries-425.local
+Site: MBPvanAdries425.home
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-cc
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.16.5/bin/cmake" "/Users/andries/Downloads/lighttpd-1.4.55"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.16.5/bin/cmake" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55"
 MakeCommand: /usr/local/Cellar/cmake/3.16.5/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

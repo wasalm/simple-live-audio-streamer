@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.16.5/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/andries/Downloads/lighttpd-1.4.55
+CMAKE_SOURCE_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/andries/Downloads/lighttpd-1.4.55/build
+CMAKE_BINARY_DIR = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles /Users/andries/Downloads/lighttpd-1.4.55/build/build/CMakeFiles/progress.marks
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andries/Downloads/lighttpd-1.4.55/build/CMakeFiles 0
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/build/CMakeFiles/progress.marks"
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/clean
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/preinstall
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/preinstall
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 build/CMakeFiles/test_mod_evhost.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_evhost.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_evhost.dir/rule
 .PHONY : build/CMakeFiles/test_mod_evhost.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ test_mod_evhost: build/CMakeFiles/test_mod_evhost.dir/rule
 
 # fast build rule for target.
 test_mod_evhost/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/build
 .PHONY : test_mod_evhost/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_mod_access.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_access.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_access.dir/rule
 .PHONY : build/CMakeFiles/test_mod_access.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ test_mod_access: build/CMakeFiles/test_mod_access.dir/rule
 
 # fast build rule for target.
 test_mod_access/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/build
 .PHONY : test_mod_access/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_configfile.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_configfile.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_configfile.dir/rule
 .PHONY : build/CMakeFiles/test_configfile.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ test_configfile: build/CMakeFiles/test_configfile.dir/rule
 
 # fast build rule for target.
 test_configfile/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/build
 .PHONY : test_configfile/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_burl.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_burl.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_burl.dir/rule
 .PHONY : build/CMakeFiles/test_burl.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ test_burl: build/CMakeFiles/test_burl.dir/rule
 
 # fast build rule for target.
 test_burl/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/build
 .PHONY : test_burl/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_mod_simple_vhost.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_simple_vhost.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_mod_simple_vhost.dir/rule
 .PHONY : build/CMakeFiles/test_mod_simple_vhost.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ test_mod_simple_vhost: build/CMakeFiles/test_mod_simple_vhost.dir/rule
 
 # fast build rule for target.
 test_mod_simple_vhost/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/build
 .PHONY : test_mod_simple_vhost/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_buffer.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_buffer.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_buffer.dir/rule
 .PHONY : build/CMakeFiles/test_buffer.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ test_buffer: build/CMakeFiles/test_buffer.dir/rule
 
 # fast build rule for target.
 test_buffer/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/build
 .PHONY : test_buffer/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_webdav.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_webdav.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_webdav.dir/rule
 .PHONY : build/CMakeFiles/mod_webdav.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ mod_webdav: build/CMakeFiles/mod_webdav.dir/rule
 
 # fast build rule for target.
 mod_webdav/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/build
 .PHONY : mod_webdav/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_wstunnel.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_wstunnel.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_wstunnel.dir/rule
 .PHONY : build/CMakeFiles/mod_wstunnel.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ mod_wstunnel: build/CMakeFiles/mod_wstunnel.dir/rule
 
 # fast build rule for target.
 mod_wstunnel/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/build
 .PHONY : mod_wstunnel/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_usertrack.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_usertrack.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_usertrack.dir/rule
 .PHONY : build/CMakeFiles/mod_usertrack.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ mod_usertrack: build/CMakeFiles/mod_usertrack.dir/rule
 
 # fast build rule for target.
 mod_usertrack/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/build
 .PHONY : mod_usertrack/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_keyvalue.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_keyvalue.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_keyvalue.dir/rule
 .PHONY : build/CMakeFiles/test_keyvalue.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ test_keyvalue: build/CMakeFiles/test_keyvalue.dir/rule
 
 # fast build rule for target.
 test_keyvalue/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/build
 .PHONY : test_keyvalue/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_status.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_status.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_status.dir/rule
 .PHONY : build/CMakeFiles/mod_status.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ mod_status: build/CMakeFiles/mod_status.dir/rule
 
 # fast build rule for target.
 mod_status/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/build
 .PHONY : mod_status/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_sockproxy.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_sockproxy.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_sockproxy.dir/rule
 .PHONY : build/CMakeFiles/mod_sockproxy.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ mod_sockproxy: build/CMakeFiles/mod_sockproxy.dir/rule
 
 # fast build rule for target.
 mod_sockproxy/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/build
 .PHONY : mod_sockproxy/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_setenv.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_setenv.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_setenv.dir/rule
 .PHONY : build/CMakeFiles/mod_setenv.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ mod_setenv: build/CMakeFiles/mod_setenv.dir/rule
 
 # fast build rule for target.
 mod_setenv/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/build
 .PHONY : mod_setenv/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_userdir.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_userdir.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_userdir.dir/rule
 .PHONY : build/CMakeFiles/mod_userdir.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ mod_userdir: build/CMakeFiles/mod_userdir.dir/rule
 
 # fast build rule for target.
 mod_userdir/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/build
 .PHONY : mod_userdir/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_scgi.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_scgi.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_scgi.dir/rule
 .PHONY : build/CMakeFiles/mod_scgi.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ mod_scgi: build/CMakeFiles/mod_scgi.dir/rule
 
 # fast build rule for target.
 mod_scgi/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/build
 .PHONY : mod_scgi/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_alias.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_alias.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_alias.dir/rule
 .PHONY : build/CMakeFiles/mod_alias.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ mod_alias: build/CMakeFiles/mod_alias.dir/rule
 
 # fast build rule for target.
 mod_alias/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/build
 .PHONY : mod_alias/fast
 
 # Convenience name for target.
 build/CMakeFiles/lighttpd-angel.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lighttpd-angel.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lighttpd-angel.dir/rule
 .PHONY : build/CMakeFiles/lighttpd-angel.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ lighttpd-angel: build/CMakeFiles/lighttpd-angel.dir/rule
 
 # fast build rule for target.
 lighttpd-angel/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/build
 .PHONY : lighttpd-angel/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_cgi.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_cgi.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_cgi.dir/rule
 .PHONY : build/CMakeFiles/mod_cgi.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ mod_cgi: build/CMakeFiles/mod_cgi.dir/rule
 
 # fast build rule for target.
 mod_cgi/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/build
 .PHONY : mod_cgi/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_rewrite.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_rewrite.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_rewrite.dir/rule
 .PHONY : build/CMakeFiles/mod_rewrite.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ mod_rewrite: build/CMakeFiles/mod_rewrite.dir/rule
 
 # fast build rule for target.
 mod_rewrite/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/build
 .PHONY : mod_rewrite/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_compress.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_compress.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_compress.dir/rule
 .PHONY : build/CMakeFiles/mod_compress.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ mod_compress: build/CMakeFiles/mod_compress.dir/rule
 
 # fast build rule for target.
 mod_compress/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/build
 .PHONY : mod_compress/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_expire.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_expire.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_expire.dir/rule
 .PHONY : build/CMakeFiles/mod_expire.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ mod_expire: build/CMakeFiles/mod_expire.dir/rule
 
 # fast build rule for target.
 mod_expire/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/build
 .PHONY : mod_expire/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_rrdtool.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_rrdtool.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_rrdtool.dir/rule
 .PHONY : build/CMakeFiles/mod_rrdtool.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ mod_rrdtool: build/CMakeFiles/mod_rrdtool.dir/rule
 
 # fast build rule for target.
 mod_rrdtool/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/build
 .PHONY : mod_rrdtool/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_flv_streaming.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_flv_streaming.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_flv_streaming.dir/rule
 .PHONY : build/CMakeFiles/mod_flv_streaming.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ mod_flv_streaming: build/CMakeFiles/mod_flv_streaming.dir/rule
 
 # fast build rule for target.
 mod_flv_streaming/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/build
 .PHONY : mod_flv_streaming/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_simple_vhost.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_simple_vhost.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_simple_vhost.dir/rule
 .PHONY : build/CMakeFiles/mod_simple_vhost.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ mod_simple_vhost: build/CMakeFiles/mod_simple_vhost.dir/rule
 
 # fast build rule for target.
 mod_simple_vhost/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/build
 .PHONY : mod_simple_vhost/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_proxy.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_proxy.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_proxy.dir/rule
 .PHONY : build/CMakeFiles/mod_proxy.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ mod_proxy: build/CMakeFiles/mod_proxy.dir/rule
 
 # fast build rule for target.
 mod_proxy/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/build
 .PHONY : mod_proxy/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_extforward.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_extforward.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_extforward.dir/rule
 .PHONY : build/CMakeFiles/mod_extforward.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ mod_extforward: build/CMakeFiles/mod_extforward.dir/rule
 
 # fast build rule for target.
 mod_extforward/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/build
 .PHONY : mod_extforward/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_accesslog.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_accesslog.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_accesslog.dir/rule
 .PHONY : build/CMakeFiles/mod_accesslog.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ mod_accesslog: build/CMakeFiles/mod_accesslog.dir/rule
 
 # fast build rule for target.
 mod_accesslog/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/build
 .PHONY : mod_accesslog/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_secdownload.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_secdownload.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_secdownload.dir/rule
 .PHONY : build/CMakeFiles/mod_secdownload.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ mod_secdownload: build/CMakeFiles/mod_secdownload.dir/rule
 
 # fast build rule for target.
 mod_secdownload/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/build
 .PHONY : mod_secdownload/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_fastcgi.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_fastcgi.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_fastcgi.dir/rule
 .PHONY : build/CMakeFiles/mod_fastcgi.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ mod_fastcgi: build/CMakeFiles/mod_fastcgi.dir/rule
 
 # fast build rule for target.
 mod_fastcgi/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/build
 .PHONY : mod_fastcgi/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_evhost.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_evhost.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_evhost.dir/rule
 .PHONY : build/CMakeFiles/mod_evhost.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ mod_evhost: build/CMakeFiles/mod_evhost.dir/rule
 
 # fast build rule for target.
 mod_evhost/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/build
 .PHONY : mod_evhost/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_evasive.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_evasive.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_evasive.dir/rule
 .PHONY : build/CMakeFiles/mod_evasive.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ mod_evasive: build/CMakeFiles/mod_evasive.dir/rule
 
 # fast build rule for target.
 mod_evasive/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/build
 .PHONY : mod_evasive/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_dirlisting.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_dirlisting.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_dirlisting.dir/rule
 .PHONY : build/CMakeFiles/mod_dirlisting.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ mod_dirlisting: build/CMakeFiles/mod_dirlisting.dir/rule
 
 # fast build rule for target.
 mod_dirlisting/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/build
 .PHONY : mod_dirlisting/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_deflate.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_deflate.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_deflate.dir/rule
 .PHONY : build/CMakeFiles/mod_deflate.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ mod_deflate: build/CMakeFiles/mod_deflate.dir/rule
 
 # fast build rule for target.
 mod_deflate/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/build
 .PHONY : mod_deflate/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_redirect.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_redirect.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_redirect.dir/rule
 .PHONY : build/CMakeFiles/mod_redirect.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ mod_redirect: build/CMakeFiles/mod_redirect.dir/rule
 
 # fast build rule for target.
 mod_redirect/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/build
 .PHONY : mod_redirect/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_vhostdb.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_vhostdb.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_vhostdb.dir/rule
 .PHONY : build/CMakeFiles/mod_vhostdb.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ mod_vhostdb: build/CMakeFiles/mod_vhostdb.dir/rule
 
 # fast build rule for target.
 mod_vhostdb/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/build
 .PHONY : mod_vhostdb/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_ssi.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_ssi.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_ssi.dir/rule
 .PHONY : build/CMakeFiles/mod_ssi.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ mod_ssi: build/CMakeFiles/mod_ssi.dir/rule
 
 # fast build rule for target.
 mod_ssi/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/build
 .PHONY : mod_ssi/fast
 
 # Convenience name for target.
 build/CMakeFiles/lighttpd.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lighttpd.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lighttpd.dir/rule
 .PHONY : build/CMakeFiles/lighttpd.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ lighttpd: build/CMakeFiles/lighttpd.dir/rule
 
 # fast build rule for target.
 lighttpd/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/build
 .PHONY : lighttpd/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_request.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_request.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_request.dir/rule
 .PHONY : build/CMakeFiles/test_request.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ test_request: build/CMakeFiles/test_request.dir/rule
 
 # fast build rule for target.
 test_request/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/build
 .PHONY : test_request/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_indexfile.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_indexfile.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_indexfile.dir/rule
 .PHONY : build/CMakeFiles/mod_indexfile.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ mod_indexfile: build/CMakeFiles/mod_indexfile.dir/rule
 
 # fast build rule for target.
 mod_indexfile/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/build
 .PHONY : mod_indexfile/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_auth.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_auth.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_auth.dir/rule
 .PHONY : build/CMakeFiles/mod_auth.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ mod_auth: build/CMakeFiles/mod_auth.dir/rule
 
 # fast build rule for target.
 mod_auth/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/build
 .PHONY : mod_auth/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_base64.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_base64.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_base64.dir/rule
 .PHONY : build/CMakeFiles/test_base64.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ test_base64: build/CMakeFiles/test_base64.dir/rule
 
 # fast build rule for target.
 test_base64/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/build
 .PHONY : test_base64/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_access.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_access.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_access.dir/rule
 .PHONY : build/CMakeFiles/mod_access.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ mod_access: build/CMakeFiles/mod_access.dir/rule
 
 # fast build rule for target.
 mod_access/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/build
 .PHONY : mod_access/fast
 
 # Convenience name for target.
 build/CMakeFiles/lemon.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lemon.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/lemon.dir/rule
 .PHONY : build/CMakeFiles/lemon.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ lemon: build/CMakeFiles/lemon.dir/rule
 
 # fast build rule for target.
 lemon/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/build
 .PHONY : lemon/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_authn_file.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_authn_file.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_authn_file.dir/rule
 .PHONY : build/CMakeFiles/mod_authn_file.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ mod_authn_file: build/CMakeFiles/mod_authn_file.dir/rule
 
 # fast build rule for target.
 mod_authn_file/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/build
 .PHONY : mod_authn_file/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_staticfile.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_staticfile.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_staticfile.dir/rule
 .PHONY : build/CMakeFiles/mod_staticfile.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ mod_staticfile: build/CMakeFiles/mod_staticfile.dir/rule
 
 # fast build rule for target.
 mod_staticfile/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/build
 .PHONY : mod_staticfile/fast
 
 # Convenience name for target.
 build/CMakeFiles/test_array.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_array.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/test_array.dir/rule
 .PHONY : build/CMakeFiles/test_array.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ test_array: build/CMakeFiles/test_array.dir/rule
 
 # fast build rule for target.
 test_array/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/build
 .PHONY : test_array/fast
 
 # Convenience name for target.
 build/CMakeFiles/mod_uploadprogress.dir/rule:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_uploadprogress.dir/rule
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f CMakeFiles/Makefile2 build/CMakeFiles/mod_uploadprogress.dir/rule
 .PHONY : build/CMakeFiles/mod_uploadprogress.dir/rule
 
 # Convenience name for target.
@@ -869,7 +869,7 @@ mod_uploadprogress: build/CMakeFiles/mod_uploadprogress.dir/rule
 
 # fast build rule for target.
 mod_uploadprogress/fast:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/build
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/build
 .PHONY : mod_uploadprogress/fast
 
 algo_sha1.o: algo_sha1.c.o
@@ -878,7 +878,7 @@ algo_sha1.o: algo_sha1.c.o
 
 # target to build an object file
 algo_sha1.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.o
 .PHONY : algo_sha1.c.o
 
 algo_sha1.i: algo_sha1.c.i
@@ -887,7 +887,7 @@ algo_sha1.i: algo_sha1.c.i
 
 # target to preprocess a source file
 algo_sha1.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.i
 .PHONY : algo_sha1.c.i
 
 algo_sha1.s: algo_sha1.c.s
@@ -896,7 +896,7 @@ algo_sha1.s: algo_sha1.c.s
 
 # target to generate assembly for a file
 algo_sha1.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/algo_sha1.c.s
 .PHONY : algo_sha1.c.s
 
 array.o: array.c.o
@@ -905,14 +905,14 @@ array.o: array.c.o
 
 # target to build an object file
 array.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.o
 .PHONY : array.c.o
 
 array.i: array.c.i
@@ -921,14 +921,14 @@ array.i: array.c.i
 
 # target to preprocess a source file
 array.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.i
 .PHONY : array.c.i
 
 array.s: array.c.s
@@ -937,14 +937,14 @@ array.s: array.c.s
 
 # target to generate assembly for a file
 array.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/array.c.s
 .PHONY : array.c.s
 
 base64.o: base64.c.o
@@ -953,10 +953,10 @@ base64.o: base64.c.o
 
 # target to build an object file
 base64.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.o
 .PHONY : base64.c.o
 
 base64.i: base64.c.i
@@ -965,10 +965,10 @@ base64.i: base64.c.i
 
 # target to preprocess a source file
 base64.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.i
 .PHONY : base64.c.i
 
 base64.s: base64.c.s
@@ -977,10 +977,10 @@ base64.s: base64.c.s
 
 # target to generate assembly for a file
 base64.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/base64.c.s
 .PHONY : base64.c.s
 
 buffer.o: buffer.c.o
@@ -989,17 +989,17 @@ buffer.o: buffer.c.o
 
 # target to build an object file
 buffer.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.o
 .PHONY : buffer.c.o
 
 buffer.i: buffer.c.i
@@ -1008,17 +1008,17 @@ buffer.i: buffer.c.i
 
 # target to preprocess a source file
 buffer.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.i
 .PHONY : buffer.c.i
 
 buffer.s: buffer.c.s
@@ -1027,17 +1027,17 @@ buffer.s: buffer.c.s
 
 # target to generate assembly for a file
 buffer.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/buffer.c.s
 .PHONY : buffer.c.s
 
 burl.o: burl.c.o
@@ -1046,9 +1046,9 @@ burl.o: burl.c.o
 
 # target to build an object file
 burl.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.o
 .PHONY : burl.c.o
 
 burl.i: burl.c.i
@@ -1057,9 +1057,9 @@ burl.i: burl.c.i
 
 # target to preprocess a source file
 burl.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.i
 .PHONY : burl.c.i
 
 burl.s: burl.c.s
@@ -1068,9 +1068,9 @@ burl.s: burl.c.s
 
 # target to generate assembly for a file
 burl.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/burl.c.s
 .PHONY : burl.c.s
 
 chunk.o: chunk.c.o
@@ -1079,7 +1079,7 @@ chunk.o: chunk.c.o
 
 # target to build an object file
 chunk.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.o
 .PHONY : chunk.c.o
 
 chunk.i: chunk.c.i
@@ -1088,7 +1088,7 @@ chunk.i: chunk.c.i
 
 # target to preprocess a source file
 chunk.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.i
 .PHONY : chunk.c.i
 
 chunk.s: chunk.c.s
@@ -1097,7 +1097,7 @@ chunk.s: chunk.c.s
 
 # target to generate assembly for a file
 chunk.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/chunk.c.s
 .PHONY : chunk.c.s
 
 configfile-glue.o: configfile-glue.c.o
@@ -1106,10 +1106,10 @@ configfile-glue.o: configfile-glue.c.o
 
 # target to build an object file
 configfile-glue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.o
 .PHONY : configfile-glue.c.o
 
 configfile-glue.i: configfile-glue.c.i
@@ -1118,10 +1118,10 @@ configfile-glue.i: configfile-glue.c.i
 
 # target to preprocess a source file
 configfile-glue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.i
 .PHONY : configfile-glue.c.i
 
 configfile-glue.s: configfile-glue.c.s
@@ -1130,10 +1130,10 @@ configfile-glue.s: configfile-glue.c.s
 
 # target to generate assembly for a file
 configfile-glue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/configfile-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/configfile-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/configfile-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile-glue.c.s
 .PHONY : configfile-glue.c.s
 
 configfile.o: configfile.c.o
@@ -1142,7 +1142,7 @@ configfile.o: configfile.c.o
 
 # target to build an object file
 configfile.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.o
 .PHONY : configfile.c.o
 
 configfile.i: configfile.c.i
@@ -1151,7 +1151,7 @@ configfile.i: configfile.c.i
 
 # target to preprocess a source file
 configfile.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.i
 .PHONY : configfile.c.i
 
 configfile.s: configfile.c.s
@@ -1160,7 +1160,7 @@ configfile.s: configfile.c.s
 
 # target to generate assembly for a file
 configfile.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configfile.c.s
 .PHONY : configfile.c.s
 
 configparser.o: configparser.c.o
@@ -1169,7 +1169,7 @@ configparser.o: configparser.c.o
 
 # target to build an object file
 configparser.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.o
 .PHONY : configparser.c.o
 
 configparser.i: configparser.c.i
@@ -1178,7 +1178,7 @@ configparser.i: configparser.c.i
 
 # target to preprocess a source file
 configparser.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.i
 .PHONY : configparser.c.i
 
 configparser.s: configparser.c.s
@@ -1187,7 +1187,7 @@ configparser.s: configparser.c.s
 
 # target to generate assembly for a file
 configparser.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/configparser.c.s
 .PHONY : configparser.c.s
 
 connections-glue.o: connections-glue.c.o
@@ -1196,7 +1196,7 @@ connections-glue.o: connections-glue.c.o
 
 # target to build an object file
 connections-glue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.o
 .PHONY : connections-glue.c.o
 
 connections-glue.i: connections-glue.c.i
@@ -1205,7 +1205,7 @@ connections-glue.i: connections-glue.c.i
 
 # target to preprocess a source file
 connections-glue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.i
 .PHONY : connections-glue.c.i
 
 connections-glue.s: connections-glue.c.s
@@ -1214,7 +1214,7 @@ connections-glue.s: connections-glue.c.s
 
 # target to generate assembly for a file
 connections-glue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections-glue.c.s
 .PHONY : connections-glue.c.s
 
 connections.o: connections.c.o
@@ -1223,7 +1223,7 @@ connections.o: connections.c.o
 
 # target to build an object file
 connections.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.o
 .PHONY : connections.c.o
 
 connections.i: connections.c.i
@@ -1232,7 +1232,7 @@ connections.i: connections.c.i
 
 # target to preprocess a source file
 connections.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.i
 .PHONY : connections.c.i
 
 connections.s: connections.c.s
@@ -1241,7 +1241,7 @@ connections.s: connections.c.s
 
 # target to generate assembly for a file
 connections.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/connections.c.s
 .PHONY : connections.c.s
 
 crc32.o: crc32.c.o
@@ -1250,7 +1250,7 @@ crc32.o: crc32.c.o
 
 # target to build an object file
 crc32.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.o
 .PHONY : crc32.c.o
 
 crc32.i: crc32.c.i
@@ -1259,7 +1259,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -1268,7 +1268,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 data_array.o: data_array.c.o
@@ -1277,8 +1277,8 @@ data_array.o: data_array.c.o
 
 # target to build an object file
 data_array.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.o
 .PHONY : data_array.c.o
 
 data_array.i: data_array.c.i
@@ -1287,8 +1287,8 @@ data_array.i: data_array.c.i
 
 # target to preprocess a source file
 data_array.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.i
 .PHONY : data_array.c.i
 
 data_array.s: data_array.c.s
@@ -1297,8 +1297,8 @@ data_array.s: data_array.c.s
 
 # target to generate assembly for a file
 data_array.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_array.c.s
 .PHONY : data_array.c.s
 
 data_config.o: data_config.c.o
@@ -1307,11 +1307,11 @@ data_config.o: data_config.c.o
 
 # target to build an object file
 data_config.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.o
 .PHONY : data_config.c.o
 
 data_config.i: data_config.c.i
@@ -1320,11 +1320,11 @@ data_config.i: data_config.c.i
 
 # target to preprocess a source file
 data_config.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.i
 .PHONY : data_config.c.i
 
 data_config.s: data_config.c.s
@@ -1333,11 +1333,11 @@ data_config.s: data_config.c.s
 
 # target to generate assembly for a file
 data_config.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_config.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_config.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_config.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_config.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_config.c.s
 .PHONY : data_config.c.s
 
 data_integer.o: data_integer.c.o
@@ -1346,14 +1346,14 @@ data_integer.o: data_integer.c.o
 
 # target to build an object file
 data_integer.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.o
 .PHONY : data_integer.c.o
 
 data_integer.i: data_integer.c.i
@@ -1362,14 +1362,14 @@ data_integer.i: data_integer.c.i
 
 # target to preprocess a source file
 data_integer.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.i
 .PHONY : data_integer.c.i
 
 data_integer.s: data_integer.c.s
@@ -1378,14 +1378,14 @@ data_integer.s: data_integer.c.s
 
 # target to generate assembly for a file
 data_integer.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_integer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_integer.c.s
 .PHONY : data_integer.c.s
 
 data_string.o: data_string.c.o
@@ -1394,14 +1394,14 @@ data_string.o: data_string.c.o
 
 # target to build an object file
 data_string.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.o
 .PHONY : data_string.c.o
 
 data_string.i: data_string.c.i
@@ -1410,14 +1410,14 @@ data_string.i: data_string.c.i
 
 # target to preprocess a source file
 data_string.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.i
 .PHONY : data_string.c.i
 
 data_string.s: data_string.c.s
@@ -1426,14 +1426,14 @@ data_string.s: data_string.c.s
 
 # target to generate assembly for a file
 data_string.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/data_string.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/data_string.c.s
 .PHONY : data_string.c.s
 
 etag.o: etag.c.o
@@ -1442,7 +1442,7 @@ etag.o: etag.c.o
 
 # target to build an object file
 etag.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.o
 .PHONY : etag.c.o
 
 etag.i: etag.c.i
@@ -1451,7 +1451,7 @@ etag.i: etag.c.i
 
 # target to preprocess a source file
 etag.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.i
 .PHONY : etag.c.i
 
 etag.s: etag.c.s
@@ -1460,7 +1460,7 @@ etag.s: etag.c.s
 
 # target to generate assembly for a file
 etag.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/etag.c.s
 .PHONY : etag.c.s
 
 fdevent.o: fdevent.c.o
@@ -1469,7 +1469,7 @@ fdevent.o: fdevent.c.o
 
 # target to build an object file
 fdevent.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.o
 .PHONY : fdevent.c.o
 
 fdevent.i: fdevent.c.i
@@ -1478,7 +1478,7 @@ fdevent.i: fdevent.c.i
 
 # target to preprocess a source file
 fdevent.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.i
 .PHONY : fdevent.c.i
 
 fdevent.s: fdevent.c.s
@@ -1487,7 +1487,7 @@ fdevent.s: fdevent.c.s
 
 # target to generate assembly for a file
 fdevent.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent.c.s
 .PHONY : fdevent.c.s
 
 fdevent_freebsd_kqueue.o: fdevent_freebsd_kqueue.c.o
@@ -1496,7 +1496,7 @@ fdevent_freebsd_kqueue.o: fdevent_freebsd_kqueue.c.o
 
 # target to build an object file
 fdevent_freebsd_kqueue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.o
 .PHONY : fdevent_freebsd_kqueue.c.o
 
 fdevent_freebsd_kqueue.i: fdevent_freebsd_kqueue.c.i
@@ -1505,7 +1505,7 @@ fdevent_freebsd_kqueue.i: fdevent_freebsd_kqueue.c.i
 
 # target to preprocess a source file
 fdevent_freebsd_kqueue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.i
 .PHONY : fdevent_freebsd_kqueue.c.i
 
 fdevent_freebsd_kqueue.s: fdevent_freebsd_kqueue.c.s
@@ -1514,7 +1514,7 @@ fdevent_freebsd_kqueue.s: fdevent_freebsd_kqueue.c.s
 
 # target to generate assembly for a file
 fdevent_freebsd_kqueue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_freebsd_kqueue.c.s
 .PHONY : fdevent_freebsd_kqueue.c.s
 
 fdevent_libev.o: fdevent_libev.c.o
@@ -1523,7 +1523,7 @@ fdevent_libev.o: fdevent_libev.c.o
 
 # target to build an object file
 fdevent_libev.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.o
 .PHONY : fdevent_libev.c.o
 
 fdevent_libev.i: fdevent_libev.c.i
@@ -1532,7 +1532,7 @@ fdevent_libev.i: fdevent_libev.c.i
 
 # target to preprocess a source file
 fdevent_libev.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.i
 .PHONY : fdevent_libev.c.i
 
 fdevent_libev.s: fdevent_libev.c.s
@@ -1541,7 +1541,7 @@ fdevent_libev.s: fdevent_libev.c.s
 
 # target to generate assembly for a file
 fdevent_libev.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_libev.c.s
 .PHONY : fdevent_libev.c.s
 
 fdevent_linux_sysepoll.o: fdevent_linux_sysepoll.c.o
@@ -1550,7 +1550,7 @@ fdevent_linux_sysepoll.o: fdevent_linux_sysepoll.c.o
 
 # target to build an object file
 fdevent_linux_sysepoll.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.o
 .PHONY : fdevent_linux_sysepoll.c.o
 
 fdevent_linux_sysepoll.i: fdevent_linux_sysepoll.c.i
@@ -1559,7 +1559,7 @@ fdevent_linux_sysepoll.i: fdevent_linux_sysepoll.c.i
 
 # target to preprocess a source file
 fdevent_linux_sysepoll.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.i
 .PHONY : fdevent_linux_sysepoll.c.i
 
 fdevent_linux_sysepoll.s: fdevent_linux_sysepoll.c.s
@@ -1568,7 +1568,7 @@ fdevent_linux_sysepoll.s: fdevent_linux_sysepoll.c.s
 
 # target to generate assembly for a file
 fdevent_linux_sysepoll.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_linux_sysepoll.c.s
 .PHONY : fdevent_linux_sysepoll.c.s
 
 fdevent_poll.o: fdevent_poll.c.o
@@ -1577,7 +1577,7 @@ fdevent_poll.o: fdevent_poll.c.o
 
 # target to build an object file
 fdevent_poll.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.o
 .PHONY : fdevent_poll.c.o
 
 fdevent_poll.i: fdevent_poll.c.i
@@ -1586,7 +1586,7 @@ fdevent_poll.i: fdevent_poll.c.i
 
 # target to preprocess a source file
 fdevent_poll.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.i
 .PHONY : fdevent_poll.c.i
 
 fdevent_poll.s: fdevent_poll.c.s
@@ -1595,7 +1595,7 @@ fdevent_poll.s: fdevent_poll.c.s
 
 # target to generate assembly for a file
 fdevent_poll.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_poll.c.s
 .PHONY : fdevent_poll.c.s
 
 fdevent_select.o: fdevent_select.c.o
@@ -1604,7 +1604,7 @@ fdevent_select.o: fdevent_select.c.o
 
 # target to build an object file
 fdevent_select.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.o
 .PHONY : fdevent_select.c.o
 
 fdevent_select.i: fdevent_select.c.i
@@ -1613,7 +1613,7 @@ fdevent_select.i: fdevent_select.c.i
 
 # target to preprocess a source file
 fdevent_select.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.i
 .PHONY : fdevent_select.c.i
 
 fdevent_select.s: fdevent_select.c.s
@@ -1622,7 +1622,7 @@ fdevent_select.s: fdevent_select.c.s
 
 # target to generate assembly for a file
 fdevent_select.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_select.c.s
 .PHONY : fdevent_select.c.s
 
 fdevent_solaris_devpoll.o: fdevent_solaris_devpoll.c.o
@@ -1631,7 +1631,7 @@ fdevent_solaris_devpoll.o: fdevent_solaris_devpoll.c.o
 
 # target to build an object file
 fdevent_solaris_devpoll.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.o
 .PHONY : fdevent_solaris_devpoll.c.o
 
 fdevent_solaris_devpoll.i: fdevent_solaris_devpoll.c.i
@@ -1640,7 +1640,7 @@ fdevent_solaris_devpoll.i: fdevent_solaris_devpoll.c.i
 
 # target to preprocess a source file
 fdevent_solaris_devpoll.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.i
 .PHONY : fdevent_solaris_devpoll.c.i
 
 fdevent_solaris_devpoll.s: fdevent_solaris_devpoll.c.s
@@ -1649,7 +1649,7 @@ fdevent_solaris_devpoll.s: fdevent_solaris_devpoll.c.s
 
 # target to generate assembly for a file
 fdevent_solaris_devpoll.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_devpoll.c.s
 .PHONY : fdevent_solaris_devpoll.c.s
 
 fdevent_solaris_port.o: fdevent_solaris_port.c.o
@@ -1658,7 +1658,7 @@ fdevent_solaris_port.o: fdevent_solaris_port.c.o
 
 # target to build an object file
 fdevent_solaris_port.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.o
 .PHONY : fdevent_solaris_port.c.o
 
 fdevent_solaris_port.i: fdevent_solaris_port.c.i
@@ -1667,7 +1667,7 @@ fdevent_solaris_port.i: fdevent_solaris_port.c.i
 
 # target to preprocess a source file
 fdevent_solaris_port.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.i
 .PHONY : fdevent_solaris_port.c.i
 
 fdevent_solaris_port.s: fdevent_solaris_port.c.s
@@ -1676,7 +1676,7 @@ fdevent_solaris_port.s: fdevent_solaris_port.c.s
 
 # target to generate assembly for a file
 fdevent_solaris_port.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/fdevent_solaris_port.c.s
 .PHONY : fdevent_solaris_port.c.s
 
 gw_backend.o: gw_backend.c.o
@@ -1685,7 +1685,7 @@ gw_backend.o: gw_backend.c.o
 
 # target to build an object file
 gw_backend.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.o
 .PHONY : gw_backend.c.o
 
 gw_backend.i: gw_backend.c.i
@@ -1694,7 +1694,7 @@ gw_backend.i: gw_backend.c.i
 
 # target to preprocess a source file
 gw_backend.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.i
 .PHONY : gw_backend.c.i
 
 gw_backend.s: gw_backend.c.s
@@ -1703,7 +1703,7 @@ gw_backend.s: gw_backend.c.s
 
 # target to generate assembly for a file
 gw_backend.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/gw_backend.c.s
 .PHONY : gw_backend.c.s
 
 http-header-glue.o: http-header-glue.c.o
@@ -1712,7 +1712,7 @@ http-header-glue.o: http-header-glue.c.o
 
 # target to build an object file
 http-header-glue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.o
 .PHONY : http-header-glue.c.o
 
 http-header-glue.i: http-header-glue.c.i
@@ -1721,7 +1721,7 @@ http-header-glue.i: http-header-glue.c.i
 
 # target to preprocess a source file
 http-header-glue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.i
 .PHONY : http-header-glue.c.i
 
 http-header-glue.s: http-header-glue.c.s
@@ -1730,7 +1730,7 @@ http-header-glue.s: http-header-glue.c.s
 
 # target to generate assembly for a file
 http-header-glue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http-header-glue.c.s
 .PHONY : http-header-glue.c.s
 
 http_auth.o: http_auth.c.o
@@ -1739,7 +1739,7 @@ http_auth.o: http_auth.c.o
 
 # target to build an object file
 http_auth.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.o
 .PHONY : http_auth.c.o
 
 http_auth.i: http_auth.c.i
@@ -1748,7 +1748,7 @@ http_auth.i: http_auth.c.i
 
 # target to preprocess a source file
 http_auth.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.i
 .PHONY : http_auth.c.i
 
 http_auth.s: http_auth.c.s
@@ -1757,7 +1757,7 @@ http_auth.s: http_auth.c.s
 
 # target to generate assembly for a file
 http_auth.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_auth.c.s
 .PHONY : http_auth.c.s
 
 http_chunk.o: http_chunk.c.o
@@ -1766,7 +1766,7 @@ http_chunk.o: http_chunk.c.o
 
 # target to build an object file
 http_chunk.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.o
 .PHONY : http_chunk.c.o
 
 http_chunk.i: http_chunk.c.i
@@ -1775,7 +1775,7 @@ http_chunk.i: http_chunk.c.i
 
 # target to preprocess a source file
 http_chunk.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.i
 .PHONY : http_chunk.c.i
 
 http_chunk.s: http_chunk.c.s
@@ -1784,7 +1784,7 @@ http_chunk.s: http_chunk.c.s
 
 # target to generate assembly for a file
 http_chunk.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_chunk.c.s
 .PHONY : http_chunk.c.s
 
 http_header.o: http_header.c.o
@@ -1793,12 +1793,12 @@ http_header.o: http_header.c.o
 
 # target to build an object file
 http_header.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.o
 .PHONY : http_header.c.o
 
 http_header.i: http_header.c.i
@@ -1807,12 +1807,12 @@ http_header.i: http_header.c.i
 
 # target to preprocess a source file
 http_header.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.i
 .PHONY : http_header.c.i
 
 http_header.s: http_header.c.s
@@ -1821,12 +1821,12 @@ http_header.s: http_header.c.s
 
 # target to generate assembly for a file
 http_header.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_header.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_header.c.s
 .PHONY : http_header.c.s
 
 http_kv.o: http_kv.c.o
@@ -1835,12 +1835,12 @@ http_kv.o: http_kv.c.o
 
 # target to build an object file
 http_kv.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.o
 .PHONY : http_kv.c.o
 
 http_kv.i: http_kv.c.i
@@ -1849,12 +1849,12 @@ http_kv.i: http_kv.c.i
 
 # target to preprocess a source file
 http_kv.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.i
 .PHONY : http_kv.c.i
 
 http_kv.s: http_kv.c.s
@@ -1863,12 +1863,12 @@ http_kv.s: http_kv.c.s
 
 # target to generate assembly for a file
 http_kv.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_kv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/http_kv.c.s
 .PHONY : http_kv.c.s
 
 http_vhostdb.o: http_vhostdb.c.o
@@ -1877,7 +1877,7 @@ http_vhostdb.o: http_vhostdb.c.o
 
 # target to build an object file
 http_vhostdb.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.o
 .PHONY : http_vhostdb.c.o
 
 http_vhostdb.i: http_vhostdb.c.i
@@ -1886,7 +1886,7 @@ http_vhostdb.i: http_vhostdb.c.i
 
 # target to preprocess a source file
 http_vhostdb.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.i
 .PHONY : http_vhostdb.c.i
 
 http_vhostdb.s: http_vhostdb.c.s
@@ -1895,7 +1895,7 @@ http_vhostdb.s: http_vhostdb.c.s
 
 # target to generate assembly for a file
 http_vhostdb.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/http_vhostdb.c.s
 .PHONY : http_vhostdb.c.s
 
 inet_ntop_cache.o: inet_ntop_cache.c.o
@@ -1904,7 +1904,7 @@ inet_ntop_cache.o: inet_ntop_cache.c.o
 
 # target to build an object file
 inet_ntop_cache.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.o
 .PHONY : inet_ntop_cache.c.o
 
 inet_ntop_cache.i: inet_ntop_cache.c.i
@@ -1913,7 +1913,7 @@ inet_ntop_cache.i: inet_ntop_cache.c.i
 
 # target to preprocess a source file
 inet_ntop_cache.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.i
 .PHONY : inet_ntop_cache.c.i
 
 inet_ntop_cache.s: inet_ntop_cache.c.s
@@ -1922,7 +1922,7 @@ inet_ntop_cache.s: inet_ntop_cache.c.s
 
 # target to generate assembly for a file
 inet_ntop_cache.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/inet_ntop_cache.c.s
 .PHONY : inet_ntop_cache.c.s
 
 joblist.o: joblist.c.o
@@ -1931,7 +1931,7 @@ joblist.o: joblist.c.o
 
 # target to build an object file
 joblist.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.o
 .PHONY : joblist.c.o
 
 joblist.i: joblist.c.i
@@ -1940,7 +1940,7 @@ joblist.i: joblist.c.i
 
 # target to preprocess a source file
 joblist.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.i
 .PHONY : joblist.c.i
 
 joblist.s: joblist.c.s
@@ -1949,7 +1949,7 @@ joblist.s: joblist.c.s
 
 # target to generate assembly for a file
 joblist.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/joblist.c.s
 .PHONY : joblist.c.s
 
 keyvalue.o: keyvalue.c.o
@@ -1958,7 +1958,7 @@ keyvalue.o: keyvalue.c.o
 
 # target to build an object file
 keyvalue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.o
 .PHONY : keyvalue.c.o
 
 keyvalue.i: keyvalue.c.i
@@ -1967,7 +1967,7 @@ keyvalue.i: keyvalue.c.i
 
 # target to preprocess a source file
 keyvalue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.i
 .PHONY : keyvalue.c.i
 
 keyvalue.s: keyvalue.c.s
@@ -1976,7 +1976,7 @@ keyvalue.s: keyvalue.c.s
 
 # target to generate assembly for a file
 keyvalue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/keyvalue.c.s
 .PHONY : keyvalue.c.s
 
 lemon.o: lemon.c.o
@@ -1985,7 +1985,7 @@ lemon.o: lemon.c.o
 
 # target to build an object file
 lemon.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.o
 .PHONY : lemon.c.o
 
 lemon.i: lemon.c.i
@@ -1994,7 +1994,7 @@ lemon.i: lemon.c.i
 
 # target to preprocess a source file
 lemon.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.i
 .PHONY : lemon.c.i
 
 lemon.s: lemon.c.s
@@ -2003,7 +2003,7 @@ lemon.s: lemon.c.s
 
 # target to generate assembly for a file
 lemon.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lemon.dir/build.make build/CMakeFiles/lemon.dir/lemon.c.s
 .PHONY : lemon.c.s
 
 lighttpd-angel.o: lighttpd-angel.c.o
@@ -2012,7 +2012,7 @@ lighttpd-angel.o: lighttpd-angel.c.o
 
 # target to build an object file
 lighttpd-angel.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.o
 .PHONY : lighttpd-angel.c.o
 
 lighttpd-angel.i: lighttpd-angel.c.i
@@ -2021,7 +2021,7 @@ lighttpd-angel.i: lighttpd-angel.c.i
 
 # target to preprocess a source file
 lighttpd-angel.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.i
 .PHONY : lighttpd-angel.c.i
 
 lighttpd-angel.s: lighttpd-angel.c.s
@@ -2030,7 +2030,7 @@ lighttpd-angel.s: lighttpd-angel.c.s
 
 # target to generate assembly for a file
 lighttpd-angel.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd-angel.dir/build.make build/CMakeFiles/lighttpd-angel.dir/lighttpd-angel.c.s
 .PHONY : lighttpd-angel.c.s
 
 log.o: log.c.o
@@ -2039,13 +2039,13 @@ log.o: log.c.o
 
 # target to build an object file
 log.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.o
 .PHONY : log.c.o
 
 log.i: log.c.i
@@ -2054,13 +2054,13 @@ log.i: log.c.i
 
 # target to preprocess a source file
 log.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.i
 .PHONY : log.c.i
 
 log.s: log.c.s
@@ -2069,13 +2069,13 @@ log.s: log.c.s
 
 # target to generate assembly for a file
 log.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/log.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/log.c.s
 .PHONY : log.c.s
 
 md5.o: md5.c.o
@@ -2084,7 +2084,7 @@ md5.o: md5.c.o
 
 # target to build an object file
 md5.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.o
 .PHONY : md5.c.o
 
 md5.i: md5.c.i
@@ -2093,7 +2093,7 @@ md5.i: md5.c.i
 
 # target to preprocess a source file
 md5.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.i
 .PHONY : md5.c.i
 
 md5.s: md5.c.s
@@ -2102,7 +2102,7 @@ md5.s: md5.c.s
 
 # target to generate assembly for a file
 md5.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/md5.c.s
 .PHONY : md5.c.s
 
 mod_access.o: mod_access.c.o
@@ -2111,7 +2111,7 @@ mod_access.o: mod_access.c.o
 
 # target to build an object file
 mod_access.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.o
 .PHONY : mod_access.c.o
 
 mod_access.i: mod_access.c.i
@@ -2120,7 +2120,7 @@ mod_access.i: mod_access.c.i
 
 # target to preprocess a source file
 mod_access.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.i
 .PHONY : mod_access.c.i
 
 mod_access.s: mod_access.c.s
@@ -2129,7 +2129,7 @@ mod_access.s: mod_access.c.s
 
 # target to generate assembly for a file
 mod_access.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_access.dir/build.make build/CMakeFiles/mod_access.dir/mod_access.c.s
 .PHONY : mod_access.c.s
 
 mod_accesslog.o: mod_accesslog.c.o
@@ -2138,7 +2138,7 @@ mod_accesslog.o: mod_accesslog.c.o
 
 # target to build an object file
 mod_accesslog.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.o
 .PHONY : mod_accesslog.c.o
 
 mod_accesslog.i: mod_accesslog.c.i
@@ -2147,7 +2147,7 @@ mod_accesslog.i: mod_accesslog.c.i
 
 # target to preprocess a source file
 mod_accesslog.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.i
 .PHONY : mod_accesslog.c.i
 
 mod_accesslog.s: mod_accesslog.c.s
@@ -2156,7 +2156,7 @@ mod_accesslog.s: mod_accesslog.c.s
 
 # target to generate assembly for a file
 mod_accesslog.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_accesslog.dir/build.make build/CMakeFiles/mod_accesslog.dir/mod_accesslog.c.s
 .PHONY : mod_accesslog.c.s
 
 mod_alias.o: mod_alias.c.o
@@ -2165,7 +2165,7 @@ mod_alias.o: mod_alias.c.o
 
 # target to build an object file
 mod_alias.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.o
 .PHONY : mod_alias.c.o
 
 mod_alias.i: mod_alias.c.i
@@ -2174,7 +2174,7 @@ mod_alias.i: mod_alias.c.i
 
 # target to preprocess a source file
 mod_alias.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.i
 .PHONY : mod_alias.c.i
 
 mod_alias.s: mod_alias.c.s
@@ -2183,7 +2183,7 @@ mod_alias.s: mod_alias.c.s
 
 # target to generate assembly for a file
 mod_alias.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_alias.dir/build.make build/CMakeFiles/mod_alias.dir/mod_alias.c.s
 .PHONY : mod_alias.c.s
 
 mod_auth.o: mod_auth.c.o
@@ -2192,7 +2192,7 @@ mod_auth.o: mod_auth.c.o
 
 # target to build an object file
 mod_auth.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.o
 .PHONY : mod_auth.c.o
 
 mod_auth.i: mod_auth.c.i
@@ -2201,7 +2201,7 @@ mod_auth.i: mod_auth.c.i
 
 # target to preprocess a source file
 mod_auth.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.i
 .PHONY : mod_auth.c.i
 
 mod_auth.s: mod_auth.c.s
@@ -2210,7 +2210,7 @@ mod_auth.s: mod_auth.c.s
 
 # target to generate assembly for a file
 mod_auth.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_auth.dir/build.make build/CMakeFiles/mod_auth.dir/mod_auth.c.s
 .PHONY : mod_auth.c.s
 
 mod_authn_file.o: mod_authn_file.c.o
@@ -2219,7 +2219,7 @@ mod_authn_file.o: mod_authn_file.c.o
 
 # target to build an object file
 mod_authn_file.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.o
 .PHONY : mod_authn_file.c.o
 
 mod_authn_file.i: mod_authn_file.c.i
@@ -2228,7 +2228,7 @@ mod_authn_file.i: mod_authn_file.c.i
 
 # target to preprocess a source file
 mod_authn_file.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.i
 .PHONY : mod_authn_file.c.i
 
 mod_authn_file.s: mod_authn_file.c.s
@@ -2237,7 +2237,7 @@ mod_authn_file.s: mod_authn_file.c.s
 
 # target to generate assembly for a file
 mod_authn_file.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_authn_file.dir/build.make build/CMakeFiles/mod_authn_file.dir/mod_authn_file.c.s
 .PHONY : mod_authn_file.c.s
 
 mod_cgi.o: mod_cgi.c.o
@@ -2246,7 +2246,7 @@ mod_cgi.o: mod_cgi.c.o
 
 # target to build an object file
 mod_cgi.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.o
 .PHONY : mod_cgi.c.o
 
 mod_cgi.i: mod_cgi.c.i
@@ -2255,7 +2255,7 @@ mod_cgi.i: mod_cgi.c.i
 
 # target to preprocess a source file
 mod_cgi.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.i
 .PHONY : mod_cgi.c.i
 
 mod_cgi.s: mod_cgi.c.s
@@ -2264,7 +2264,7 @@ mod_cgi.s: mod_cgi.c.s
 
 # target to generate assembly for a file
 mod_cgi.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_cgi.dir/build.make build/CMakeFiles/mod_cgi.dir/mod_cgi.c.s
 .PHONY : mod_cgi.c.s
 
 mod_compress.o: mod_compress.c.o
@@ -2273,7 +2273,7 @@ mod_compress.o: mod_compress.c.o
 
 # target to build an object file
 mod_compress.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.o
 .PHONY : mod_compress.c.o
 
 mod_compress.i: mod_compress.c.i
@@ -2282,7 +2282,7 @@ mod_compress.i: mod_compress.c.i
 
 # target to preprocess a source file
 mod_compress.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.i
 .PHONY : mod_compress.c.i
 
 mod_compress.s: mod_compress.c.s
@@ -2291,7 +2291,7 @@ mod_compress.s: mod_compress.c.s
 
 # target to generate assembly for a file
 mod_compress.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_compress.dir/build.make build/CMakeFiles/mod_compress.dir/mod_compress.c.s
 .PHONY : mod_compress.c.s
 
 mod_deflate.o: mod_deflate.c.o
@@ -2300,7 +2300,7 @@ mod_deflate.o: mod_deflate.c.o
 
 # target to build an object file
 mod_deflate.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.o
 .PHONY : mod_deflate.c.o
 
 mod_deflate.i: mod_deflate.c.i
@@ -2309,7 +2309,7 @@ mod_deflate.i: mod_deflate.c.i
 
 # target to preprocess a source file
 mod_deflate.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.i
 .PHONY : mod_deflate.c.i
 
 mod_deflate.s: mod_deflate.c.s
@@ -2318,7 +2318,7 @@ mod_deflate.s: mod_deflate.c.s
 
 # target to generate assembly for a file
 mod_deflate.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_deflate.dir/build.make build/CMakeFiles/mod_deflate.dir/mod_deflate.c.s
 .PHONY : mod_deflate.c.s
 
 mod_dirlisting.o: mod_dirlisting.c.o
@@ -2327,7 +2327,7 @@ mod_dirlisting.o: mod_dirlisting.c.o
 
 # target to build an object file
 mod_dirlisting.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.o
 .PHONY : mod_dirlisting.c.o
 
 mod_dirlisting.i: mod_dirlisting.c.i
@@ -2336,7 +2336,7 @@ mod_dirlisting.i: mod_dirlisting.c.i
 
 # target to preprocess a source file
 mod_dirlisting.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.i
 .PHONY : mod_dirlisting.c.i
 
 mod_dirlisting.s: mod_dirlisting.c.s
@@ -2345,7 +2345,7 @@ mod_dirlisting.s: mod_dirlisting.c.s
 
 # target to generate assembly for a file
 mod_dirlisting.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_dirlisting.dir/build.make build/CMakeFiles/mod_dirlisting.dir/mod_dirlisting.c.s
 .PHONY : mod_dirlisting.c.s
 
 mod_evasive.o: mod_evasive.c.o
@@ -2354,7 +2354,7 @@ mod_evasive.o: mod_evasive.c.o
 
 # target to build an object file
 mod_evasive.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.o
 .PHONY : mod_evasive.c.o
 
 mod_evasive.i: mod_evasive.c.i
@@ -2363,7 +2363,7 @@ mod_evasive.i: mod_evasive.c.i
 
 # target to preprocess a source file
 mod_evasive.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.i
 .PHONY : mod_evasive.c.i
 
 mod_evasive.s: mod_evasive.c.s
@@ -2372,7 +2372,7 @@ mod_evasive.s: mod_evasive.c.s
 
 # target to generate assembly for a file
 mod_evasive.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evasive.dir/build.make build/CMakeFiles/mod_evasive.dir/mod_evasive.c.s
 .PHONY : mod_evasive.c.s
 
 mod_evhost.o: mod_evhost.c.o
@@ -2381,7 +2381,7 @@ mod_evhost.o: mod_evhost.c.o
 
 # target to build an object file
 mod_evhost.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.o
 .PHONY : mod_evhost.c.o
 
 mod_evhost.i: mod_evhost.c.i
@@ -2390,7 +2390,7 @@ mod_evhost.i: mod_evhost.c.i
 
 # target to preprocess a source file
 mod_evhost.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.i
 .PHONY : mod_evhost.c.i
 
 mod_evhost.s: mod_evhost.c.s
@@ -2399,7 +2399,7 @@ mod_evhost.s: mod_evhost.c.s
 
 # target to generate assembly for a file
 mod_evhost.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_evhost.dir/build.make build/CMakeFiles/mod_evhost.dir/mod_evhost.c.s
 .PHONY : mod_evhost.c.s
 
 mod_expire.o: mod_expire.c.o
@@ -2408,7 +2408,7 @@ mod_expire.o: mod_expire.c.o
 
 # target to build an object file
 mod_expire.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.o
 .PHONY : mod_expire.c.o
 
 mod_expire.i: mod_expire.c.i
@@ -2417,7 +2417,7 @@ mod_expire.i: mod_expire.c.i
 
 # target to preprocess a source file
 mod_expire.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.i
 .PHONY : mod_expire.c.i
 
 mod_expire.s: mod_expire.c.s
@@ -2426,7 +2426,7 @@ mod_expire.s: mod_expire.c.s
 
 # target to generate assembly for a file
 mod_expire.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_expire.dir/build.make build/CMakeFiles/mod_expire.dir/mod_expire.c.s
 .PHONY : mod_expire.c.s
 
 mod_extforward.o: mod_extforward.c.o
@@ -2435,7 +2435,7 @@ mod_extforward.o: mod_extforward.c.o
 
 # target to build an object file
 mod_extforward.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.o
 .PHONY : mod_extforward.c.o
 
 mod_extforward.i: mod_extforward.c.i
@@ -2444,7 +2444,7 @@ mod_extforward.i: mod_extforward.c.i
 
 # target to preprocess a source file
 mod_extforward.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.i
 .PHONY : mod_extforward.c.i
 
 mod_extforward.s: mod_extforward.c.s
@@ -2453,7 +2453,7 @@ mod_extforward.s: mod_extforward.c.s
 
 # target to generate assembly for a file
 mod_extforward.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_extforward.dir/build.make build/CMakeFiles/mod_extforward.dir/mod_extforward.c.s
 .PHONY : mod_extforward.c.s
 
 mod_fastcgi.o: mod_fastcgi.c.o
@@ -2462,7 +2462,7 @@ mod_fastcgi.o: mod_fastcgi.c.o
 
 # target to build an object file
 mod_fastcgi.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.o
 .PHONY : mod_fastcgi.c.o
 
 mod_fastcgi.i: mod_fastcgi.c.i
@@ -2471,7 +2471,7 @@ mod_fastcgi.i: mod_fastcgi.c.i
 
 # target to preprocess a source file
 mod_fastcgi.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.i
 .PHONY : mod_fastcgi.c.i
 
 mod_fastcgi.s: mod_fastcgi.c.s
@@ -2480,7 +2480,7 @@ mod_fastcgi.s: mod_fastcgi.c.s
 
 # target to generate assembly for a file
 mod_fastcgi.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_fastcgi.dir/build.make build/CMakeFiles/mod_fastcgi.dir/mod_fastcgi.c.s
 .PHONY : mod_fastcgi.c.s
 
 mod_flv_streaming.o: mod_flv_streaming.c.o
@@ -2489,7 +2489,7 @@ mod_flv_streaming.o: mod_flv_streaming.c.o
 
 # target to build an object file
 mod_flv_streaming.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.o
 .PHONY : mod_flv_streaming.c.o
 
 mod_flv_streaming.i: mod_flv_streaming.c.i
@@ -2498,7 +2498,7 @@ mod_flv_streaming.i: mod_flv_streaming.c.i
 
 # target to preprocess a source file
 mod_flv_streaming.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.i
 .PHONY : mod_flv_streaming.c.i
 
 mod_flv_streaming.s: mod_flv_streaming.c.s
@@ -2507,7 +2507,7 @@ mod_flv_streaming.s: mod_flv_streaming.c.s
 
 # target to generate assembly for a file
 mod_flv_streaming.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_flv_streaming.dir/build.make build/CMakeFiles/mod_flv_streaming.dir/mod_flv_streaming.c.s
 .PHONY : mod_flv_streaming.c.s
 
 mod_indexfile.o: mod_indexfile.c.o
@@ -2516,7 +2516,7 @@ mod_indexfile.o: mod_indexfile.c.o
 
 # target to build an object file
 mod_indexfile.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.o
 .PHONY : mod_indexfile.c.o
 
 mod_indexfile.i: mod_indexfile.c.i
@@ -2525,7 +2525,7 @@ mod_indexfile.i: mod_indexfile.c.i
 
 # target to preprocess a source file
 mod_indexfile.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.i
 .PHONY : mod_indexfile.c.i
 
 mod_indexfile.s: mod_indexfile.c.s
@@ -2534,7 +2534,7 @@ mod_indexfile.s: mod_indexfile.c.s
 
 # target to generate assembly for a file
 mod_indexfile.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_indexfile.dir/build.make build/CMakeFiles/mod_indexfile.dir/mod_indexfile.c.s
 .PHONY : mod_indexfile.c.s
 
 mod_proxy.o: mod_proxy.c.o
@@ -2543,7 +2543,7 @@ mod_proxy.o: mod_proxy.c.o
 
 # target to build an object file
 mod_proxy.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.o
 .PHONY : mod_proxy.c.o
 
 mod_proxy.i: mod_proxy.c.i
@@ -2552,7 +2552,7 @@ mod_proxy.i: mod_proxy.c.i
 
 # target to preprocess a source file
 mod_proxy.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.i
 .PHONY : mod_proxy.c.i
 
 mod_proxy.s: mod_proxy.c.s
@@ -2561,7 +2561,7 @@ mod_proxy.s: mod_proxy.c.s
 
 # target to generate assembly for a file
 mod_proxy.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_proxy.dir/build.make build/CMakeFiles/mod_proxy.dir/mod_proxy.c.s
 .PHONY : mod_proxy.c.s
 
 mod_redirect.o: mod_redirect.c.o
@@ -2570,7 +2570,7 @@ mod_redirect.o: mod_redirect.c.o
 
 # target to build an object file
 mod_redirect.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.o
 .PHONY : mod_redirect.c.o
 
 mod_redirect.i: mod_redirect.c.i
@@ -2579,7 +2579,7 @@ mod_redirect.i: mod_redirect.c.i
 
 # target to preprocess a source file
 mod_redirect.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.i
 .PHONY : mod_redirect.c.i
 
 mod_redirect.s: mod_redirect.c.s
@@ -2588,7 +2588,7 @@ mod_redirect.s: mod_redirect.c.s
 
 # target to generate assembly for a file
 mod_redirect.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_redirect.dir/build.make build/CMakeFiles/mod_redirect.dir/mod_redirect.c.s
 .PHONY : mod_redirect.c.s
 
 mod_rewrite.o: mod_rewrite.c.o
@@ -2597,7 +2597,7 @@ mod_rewrite.o: mod_rewrite.c.o
 
 # target to build an object file
 mod_rewrite.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.o
 .PHONY : mod_rewrite.c.o
 
 mod_rewrite.i: mod_rewrite.c.i
@@ -2606,7 +2606,7 @@ mod_rewrite.i: mod_rewrite.c.i
 
 # target to preprocess a source file
 mod_rewrite.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.i
 .PHONY : mod_rewrite.c.i
 
 mod_rewrite.s: mod_rewrite.c.s
@@ -2615,7 +2615,7 @@ mod_rewrite.s: mod_rewrite.c.s
 
 # target to generate assembly for a file
 mod_rewrite.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rewrite.dir/build.make build/CMakeFiles/mod_rewrite.dir/mod_rewrite.c.s
 .PHONY : mod_rewrite.c.s
 
 mod_rrdtool.o: mod_rrdtool.c.o
@@ -2624,7 +2624,7 @@ mod_rrdtool.o: mod_rrdtool.c.o
 
 # target to build an object file
 mod_rrdtool.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.o
 .PHONY : mod_rrdtool.c.o
 
 mod_rrdtool.i: mod_rrdtool.c.i
@@ -2633,7 +2633,7 @@ mod_rrdtool.i: mod_rrdtool.c.i
 
 # target to preprocess a source file
 mod_rrdtool.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.i
 .PHONY : mod_rrdtool.c.i
 
 mod_rrdtool.s: mod_rrdtool.c.s
@@ -2642,7 +2642,7 @@ mod_rrdtool.s: mod_rrdtool.c.s
 
 # target to generate assembly for a file
 mod_rrdtool.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_rrdtool.dir/build.make build/CMakeFiles/mod_rrdtool.dir/mod_rrdtool.c.s
 .PHONY : mod_rrdtool.c.s
 
 mod_scgi.o: mod_scgi.c.o
@@ -2651,7 +2651,7 @@ mod_scgi.o: mod_scgi.c.o
 
 # target to build an object file
 mod_scgi.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.o
 .PHONY : mod_scgi.c.o
 
 mod_scgi.i: mod_scgi.c.i
@@ -2660,7 +2660,7 @@ mod_scgi.i: mod_scgi.c.i
 
 # target to preprocess a source file
 mod_scgi.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.i
 .PHONY : mod_scgi.c.i
 
 mod_scgi.s: mod_scgi.c.s
@@ -2669,7 +2669,7 @@ mod_scgi.s: mod_scgi.c.s
 
 # target to generate assembly for a file
 mod_scgi.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_scgi.dir/build.make build/CMakeFiles/mod_scgi.dir/mod_scgi.c.s
 .PHONY : mod_scgi.c.s
 
 mod_secdownload.o: mod_secdownload.c.o
@@ -2678,7 +2678,7 @@ mod_secdownload.o: mod_secdownload.c.o
 
 # target to build an object file
 mod_secdownload.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.o
 .PHONY : mod_secdownload.c.o
 
 mod_secdownload.i: mod_secdownload.c.i
@@ -2687,7 +2687,7 @@ mod_secdownload.i: mod_secdownload.c.i
 
 # target to preprocess a source file
 mod_secdownload.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.i
 .PHONY : mod_secdownload.c.i
 
 mod_secdownload.s: mod_secdownload.c.s
@@ -2696,7 +2696,7 @@ mod_secdownload.s: mod_secdownload.c.s
 
 # target to generate assembly for a file
 mod_secdownload.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_secdownload.dir/build.make build/CMakeFiles/mod_secdownload.dir/mod_secdownload.c.s
 .PHONY : mod_secdownload.c.s
 
 mod_setenv.o: mod_setenv.c.o
@@ -2705,7 +2705,7 @@ mod_setenv.o: mod_setenv.c.o
 
 # target to build an object file
 mod_setenv.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.o
 .PHONY : mod_setenv.c.o
 
 mod_setenv.i: mod_setenv.c.i
@@ -2714,7 +2714,7 @@ mod_setenv.i: mod_setenv.c.i
 
 # target to preprocess a source file
 mod_setenv.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.i
 .PHONY : mod_setenv.c.i
 
 mod_setenv.s: mod_setenv.c.s
@@ -2723,7 +2723,7 @@ mod_setenv.s: mod_setenv.c.s
 
 # target to generate assembly for a file
 mod_setenv.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_setenv.dir/build.make build/CMakeFiles/mod_setenv.dir/mod_setenv.c.s
 .PHONY : mod_setenv.c.s
 
 mod_simple_vhost.o: mod_simple_vhost.c.o
@@ -2732,7 +2732,7 @@ mod_simple_vhost.o: mod_simple_vhost.c.o
 
 # target to build an object file
 mod_simple_vhost.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.o
 .PHONY : mod_simple_vhost.c.o
 
 mod_simple_vhost.i: mod_simple_vhost.c.i
@@ -2741,7 +2741,7 @@ mod_simple_vhost.i: mod_simple_vhost.c.i
 
 # target to preprocess a source file
 mod_simple_vhost.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.i
 .PHONY : mod_simple_vhost.c.i
 
 mod_simple_vhost.s: mod_simple_vhost.c.s
@@ -2750,7 +2750,7 @@ mod_simple_vhost.s: mod_simple_vhost.c.s
 
 # target to generate assembly for a file
 mod_simple_vhost.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_simple_vhost.dir/build.make build/CMakeFiles/mod_simple_vhost.dir/mod_simple_vhost.c.s
 .PHONY : mod_simple_vhost.c.s
 
 mod_sockproxy.o: mod_sockproxy.c.o
@@ -2759,7 +2759,7 @@ mod_sockproxy.o: mod_sockproxy.c.o
 
 # target to build an object file
 mod_sockproxy.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.o
 .PHONY : mod_sockproxy.c.o
 
 mod_sockproxy.i: mod_sockproxy.c.i
@@ -2768,7 +2768,7 @@ mod_sockproxy.i: mod_sockproxy.c.i
 
 # target to preprocess a source file
 mod_sockproxy.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.i
 .PHONY : mod_sockproxy.c.i
 
 mod_sockproxy.s: mod_sockproxy.c.s
@@ -2777,7 +2777,7 @@ mod_sockproxy.s: mod_sockproxy.c.s
 
 # target to generate assembly for a file
 mod_sockproxy.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_sockproxy.dir/build.make build/CMakeFiles/mod_sockproxy.dir/mod_sockproxy.c.s
 .PHONY : mod_sockproxy.c.s
 
 mod_ssi.o: mod_ssi.c.o
@@ -2786,7 +2786,7 @@ mod_ssi.o: mod_ssi.c.o
 
 # target to build an object file
 mod_ssi.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.o
 .PHONY : mod_ssi.c.o
 
 mod_ssi.i: mod_ssi.c.i
@@ -2795,7 +2795,7 @@ mod_ssi.i: mod_ssi.c.i
 
 # target to preprocess a source file
 mod_ssi.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.i
 .PHONY : mod_ssi.c.i
 
 mod_ssi.s: mod_ssi.c.s
@@ -2804,7 +2804,7 @@ mod_ssi.s: mod_ssi.c.s
 
 # target to generate assembly for a file
 mod_ssi.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi.c.s
 .PHONY : mod_ssi.c.s
 
 mod_ssi_expr.o: mod_ssi_expr.c.o
@@ -2813,7 +2813,7 @@ mod_ssi_expr.o: mod_ssi_expr.c.o
 
 # target to build an object file
 mod_ssi_expr.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.o
 .PHONY : mod_ssi_expr.c.o
 
 mod_ssi_expr.i: mod_ssi_expr.c.i
@@ -2822,7 +2822,7 @@ mod_ssi_expr.i: mod_ssi_expr.c.i
 
 # target to preprocess a source file
 mod_ssi_expr.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.i
 .PHONY : mod_ssi_expr.c.i
 
 mod_ssi_expr.s: mod_ssi_expr.c.s
@@ -2831,7 +2831,7 @@ mod_ssi_expr.s: mod_ssi_expr.c.s
 
 # target to generate assembly for a file
 mod_ssi_expr.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_expr.c.s
 .PHONY : mod_ssi_expr.c.s
 
 mod_ssi_exprparser.o: mod_ssi_exprparser.c.o
@@ -2840,7 +2840,7 @@ mod_ssi_exprparser.o: mod_ssi_exprparser.c.o
 
 # target to build an object file
 mod_ssi_exprparser.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.o
 .PHONY : mod_ssi_exprparser.c.o
 
 mod_ssi_exprparser.i: mod_ssi_exprparser.c.i
@@ -2849,7 +2849,7 @@ mod_ssi_exprparser.i: mod_ssi_exprparser.c.i
 
 # target to preprocess a source file
 mod_ssi_exprparser.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.i
 .PHONY : mod_ssi_exprparser.c.i
 
 mod_ssi_exprparser.s: mod_ssi_exprparser.c.s
@@ -2858,7 +2858,7 @@ mod_ssi_exprparser.s: mod_ssi_exprparser.c.s
 
 # target to generate assembly for a file
 mod_ssi_exprparser.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_ssi.dir/build.make build/CMakeFiles/mod_ssi.dir/mod_ssi_exprparser.c.s
 .PHONY : mod_ssi_exprparser.c.s
 
 mod_staticfile.o: mod_staticfile.c.o
@@ -2867,7 +2867,7 @@ mod_staticfile.o: mod_staticfile.c.o
 
 # target to build an object file
 mod_staticfile.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.o
 .PHONY : mod_staticfile.c.o
 
 mod_staticfile.i: mod_staticfile.c.i
@@ -2876,7 +2876,7 @@ mod_staticfile.i: mod_staticfile.c.i
 
 # target to preprocess a source file
 mod_staticfile.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.i
 .PHONY : mod_staticfile.c.i
 
 mod_staticfile.s: mod_staticfile.c.s
@@ -2885,7 +2885,7 @@ mod_staticfile.s: mod_staticfile.c.s
 
 # target to generate assembly for a file
 mod_staticfile.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_staticfile.dir/build.make build/CMakeFiles/mod_staticfile.dir/mod_staticfile.c.s
 .PHONY : mod_staticfile.c.s
 
 mod_status.o: mod_status.c.o
@@ -2894,7 +2894,7 @@ mod_status.o: mod_status.c.o
 
 # target to build an object file
 mod_status.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.o
 .PHONY : mod_status.c.o
 
 mod_status.i: mod_status.c.i
@@ -2903,7 +2903,7 @@ mod_status.i: mod_status.c.i
 
 # target to preprocess a source file
 mod_status.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.i
 .PHONY : mod_status.c.i
 
 mod_status.s: mod_status.c.s
@@ -2912,7 +2912,7 @@ mod_status.s: mod_status.c.s
 
 # target to generate assembly for a file
 mod_status.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_status.dir/build.make build/CMakeFiles/mod_status.dir/mod_status.c.s
 .PHONY : mod_status.c.s
 
 mod_uploadprogress.o: mod_uploadprogress.c.o
@@ -2921,7 +2921,7 @@ mod_uploadprogress.o: mod_uploadprogress.c.o
 
 # target to build an object file
 mod_uploadprogress.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.o
 .PHONY : mod_uploadprogress.c.o
 
 mod_uploadprogress.i: mod_uploadprogress.c.i
@@ -2930,7 +2930,7 @@ mod_uploadprogress.i: mod_uploadprogress.c.i
 
 # target to preprocess a source file
 mod_uploadprogress.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.i
 .PHONY : mod_uploadprogress.c.i
 
 mod_uploadprogress.s: mod_uploadprogress.c.s
@@ -2939,7 +2939,7 @@ mod_uploadprogress.s: mod_uploadprogress.c.s
 
 # target to generate assembly for a file
 mod_uploadprogress.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_uploadprogress.dir/build.make build/CMakeFiles/mod_uploadprogress.dir/mod_uploadprogress.c.s
 .PHONY : mod_uploadprogress.c.s
 
 mod_userdir.o: mod_userdir.c.o
@@ -2948,7 +2948,7 @@ mod_userdir.o: mod_userdir.c.o
 
 # target to build an object file
 mod_userdir.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.o
 .PHONY : mod_userdir.c.o
 
 mod_userdir.i: mod_userdir.c.i
@@ -2957,7 +2957,7 @@ mod_userdir.i: mod_userdir.c.i
 
 # target to preprocess a source file
 mod_userdir.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.i
 .PHONY : mod_userdir.c.i
 
 mod_userdir.s: mod_userdir.c.s
@@ -2966,7 +2966,7 @@ mod_userdir.s: mod_userdir.c.s
 
 # target to generate assembly for a file
 mod_userdir.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_userdir.dir/build.make build/CMakeFiles/mod_userdir.dir/mod_userdir.c.s
 .PHONY : mod_userdir.c.s
 
 mod_usertrack.o: mod_usertrack.c.o
@@ -2975,7 +2975,7 @@ mod_usertrack.o: mod_usertrack.c.o
 
 # target to build an object file
 mod_usertrack.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.o
 .PHONY : mod_usertrack.c.o
 
 mod_usertrack.i: mod_usertrack.c.i
@@ -2984,7 +2984,7 @@ mod_usertrack.i: mod_usertrack.c.i
 
 # target to preprocess a source file
 mod_usertrack.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.i
 .PHONY : mod_usertrack.c.i
 
 mod_usertrack.s: mod_usertrack.c.s
@@ -2993,7 +2993,7 @@ mod_usertrack.s: mod_usertrack.c.s
 
 # target to generate assembly for a file
 mod_usertrack.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_usertrack.dir/build.make build/CMakeFiles/mod_usertrack.dir/mod_usertrack.c.s
 .PHONY : mod_usertrack.c.s
 
 mod_vhostdb.o: mod_vhostdb.c.o
@@ -3002,7 +3002,7 @@ mod_vhostdb.o: mod_vhostdb.c.o
 
 # target to build an object file
 mod_vhostdb.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.o
 .PHONY : mod_vhostdb.c.o
 
 mod_vhostdb.i: mod_vhostdb.c.i
@@ -3011,7 +3011,7 @@ mod_vhostdb.i: mod_vhostdb.c.i
 
 # target to preprocess a source file
 mod_vhostdb.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.i
 .PHONY : mod_vhostdb.c.i
 
 mod_vhostdb.s: mod_vhostdb.c.s
@@ -3020,7 +3020,7 @@ mod_vhostdb.s: mod_vhostdb.c.s
 
 # target to generate assembly for a file
 mod_vhostdb.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_vhostdb.dir/build.make build/CMakeFiles/mod_vhostdb.dir/mod_vhostdb.c.s
 .PHONY : mod_vhostdb.c.s
 
 mod_webdav.o: mod_webdav.c.o
@@ -3029,7 +3029,7 @@ mod_webdav.o: mod_webdav.c.o
 
 # target to build an object file
 mod_webdav.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.o
 .PHONY : mod_webdav.c.o
 
 mod_webdav.i: mod_webdav.c.i
@@ -3038,7 +3038,7 @@ mod_webdav.i: mod_webdav.c.i
 
 # target to preprocess a source file
 mod_webdav.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.i
 .PHONY : mod_webdav.c.i
 
 mod_webdav.s: mod_webdav.c.s
@@ -3047,7 +3047,7 @@ mod_webdav.s: mod_webdav.c.s
 
 # target to generate assembly for a file
 mod_webdav.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_webdav.dir/build.make build/CMakeFiles/mod_webdav.dir/mod_webdav.c.s
 .PHONY : mod_webdav.c.s
 
 mod_wstunnel.o: mod_wstunnel.c.o
@@ -3056,7 +3056,7 @@ mod_wstunnel.o: mod_wstunnel.c.o
 
 # target to build an object file
 mod_wstunnel.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.o
 .PHONY : mod_wstunnel.c.o
 
 mod_wstunnel.i: mod_wstunnel.c.i
@@ -3065,7 +3065,7 @@ mod_wstunnel.i: mod_wstunnel.c.i
 
 # target to preprocess a source file
 mod_wstunnel.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.i
 .PHONY : mod_wstunnel.c.i
 
 mod_wstunnel.s: mod_wstunnel.c.s
@@ -3074,7 +3074,7 @@ mod_wstunnel.s: mod_wstunnel.c.s
 
 # target to generate assembly for a file
 mod_wstunnel.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/mod_wstunnel.dir/build.make build/CMakeFiles/mod_wstunnel.dir/mod_wstunnel.c.s
 .PHONY : mod_wstunnel.c.s
 
 network.o: network.c.o
@@ -3083,7 +3083,7 @@ network.o: network.c.o
 
 # target to build an object file
 network.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.o
 .PHONY : network.c.o
 
 network.i: network.c.i
@@ -3092,7 +3092,7 @@ network.i: network.c.i
 
 # target to preprocess a source file
 network.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.i
 .PHONY : network.c.i
 
 network.s: network.c.s
@@ -3101,7 +3101,7 @@ network.s: network.c.s
 
 # target to generate assembly for a file
 network.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network.c.s
 .PHONY : network.c.s
 
 network_write.o: network_write.c.o
@@ -3110,7 +3110,7 @@ network_write.o: network_write.c.o
 
 # target to build an object file
 network_write.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.o
 .PHONY : network_write.c.o
 
 network_write.i: network_write.c.i
@@ -3119,7 +3119,7 @@ network_write.i: network_write.c.i
 
 # target to preprocess a source file
 network_write.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.i
 .PHONY : network_write.c.i
 
 network_write.s: network_write.c.s
@@ -3128,7 +3128,7 @@ network_write.s: network_write.c.s
 
 # target to generate assembly for a file
 network_write.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/network_write.c.s
 .PHONY : network_write.c.s
 
 plugin.o: plugin.c.o
@@ -3137,7 +3137,7 @@ plugin.o: plugin.c.o
 
 # target to build an object file
 plugin.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.o
 .PHONY : plugin.c.o
 
 plugin.i: plugin.c.i
@@ -3146,7 +3146,7 @@ plugin.i: plugin.c.i
 
 # target to preprocess a source file
 plugin.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.i
 .PHONY : plugin.c.i
 
 plugin.s: plugin.c.s
@@ -3155,7 +3155,7 @@ plugin.s: plugin.c.s
 
 # target to generate assembly for a file
 plugin.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/plugin.c.s
 .PHONY : plugin.c.s
 
 rand.o: rand.c.o
@@ -3164,7 +3164,7 @@ rand.o: rand.c.o
 
 # target to build an object file
 rand.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.o
 .PHONY : rand.c.o
 
 rand.i: rand.c.i
@@ -3173,7 +3173,7 @@ rand.i: rand.c.i
 
 # target to preprocess a source file
 rand.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.i
 .PHONY : rand.c.i
 
 rand.s: rand.c.s
@@ -3182,7 +3182,7 @@ rand.s: rand.c.s
 
 # target to generate assembly for a file
 rand.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/rand.c.s
 .PHONY : rand.c.s
 
 request.o: request.c.o
@@ -3191,8 +3191,8 @@ request.o: request.c.o
 
 # target to build an object file
 request.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.o
 .PHONY : request.c.o
 
 request.i: request.c.i
@@ -3201,8 +3201,8 @@ request.i: request.c.i
 
 # target to preprocess a source file
 request.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.i
 .PHONY : request.c.i
 
 request.s: request.c.s
@@ -3211,8 +3211,8 @@ request.s: request.c.s
 
 # target to generate assembly for a file
 request.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/request.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/request.c.s
 .PHONY : request.c.s
 
 response.o: response.c.o
@@ -3221,7 +3221,7 @@ response.o: response.c.o
 
 # target to build an object file
 response.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.o
 .PHONY : response.c.o
 
 response.i: response.c.i
@@ -3230,7 +3230,7 @@ response.i: response.c.i
 
 # target to preprocess a source file
 response.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.i
 .PHONY : response.c.i
 
 response.s: response.c.s
@@ -3239,7 +3239,7 @@ response.s: response.c.s
 
 # target to generate assembly for a file
 response.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/response.c.s
 .PHONY : response.c.s
 
 safe_memclear.o: safe_memclear.c.o
@@ -3248,7 +3248,7 @@ safe_memclear.o: safe_memclear.c.o
 
 # target to build an object file
 safe_memclear.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.o
 .PHONY : safe_memclear.c.o
 
 safe_memclear.i: safe_memclear.c.i
@@ -3257,7 +3257,7 @@ safe_memclear.i: safe_memclear.c.i
 
 # target to preprocess a source file
 safe_memclear.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.i
 .PHONY : safe_memclear.c.i
 
 safe_memclear.s: safe_memclear.c.s
@@ -3266,7 +3266,7 @@ safe_memclear.s: safe_memclear.c.s
 
 # target to generate assembly for a file
 safe_memclear.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/safe_memclear.c.s
 .PHONY : safe_memclear.c.s
 
 server.o: server.c.o
@@ -3275,7 +3275,7 @@ server.o: server.c.o
 
 # target to build an object file
 server.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.o
 .PHONY : server.c.o
 
 server.i: server.c.i
@@ -3284,7 +3284,7 @@ server.i: server.c.i
 
 # target to preprocess a source file
 server.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.i
 .PHONY : server.c.i
 
 server.s: server.c.s
@@ -3293,7 +3293,7 @@ server.s: server.c.s
 
 # target to generate assembly for a file
 server.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/server.c.s
 .PHONY : server.c.s
 
 sock_addr.o: sock_addr.c.o
@@ -3302,12 +3302,12 @@ sock_addr.o: sock_addr.c.o
 
 # target to build an object file
 sock_addr.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.o
 .PHONY : sock_addr.c.o
 
 sock_addr.i: sock_addr.c.i
@@ -3316,12 +3316,12 @@ sock_addr.i: sock_addr.c.i
 
 # target to preprocess a source file
 sock_addr.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.i
 .PHONY : sock_addr.c.i
 
 sock_addr.s: sock_addr.c.s
@@ -3330,12 +3330,12 @@ sock_addr.s: sock_addr.c.s
 
 # target to generate assembly for a file
 sock_addr.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/sock_addr.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/sock_addr.c.s
 .PHONY : sock_addr.c.s
 
 splaytree.o: splaytree.c.o
@@ -3344,7 +3344,7 @@ splaytree.o: splaytree.c.o
 
 # target to build an object file
 splaytree.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.o
 .PHONY : splaytree.c.o
 
 splaytree.i: splaytree.c.i
@@ -3353,7 +3353,7 @@ splaytree.i: splaytree.c.i
 
 # target to preprocess a source file
 splaytree.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.i
 .PHONY : splaytree.c.i
 
 splaytree.s: splaytree.c.s
@@ -3362,7 +3362,7 @@ splaytree.s: splaytree.c.s
 
 # target to generate assembly for a file
 splaytree.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/splaytree.c.s
 .PHONY : splaytree.c.s
 
 stat_cache.o: stat_cache.c.o
@@ -3371,7 +3371,7 @@ stat_cache.o: stat_cache.c.o
 
 # target to build an object file
 stat_cache.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.o
 .PHONY : stat_cache.c.o
 
 stat_cache.i: stat_cache.c.i
@@ -3380,7 +3380,7 @@ stat_cache.i: stat_cache.c.i
 
 # target to preprocess a source file
 stat_cache.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.i
 .PHONY : stat_cache.c.i
 
 stat_cache.s: stat_cache.c.s
@@ -3389,7 +3389,7 @@ stat_cache.s: stat_cache.c.s
 
 # target to generate assembly for a file
 stat_cache.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stat_cache.c.s
 .PHONY : stat_cache.c.s
 
 stream.o: stream.c.o
@@ -3398,7 +3398,7 @@ stream.o: stream.c.o
 
 # target to build an object file
 stream.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.o
 .PHONY : stream.c.o
 
 stream.i: stream.c.i
@@ -3407,7 +3407,7 @@ stream.i: stream.c.i
 
 # target to preprocess a source file
 stream.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.i
 .PHONY : stream.c.i
 
 stream.s: stream.c.s
@@ -3416,7 +3416,7 @@ stream.s: stream.c.s
 
 # target to generate assembly for a file
 stream.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/stream.c.s
 .PHONY : stream.c.s
 
 t/test_array.o: t/test_array.c.o
@@ -3425,7 +3425,7 @@ t/test_array.o: t/test_array.c.o
 
 # target to build an object file
 t/test_array.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.o
 .PHONY : t/test_array.c.o
 
 t/test_array.i: t/test_array.c.i
@@ -3434,7 +3434,7 @@ t/test_array.i: t/test_array.c.i
 
 # target to preprocess a source file
 t/test_array.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.i
 .PHONY : t/test_array.c.i
 
 t/test_array.s: t/test_array.c.s
@@ -3443,7 +3443,7 @@ t/test_array.s: t/test_array.c.s
 
 # target to generate assembly for a file
 t/test_array.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_array.dir/build.make build/CMakeFiles/test_array.dir/t/test_array.c.s
 .PHONY : t/test_array.c.s
 
 t/test_base64.o: t/test_base64.c.o
@@ -3452,7 +3452,7 @@ t/test_base64.o: t/test_base64.c.o
 
 # target to build an object file
 t/test_base64.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.o
 .PHONY : t/test_base64.c.o
 
 t/test_base64.i: t/test_base64.c.i
@@ -3461,7 +3461,7 @@ t/test_base64.i: t/test_base64.c.i
 
 # target to preprocess a source file
 t/test_base64.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.i
 .PHONY : t/test_base64.c.i
 
 t/test_base64.s: t/test_base64.c.s
@@ -3470,7 +3470,7 @@ t/test_base64.s: t/test_base64.c.s
 
 # target to generate assembly for a file
 t/test_base64.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_base64.dir/build.make build/CMakeFiles/test_base64.dir/t/test_base64.c.s
 .PHONY : t/test_base64.c.s
 
 t/test_buffer.o: t/test_buffer.c.o
@@ -3479,7 +3479,7 @@ t/test_buffer.o: t/test_buffer.c.o
 
 # target to build an object file
 t/test_buffer.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.o
 .PHONY : t/test_buffer.c.o
 
 t/test_buffer.i: t/test_buffer.c.i
@@ -3488,7 +3488,7 @@ t/test_buffer.i: t/test_buffer.c.i
 
 # target to preprocess a source file
 t/test_buffer.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.i
 .PHONY : t/test_buffer.c.i
 
 t/test_buffer.s: t/test_buffer.c.s
@@ -3497,7 +3497,7 @@ t/test_buffer.s: t/test_buffer.c.s
 
 # target to generate assembly for a file
 t/test_buffer.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_buffer.dir/build.make build/CMakeFiles/test_buffer.dir/t/test_buffer.c.s
 .PHONY : t/test_buffer.c.s
 
 t/test_burl.o: t/test_burl.c.o
@@ -3506,7 +3506,7 @@ t/test_burl.o: t/test_burl.c.o
 
 # target to build an object file
 t/test_burl.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.o
 .PHONY : t/test_burl.c.o
 
 t/test_burl.i: t/test_burl.c.i
@@ -3515,7 +3515,7 @@ t/test_burl.i: t/test_burl.c.i
 
 # target to preprocess a source file
 t/test_burl.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.i
 .PHONY : t/test_burl.c.i
 
 t/test_burl.s: t/test_burl.c.s
@@ -3524,7 +3524,7 @@ t/test_burl.s: t/test_burl.c.s
 
 # target to generate assembly for a file
 t/test_burl.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_burl.dir/build.make build/CMakeFiles/test_burl.dir/t/test_burl.c.s
 .PHONY : t/test_burl.c.s
 
 t/test_configfile.o: t/test_configfile.c.o
@@ -3533,7 +3533,7 @@ t/test_configfile.o: t/test_configfile.c.o
 
 # target to build an object file
 t/test_configfile.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.o
 .PHONY : t/test_configfile.c.o
 
 t/test_configfile.i: t/test_configfile.c.i
@@ -3542,7 +3542,7 @@ t/test_configfile.i: t/test_configfile.c.i
 
 # target to preprocess a source file
 t/test_configfile.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.i
 .PHONY : t/test_configfile.c.i
 
 t/test_configfile.s: t/test_configfile.c.s
@@ -3551,7 +3551,7 @@ t/test_configfile.s: t/test_configfile.c.s
 
 # target to generate assembly for a file
 t/test_configfile.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/t/test_configfile.c.s
 .PHONY : t/test_configfile.c.s
 
 t/test_keyvalue.o: t/test_keyvalue.c.o
@@ -3560,7 +3560,7 @@ t/test_keyvalue.o: t/test_keyvalue.c.o
 
 # target to build an object file
 t/test_keyvalue.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.o
 .PHONY : t/test_keyvalue.c.o
 
 t/test_keyvalue.i: t/test_keyvalue.c.i
@@ -3569,7 +3569,7 @@ t/test_keyvalue.i: t/test_keyvalue.c.i
 
 # target to preprocess a source file
 t/test_keyvalue.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.i
 .PHONY : t/test_keyvalue.c.i
 
 t/test_keyvalue.s: t/test_keyvalue.c.s
@@ -3578,7 +3578,7 @@ t/test_keyvalue.s: t/test_keyvalue.c.s
 
 # target to generate assembly for a file
 t/test_keyvalue.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_keyvalue.dir/build.make build/CMakeFiles/test_keyvalue.dir/t/test_keyvalue.c.s
 .PHONY : t/test_keyvalue.c.s
 
 t/test_mod_access.o: t/test_mod_access.c.o
@@ -3587,7 +3587,7 @@ t/test_mod_access.o: t/test_mod_access.c.o
 
 # target to build an object file
 t/test_mod_access.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.o
 .PHONY : t/test_mod_access.c.o
 
 t/test_mod_access.i: t/test_mod_access.c.i
@@ -3596,7 +3596,7 @@ t/test_mod_access.i: t/test_mod_access.c.i
 
 # target to preprocess a source file
 t/test_mod_access.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.i
 .PHONY : t/test_mod_access.c.i
 
 t/test_mod_access.s: t/test_mod_access.c.s
@@ -3605,7 +3605,7 @@ t/test_mod_access.s: t/test_mod_access.c.s
 
 # target to generate assembly for a file
 t/test_mod_access.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/t/test_mod_access.c.s
 .PHONY : t/test_mod_access.c.s
 
 t/test_mod_evhost.o: t/test_mod_evhost.c.o
@@ -3614,7 +3614,7 @@ t/test_mod_evhost.o: t/test_mod_evhost.c.o
 
 # target to build an object file
 t/test_mod_evhost.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.o
 .PHONY : t/test_mod_evhost.c.o
 
 t/test_mod_evhost.i: t/test_mod_evhost.c.i
@@ -3623,7 +3623,7 @@ t/test_mod_evhost.i: t/test_mod_evhost.c.i
 
 # target to preprocess a source file
 t/test_mod_evhost.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.i
 .PHONY : t/test_mod_evhost.c.i
 
 t/test_mod_evhost.s: t/test_mod_evhost.c.s
@@ -3632,7 +3632,7 @@ t/test_mod_evhost.s: t/test_mod_evhost.c.s
 
 # target to generate assembly for a file
 t/test_mod_evhost.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/t/test_mod_evhost.c.s
 .PHONY : t/test_mod_evhost.c.s
 
 t/test_mod_simple_vhost.o: t/test_mod_simple_vhost.c.o
@@ -3641,7 +3641,7 @@ t/test_mod_simple_vhost.o: t/test_mod_simple_vhost.c.o
 
 # target to build an object file
 t/test_mod_simple_vhost.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.o
 .PHONY : t/test_mod_simple_vhost.c.o
 
 t/test_mod_simple_vhost.i: t/test_mod_simple_vhost.c.i
@@ -3650,7 +3650,7 @@ t/test_mod_simple_vhost.i: t/test_mod_simple_vhost.c.i
 
 # target to preprocess a source file
 t/test_mod_simple_vhost.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.i
 .PHONY : t/test_mod_simple_vhost.c.i
 
 t/test_mod_simple_vhost.s: t/test_mod_simple_vhost.c.s
@@ -3659,7 +3659,7 @@ t/test_mod_simple_vhost.s: t/test_mod_simple_vhost.c.s
 
 # target to generate assembly for a file
 t/test_mod_simple_vhost.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/t/test_mod_simple_vhost.c.s
 .PHONY : t/test_mod_simple_vhost.c.s
 
 t/test_request.o: t/test_request.c.o
@@ -3668,7 +3668,7 @@ t/test_request.o: t/test_request.c.o
 
 # target to build an object file
 t/test_request.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.o
 .PHONY : t/test_request.c.o
 
 t/test_request.i: t/test_request.c.i
@@ -3677,7 +3677,7 @@ t/test_request.i: t/test_request.c.i
 
 # target to preprocess a source file
 t/test_request.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.i
 .PHONY : t/test_request.c.i
 
 t/test_request.s: t/test_request.c.s
@@ -3686,7 +3686,7 @@ t/test_request.s: t/test_request.c.s
 
 # target to generate assembly for a file
 t/test_request.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_request.dir/build.make build/CMakeFiles/test_request.dir/t/test_request.c.s
 .PHONY : t/test_request.c.s
 
 vector.o: vector.c.o
@@ -3695,11 +3695,11 @@ vector.o: vector.c.o
 
 # target to build an object file
 vector.c.o:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.o
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.o
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.o
 .PHONY : vector.c.o
 
 vector.i: vector.c.i
@@ -3708,11 +3708,11 @@ vector.i: vector.c.i
 
 # target to preprocess a source file
 vector.c.i:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.i
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.i
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.i
 .PHONY : vector.c.i
 
 vector.s: vector.c.s
@@ -3721,11 +3721,11 @@ vector.s: vector.c.s
 
 # target to generate assembly for a file
 vector.c.s:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.s
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_evhost.dir/build.make build/CMakeFiles/test_mod_evhost.dir/vector.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_access.dir/build.make build/CMakeFiles/test_mod_access.dir/vector.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_configfile.dir/build.make build/CMakeFiles/test_configfile.dir/vector.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/test_mod_simple_vhost.dir/build.make build/CMakeFiles/test_mod_simple_vhost.dir/vector.c.s
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(MAKE) -f build/CMakeFiles/lighttpd.dir/build.make build/CMakeFiles/lighttpd.dir/vector.c.s
 .PHONY : vector.c.s
 
 # Help Target
@@ -4093,6 +4093,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/andries/Downloads/lighttpd-1.4.55/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

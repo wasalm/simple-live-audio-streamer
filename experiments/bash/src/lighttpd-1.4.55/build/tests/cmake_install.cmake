@@ -1,4 +1,4 @@
-# Install script for directory: /Users/andries/Downloads/lighttpd-1.4.55/tests
+# Install script for directory: /Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/bash/src/lighttpd-1.4.55/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
