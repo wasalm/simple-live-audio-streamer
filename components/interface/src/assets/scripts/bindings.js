@@ -146,11 +146,11 @@ document.getElementById('btn-update').addEventListener('click', function() {
 
 
 document.getElementById('btn-start').addEventListener('click', function() {
-    startStream(
-    	document.getElementById("info-title").value,
-    	document.getElementById("info-speaker").value,
-    	document.getElementById("info-text").value
-    ).then(function(data) {
+    startStream({
+    	title: document.getElementById("info-title").value,
+    	speaker: document.getElementById("info-speaker").value,
+    	text: document.getElementById("info-text").value
+    }).then(function(data) {
         checkAlive = true;
         intervalAlive = setInterval(isAlive, 1000);
 

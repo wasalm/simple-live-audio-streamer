@@ -19,7 +19,7 @@ std::string getSettings(std::string input, Config * c);
 std::string setSettings(std::string input, Config * c, FilePaths * f);
 
 std::string startStream(std::string input, Config * c, FilePaths * f, BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh, std::string code);
-std::string stopStream(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh);
-std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh);
+std::string stopStream(std::string input, BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh);
+std::string isStreaming(std::string input, Config * c, BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh);
 
 #endif /* bindings_hpp */

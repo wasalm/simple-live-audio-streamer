@@ -13,7 +13,8 @@ function updateSettingsScreen() {
 	document.getElementById("proxy-host").disabled = !document.getElementById("proxy").checked;
 	document.getElementById("proxy-port").disabled = !document.getElementById("proxy").checked;
 	document.getElementById("proxy-key").disabled = !document.getElementById("proxy").checked;
-	document.getElementById("webserver-host").disabled = !document.getElementById("proxy").checked;
+	
+	// document.getElementById("webserver-host").disabled = !document.getElementById("proxy").checked;
 
 
 	if(document.getElementById("proxy").checked) {

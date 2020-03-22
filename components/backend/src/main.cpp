@@ -57,7 +57,7 @@ std::string generatePasscode() {
  */
 int main(int argc, const char * argv[]) {
     srand(time(NULL)); 
-    
+
     std::cout << "Simple Live stream App" << std::endl;
     passcode = generatePasscode();
     std::cout << "Using passcode: " << passcode << std::endl;
@@ -75,7 +75,7 @@ int main(int argc, const char * argv[]) {
     static_cast<webview::webview *>(w)->bind("setSettings", std::bind(&setSettings, std::placeholders::_1, &config, &filePaths));
     static_cast<webview::webview *>(w)->bind("startStream", std::bind(&startStream, std::placeholders::_1, &config, &filePaths, &lighttpdService, &ffmpegService, &sshService, passcode));
     static_cast<webview::webview *>(w)->bind("stopStream", std::bind(&stopStream, std::placeholders::_1, &lighttpdService, &ffmpegService, &sshService));
-    static_cast<webview::webview *>(w)->bind("isStreaming", std::bind(&isStreaming, std::placeholders::_1, &lighttpdService, &ffmpegService, &sshService));
+    static_cast<webview::webview *>(w)->bind("isStreaming", std::bind(&isStreaming, std::placeholders::_1, &config, &lighttpdService, &ffmpegService, &sshService));
     
     webview_run(w);
     return 0;

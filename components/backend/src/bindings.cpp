@@ -13,13 +13,16 @@
 #include <vector>
 #include <filesystem>
 #include <fstream>
+#include <string>
+
+//Declared in another file
+std::string json_escape(std::string s);
 
 std::string getSettings(std::string input, Config * c) {
     return c ->toJSON();
 }
 
 std::string getAudioDevices(std::string input, FilePaths * f) {
-    //TODO
     std::string result = "[";
 
     std::vector<std::string> args;
@@ -70,6 +73,21 @@ std::string setSettings(std::string input, Config * c, FilePaths * f) {
 
 std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh, std::string code) {
     
+    //Return urls for QR codes.
+    std::string liveUrl =
+    "http://"
+        + c->webserverHost
+        + ":" + std::to_string(c->webserverPort)
+        + "/" + code
+        + "/index.html";
+    
+    std::string shareUrl =
+    "http://"
+        + c->webserverHost
+        + ":" + std::to_string(c->webserverPort)
+        + "/" + code
+        + "/share.html";
+
     /*
      * Create temporary folder and files
      */
@@ -129,27 +147,20 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
     std::filesystem::create_directory(f -> temp + "/public/" + code + "/stream");
 
     /* API */
-    // std::ofstream apiFile(f -> temp + "/public/" + code + "/api/details.json");
-    // sshKeyFile << c -> proxyKey;
-    // sshKeyFile.close();
+    std::ofstream apiFile(f -> temp + "/public/" + code + "/api/details.json");
+    apiFile << "{";
+    apiFile << "\"sermon\": " << input.substr(1,input.size()-2) << ",";
 
+    apiFile << "\"audio\": {";
+    apiFile << "\"src\": \"stream/live.m3u8\"";
+    apiFile << "},";
 
-//     {
-//     "sermon": {
-//         "title": "A life without titles",
-//         "speaker": "Jeremy Moses",
-//         "text": "Psalm 123:4-5" 
-//     },
-
-//     "audio": {
-//         "src": "stream/live.m3u8"
-//     },
-
-//     "links": {
-//         "live": "http://wasalm-34538.portmap.io:34538/index.html",
-//         "share": "http://wasalm-34538.portmap.io:34538/share.html"
-//     }
-// }
+    apiFile << "\"links\": {";
+    apiFile << "\"live\": " << json_escape(liveUrl) << ", ";
+    apiFile << "\"share\": " << json_escape(shareUrl);
+    apiFile << "}";
+    apiFile << "}";
+    apiFile.close();
 
    /*
     * Run Lighttpd
@@ -161,26 +172,37 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
     argsLighttpd.push_back(f -> temp + "/config/lighttpd.conf");
     lighttpd -> start(f->lighttpd, argsLighttpd);
 
-
    /*
     * Run SSH
     */
-    // std::vector<std::string> argsSSH;
-    // argsSSH.push_back("ssh");
-    // argsSSH.push_back("-D");
-    // argsSSH.push_back("-f");
-    // argsSSH.push_back(f -> temp + "/config/lighttpd.conf");
-    // ssh -> start("ssh", argsSSH);
+    if(c->proxy) {
+        std::vector<std::string> argsSSH;
+        argsSSH.push_back("/usr/bin/ssh");
+        argsSSH.push_back("-v");
+        argsSSH.push_back("-i");
+        argsSSH.push_back(f -> temp + "/config/ssh.key");
+        
+        argsSSH.push_back("-o");
+        argsSSH.push_back("StrictHostKeyChecking=no"); // disable hosts checking
 
-// #!/bin/bash
-// chmod 600 ./portmap/wasalm.first.pem
-// ssh -i ./portmap/wasalm.first.pem wasalm.first@wasalm-34538.portmap.io -N -R 34538:localhost:8888
+        argsSSH.push_back("-o");
+        argsSSH.push_back("UserKnownHostsFile=/dev/null"); // don't use default hosts file
 
-// #"-o", "UserKnownHostsFile=/dev/null", // dont use default hosts file
-// #"-o", "StrictHostKeyChecking=no", // disable hosts checking
-// #BatchMode yes
+        argsSSH.push_back("-o");
+        argsSSH.push_back("BatchMode=yes");
 
-   //TODO
+        argsSSH.push_back("-N");
+
+        argsSSH.push_back("-R");
+        argsSSH.push_back(std::to_string(c->webserverPort) + ":localhost:" + std::to_string(c->webserverPort));
+        
+        argsSSH.push_back("-p");
+        argsSSH.push_back(std::to_string(c->proxyPort));
+
+        argsSSH.push_back(c -> proxyUser + "@" + c-> proxyHost);
+
+        ssh -> start("/usr/bin/ssh", argsSSH);    
+    }
 
    /*
     * Run FFMpeg
@@ -190,25 +212,7 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
    //TODO
     
     
-    
-    
-    
-    //Return urls for QR codes.
-    std::string liveUrl =
-    "http://"
-        + c->webserverHost
-        + ":" + std::to_string(c->webserverPort)
-        + "/" + code
-        + "/index.html";
-    
-    std::string shareUrl =
-    "http://"
-        + c->webserverHost
-        + ":" + std::to_string(c->webserverPort)
-        + "/" + code
-        + "/share.html";
-    
-    return "{liveUrl: \"" + liveUrl + "\", shareUrl: \"" + shareUrl + "\"}";
+    return "{liveUrl: " + json_escape(liveUrl) + ", shareUrl: " + json_escape(shareUrl) + "}";
 }
 
 std::string stopStream(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
@@ -220,19 +224,25 @@ std::string stopStream(std::string input,BackgroundService * lighttpd, Backgroun
     return "0";
 }
 
-std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
+std::string isStreaming(std::string input, Config * c, BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
 
-    //Temporary
-    if(lighttpd -> isRunning()) {
-        return "true";
+    if(c->proxy) {
+        if(!ssh -> isRunning()) {
+            return "false";
+        }
     }
 
-        
-    // if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
-    //     return "true";
+    
+    if(!lighttpd -> isRunning()) {
+        return "false";
+    }
+
+    //Temporary    
+    // if(!ffmpeg -> isRunning()) {
+    //     return "false";
     // }
 
-    return "false";
+    return "true";
 }
 
 
