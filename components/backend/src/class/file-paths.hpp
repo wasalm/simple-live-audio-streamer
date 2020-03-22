@@ -14,6 +14,7 @@
 class FilePaths {
 public:
     void generatePaths();
+    ~FilePaths();
     
     std::string config;
     std::string frontEnd;
@@ -21,7 +22,9 @@ public:
     std::string ffmpeg;
     std::string lighttpd;
 
-//    std::string web;
+    std::string site;
+
+    std::string temp;
 };
 
 

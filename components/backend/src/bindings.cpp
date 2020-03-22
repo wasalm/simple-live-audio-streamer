@@ -10,6 +10,8 @@
 #include "lib/pstream.h"
 #include <string>
 #include <regex>
+#include <filesystem>
+#include <fstream>
 
 std::string getSettings(std::string input, Config * c) {
     return c ->toJSON();
@@ -57,17 +59,103 @@ std::string setSettings(std::string input, Config * c, FilePaths * f) {
 
 std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh, std::string code) {
     
-    
     /*
-     * Temporary test
+     * Create temporary folder and files
      */
-    std::string command = f->lighttpd + " -D -f " + f->lighttpd + ".conf";
-    lighttpd -> start(command);
-    
 
+    if(std::filesystem::exists(f -> temp + "/config")){
+        std::cout << "Old recordings found, removing old data." << std::endl;
+        std::filesystem::remove_all(f -> temp + "/config");
+    }
+    std::filesystem::create_directory(f -> temp + "/config");
+
+    if(std::filesystem::exists(f -> temp + "/public")){
+        std::cout << "Old recordings found, removing old data." << std::endl;
+        std::filesystem::remove_all(f -> temp + "/public");
+    }
+    std::filesystem::create_directory(f -> temp + "/public");
     
+    /* SSH Key */
+    std::ofstream sshKeyFile(f -> temp + "/config/ssh.key");
+    sshKeyFile << c -> proxyKey;
+    sshKeyFile.close();
     
+    std::filesystem::permissions(f -> temp + "/config/ssh.key", std::filesystem::perms::owner_read | std::filesystem::perms::owner_write, std::filesystem::perm_options::replace);
+
+    /* Lighttpd Config */
+    std::ofstream lighttpdConfigFile(f -> temp + "/config/lighttpd.conf");
+    lighttpdConfigFile << "server.document-root = \"" << f -> temp + "/public/\"" << std::endl;
+    lighttpdConfigFile << "server.port = " << c->webserverPort << std::endl << std::endl;
+
+    lighttpdConfigFile << "setenv.add-response-header += (" << std::endl;
+    lighttpdConfigFile << "    \"Expires\" => \"0\"," << std::endl;
+    lighttpdConfigFile << "    \"Cache-Control\" => \"no-store, no-cache, must-revalidate\"," << std::endl;
+    lighttpdConfigFile << "    \"Pragma\" => \"no-cache\"" << std::endl;
+    lighttpdConfigFile << ")" << std::endl << std::endl;
     
+    lighttpdConfigFile << "mimetype.assign = (" << std::endl;
+    lighttpdConfigFile << "    \".html\" => \"text/html\"," << std::endl;
+    lighttpdConfigFile << "    \".txt\" => \"text/plain\"," << std::endl;
+    lighttpdConfigFile << "    \".js\" => \"text/javascript\"," << std::endl;
+    lighttpdConfigFile << "    \".css\" => \"text/css\"," << std::endl;
+    lighttpdConfigFile << "    \".jpg\" => \"image/jpeg\"," << std::endl;
+    lighttpdConfigFile << "    \".png\" => \"image/png\"," << std::endl;
+    lighttpdConfigFile << "    \".svg\" => \"image/svg+xml\"," << std::endl;
+    lighttpdConfigFile << "    \".json\" => \"application/json\"," << std::endl;
+    lighttpdConfigFile << "    \".m3u8\" => \"application/x-mpegURL\"," << std::endl;
+    lighttpdConfigFile << "    \".ts\" => \"video/MP2T\"," << std::endl;
+    lighttpdConfigFile << ")" << std::endl;
+
+    lighttpdConfigFile.close();
+
+    /* Assets */
+    std::filesystem::copy(f-> site, f -> temp + "/public/" + code, std::filesystem::copy_options::recursive);
+
+    /* Add additional folders */
+    std::filesystem::create_directory(f -> temp + "/public/" + code + "/api");
+    std::filesystem::create_directory(f -> temp + "/public/" + code + "/stream");
+
+    /* API */
+    // std::ofstream apiFile(f -> temp + "/public/" + code + "/api/details.json");
+    // sshKeyFile << c -> proxyKey;
+    // sshKeyFile.close();
+
+
+//     {
+//     "sermon": {
+//         "title": "A life without titles",
+//         "speaker": "Jeremy Moses",
+//         "text": "Psalm 123:4-5" 
+//     },
+
+//     "audio": {
+//         "src": "stream/live.m3u8"
+//     },
+
+//     "links": {
+//         "live": "http://wasalm-34538.portmap.io:34538/index.html",
+//         "share": "http://wasalm-34538.portmap.io:34538/share.html"
+//     }
+// }
+
+   /*
+    * Run Lighttpd
+    */
+   // std::string command = f->lighttpd + " -D -f \"" + f -> temp + "/config/lighttpd.conf\"";
+   // lighttpd -> start(command);
+
+
+   /*
+    * Run SSH
+    */
+
+   //TODO
+
+   /*
+    * Run FFMpeg
+    */
+
+   //TODO
     
     
     
@@ -101,10 +189,16 @@ std::string stopStream(std::string input,BackgroundService * lighttpd, Backgroun
 }
 
 std::string isStreaming(std::string input,BackgroundService * lighttpd, BackgroundService * ffmpeg, BackgroundService * ssh) {
-        
-    if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
+
+    //Temporary
+    if(lighttpd -> isRunning()) {
         return "true";
     }
+
+        
+    // if(lighttpd -> isRunning() && ffmpeg -> isRunning() && ssh -> isRunning()) {
+    //     return "true";
+    // }
 
     return "false";
 }

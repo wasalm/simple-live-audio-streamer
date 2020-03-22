@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <functional>
+#include <time.h>
 
 #include "lib/webview.h"
 
@@ -16,6 +17,7 @@
 #include "class/background-service.hpp"
 
 #include "bindings.hpp"
+
     
 /*
  * Globals
@@ -54,6 +56,8 @@ std::string generatePasscode() {
  * Main
  */
 int main(int argc, const char * argv[]) {
+    srand(time(NULL)); 
+    
     std::cout << "Simple Live stream App" << std::endl;
     passcode = generatePasscode();
     std::cout << "Using passcode: " << passcode << std::endl;
