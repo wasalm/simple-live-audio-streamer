@@ -18,7 +18,7 @@ class BackgroundService {
     void _stop(bool reinit);
 public:
     
-    void start(std::string command);
+    void start(std::string file, std::vector<std::string> args);
     bool isRunning();
     void stop();
     

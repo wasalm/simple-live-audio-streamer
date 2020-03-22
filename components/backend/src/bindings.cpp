@@ -10,6 +10,7 @@
 #include "lib/pstream.h"
 #include <string>
 #include <regex>
+#include <vector>
 #include <filesystem>
 #include <fstream>
 
@@ -18,9 +19,19 @@ std::string getSettings(std::string input, Config * c) {
 }
 
 std::string getAudioDevices(std::string input, FilePaths * f) {
+    //TODO
     std::string result = "[";
 
-    redi::ipstream in(f ->ffmpeg + " -f avfoundation -list_devices true -i \"\"",redi::pstreambuf::pstderr);
+    std::vector<std::string> args;
+    args.push_back(f -> ffmpeg);
+    args.push_back("-f");
+    args.push_back("avfoundation");
+    args.push_back("-list_devices");
+    args.push_back("true");
+    args.push_back("-i");
+    args.push_back("\"\"");
+
+    redi::ipstream in(f ->ffmpeg, args,redi::pstreambuf::pstderr);
     std::string line;
 
     bool found = false;
@@ -141,8 +152,12 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
    /*
     * Run Lighttpd
     */
-   // std::string command = f->lighttpd + " -D -f \"" + f -> temp + "/config/lighttpd.conf\"";
-   // lighttpd -> start(command);
+    std::vector<std::string> argsLighttpd;
+    argsLighttpd.push_back(f -> temp + "/config/lighttpd.conf");
+    argsLighttpd.push_back("-D");
+    argsLighttpd.push_back("-f");
+    argsLighttpd.push_back(f -> temp + "/config/lighttpd.conf");
+    lighttpd -> start(f->lighttpd, argsLighttpd);
 
 
    /*
