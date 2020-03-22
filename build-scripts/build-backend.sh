@@ -13,6 +13,7 @@ mkdir dist
 
 cd src
 c++ -std=c++17 \
+	lib/json.cpp \
 	class/config.cpp \
 	class/file-paths.cpp \
 	class/background-service.cpp \

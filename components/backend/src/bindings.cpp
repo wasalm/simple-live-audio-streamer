@@ -8,15 +8,13 @@
 
 #include "bindings.hpp"
 #include "lib/pstream.h"
+#include "lib/json.hpp"
 #include <string>
 #include <regex>
 #include <vector>
 #include <filesystem>
 #include <fstream>
 #include <string>
-
-//Declared in another file
-std::string json_escape(std::string s);
 
 std::string getSettings(std::string input, Config * c) {
     return c ->toJSON();
