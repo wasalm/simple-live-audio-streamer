@@ -12,6 +12,21 @@
  * JSON functions (Copied from webview.h)
  */
 
+std::string url_encode_path(const std::string s) {
+  std::string encoded;
+  for (unsigned int i = 0; i < s.length(); i++) {
+    auto c = s[i];
+    if (isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~' || c == '/') {
+      encoded = encoded + c;
+    } else {
+      char hex[4];
+      snprintf(hex, sizeof(hex), "%%%02x", c);
+      encoded = encoded + hex;
+    }
+  }
+  return encoded;
+}
+
 std::string json_escape(std::string s) {
     std::string result = "\"";
     

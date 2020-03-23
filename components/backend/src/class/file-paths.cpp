@@ -9,6 +9,7 @@
 #include "file-paths.hpp"
 #include <filesystem>
 #include <mach-o/dyld.h>
+#include "../lib/json.hpp"
 
 void FilePaths::generatePaths() {
     //TODO
@@ -20,40 +21,28 @@ void FilePaths::generatePaths() {
         printf("Path buffer too small; need size %u\n", size);
         exit(0);
     }
-        
+    
     std::filesystem::path path(pathStr);
     std::string base = path.remove_filename();
+    std::cout << path.remove_filename() << std::endl;
 
-    // std::cout << path.remove_filename() << std::endl;
+    // Development
+    // config = base + "../../config.json";
+    // frontEnd = "file://" + url_encode_path(base) + "../../interface/dist/index.html";
+    // site = base + "../../site/dist/";
+    // ffmpeg = base + "../../binaries/ffmpeg";
+    // lighttpd = base + "../../binaries/lighttpd";
 
-
-
+    // Distribution
     config = base + "../Resources/config.json";
-    frontEnd = "file://" + base + "../Resources/site/index.html";
+    frontEnd = "file://" + url_encode_path(base) + "../Resources/app/index.html";
+    site = base + "../Resources/site/";
     ffmpeg = base + "ffmpeg";
     lighttpd = base + "lighttpd";
-    site = "file://" + base + "../Resources/site/index.html";
 
-
-
-
-
-
-
-
-
-    config =  "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/experiments/config.json";
-    frontEnd = "file:///Users/andries/Development/Git/Grace%20London/simple-live-audio-streamer/components/interface/dist/index.html";
-    
-	site = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/components/site/dist/";
-
-
-
-    temp = "/Users/andries/Development/Git/Grace London/simple-live-audio-streamer/temp";
-    temp += "/simple-livestream-temp";
-
-    // readlink /proc/self/exe
-    //std::filesystem::temp_directory_path
+    temp = std::filesystem::temp_directory_path();
+    temp += "/com.andries-salm.grace.livestream";
+    std::cout << "Temporary folder: " << temp << std::endl;
 
     /*
      * Create temporary folder and files
