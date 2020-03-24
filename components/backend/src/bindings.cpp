@@ -211,8 +211,8 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
 
     argsFFMpeg.push_back("-f");
     argsFFMpeg.push_back("avfoundation");
+    
     argsFFMpeg.push_back("-i");
-
     argsFFMpeg.push_back(":" + std::to_string(c -> audioDevice));
 
     argsFFMpeg.push_back("-acodec");
