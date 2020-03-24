@@ -64,6 +64,7 @@ std::string getAudioDevices(std::string input, FilePaths * f) {
 std::string setSettings(std::string input, Config * c, FilePaths * f) {
     // Parse Data
     c -> fromJSON(input.substr(1,input.size()-2));
+
     // Save to file
     c -> toFile(f ->config);
     return "0";
@@ -164,7 +165,7 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
     * Run Lighttpd
     */
     std::vector<std::string> argsLighttpd;
-    argsLighttpd.push_back(f -> temp + "/config/lighttpd.conf");
+    argsLighttpd.push_back(f->lighttpd);
     argsLighttpd.push_back("-D");
     argsLighttpd.push_back("-f");
     argsLighttpd.push_back(f -> temp + "/config/lighttpd.conf");
@@ -205,11 +206,64 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
    /*
     * Run FFMpeg
     */
+    std::vector<std::string> argsFFMpeg;
+    argsFFMpeg.push_back(f -> ffmpeg);
 
-// ../../ffmpeg/ffmpeg -f avfoundation -i ":1" -acodec libfdk_aac -ac 2 -af "pan=stereo|FL=c16|FR=c17,volume=15dB" -b:a 128k -hls_flags delete_segments -hls_time 15 -hls_list_size 5 -hls_delete_threshold 2 -hls_segment_filename 'file%03d.ts' live.m3u8
-   //TODO
-    
-    
+    argsFFMpeg.push_back("-f");
+    argsFFMpeg.push_back("avfoundation");
+    argsFFMpeg.push_back("-i");
+
+    argsFFMpeg.push_back(":" + std::to_string(c -> audioDevice));
+
+    argsFFMpeg.push_back("-acodec");
+    argsFFMpeg.push_back("libfdk_aac");
+
+    argsFFMpeg.push_back("-ac");
+    argsFFMpeg.push_back("2");
+
+    if(c -> audioChannels || c -> audioVolume) {
+        argsFFMpeg.push_back("-af");
+
+        std::string filter = "";
+
+        if(c -> audioChannels) {
+            filter += "pan=stereo|FL=c" + std::to_string(c -> audioChannelsLeft) + "|FR=c" + std::to_string(c -> audioChannelsRight);
+        }
+
+        if(c -> audioChannels && c -> audioVolume) {
+            filter += ',';
+        }
+
+        if(c -> audioVolume) {
+            filter += "volume=" + std::to_string(c -> audioVolumeVal) + "dB";
+        }
+
+        argsFFMpeg.push_back(filter);
+    }
+
+    argsFFMpeg.push_back("-b:a");
+    argsFFMpeg.push_back(std::to_string(c -> audioBitrate) + "k");      
+
+    argsFFMpeg.push_back("-hls_flags");
+    argsFFMpeg.push_back("delete_segments");
+
+    argsFFMpeg.push_back("-hls_time");
+    argsFFMpeg.push_back("15");
+
+    argsFFMpeg.push_back("-hls_list_size");
+    argsFFMpeg.push_back("5");
+
+    argsFFMpeg.push_back("-hls_delete_threshold");
+    argsFFMpeg.push_back("2");
+
+    argsFFMpeg.push_back("-hls_segment_filename");
+    argsFFMpeg.push_back("file\%03d.ts");
+
+    argsFFMpeg.push_back("live.m3u8");
+
+    std::filesystem::current_path(f -> temp + "/public/" + code + "/stream");
+    ffmpeg -> start(f -> ffmpeg, argsFFMpeg);
+        
     return "{liveUrl: " + json_escape(liveUrl) + ", shareUrl: " + json_escape(shareUrl) + "}";
 }
 
@@ -229,16 +283,14 @@ std::string isStreaming(std::string input, Config * c, BackgroundService * light
             return "false";
         }
     }
-
     
     if(!lighttpd -> isRunning()) {
         return "false";
     }
 
-    //Temporary    
-    // if(!ffmpeg -> isRunning()) {
-    //     return "false";
-    // }
+    if(!ffmpeg -> isRunning()) {
+        return "false";
+    }
 
     return "true";
 }

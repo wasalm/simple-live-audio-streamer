@@ -11,6 +11,9 @@ function isAlive() {
             if(checkAlive){
                 if(!state) {
                     //Something went wrong
+                    checkAlive = false;
+                    clearInterval(intervalAlive);
+
                     stopStream();
                     document.getElementById('main').classList.add("invalid");
                     document.getElementById('main').classList.remove("running");

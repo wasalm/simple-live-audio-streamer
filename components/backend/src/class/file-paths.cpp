@@ -12,8 +12,6 @@
 #include "../lib/json.hpp"
 
 void FilePaths::generatePaths() {
-    //TODO
-    //TODO url encode 
     
     char pathStr[1024];
     uint32_t size = sizeof(pathStr);
