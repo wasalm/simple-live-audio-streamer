@@ -76,49 +76,32 @@
 
     function parseConfig(e) {
 
-        images = [{
-                src: "16.png",
-                width: 16,
-                height: 16,
+        appSizes = [16,32,64,128,256,512, 1024];
+        faviconSizes = [32,57,76,96,120,128,144,152,167,180,192,195,196,228];
+
+        images = []
+
+        for(var i=0; i< appSizes.length; i++) {
+            var image = {
+                src: "icons/app/icon-" + appSizes[i] +  ".png",
+                width: appSizes[i],
+                height: appSizes[i],
                 blob: null
-            },
-            {
-                src: "32.png",
-                width: 32,
-                height: 32,
+            };
+
+            images.push(image);
+        }
+
+        for(var i=0; i< faviconSizes.length; i++) {
+            var image = {
+                src: "icons/favicons/favicon-" + faviconSizes[i] +  ".png",
+                width: faviconSizes[i],
+                height: faviconSizes[i],
                 blob: null
-            },
-            {
-                src: "64.png",
-                width: 64,
-                height: 64,
-                blob: null
-            },
-            {
-                src: "128.png",
-                width: 128,
-                height: 128,
-                blob: null
-            },
-            {
-                src: "256.png",
-                width: 256,
-                height: 256,
-                blob: null
-            },
-            {
-                src: "512.png",
-                width: 512,
-                height: 512,
-                blob: null
-            },
-            {
-                src: "1024.png",
-                width: 1024,
-                height: 1024,
-                blob: null
-            },
-        ];
+            };
+
+            images.push(image);
+        }
 
         return true
     }
