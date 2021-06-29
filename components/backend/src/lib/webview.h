@@ -687,7 +687,7 @@ public:
         ((void(*)(id, SEL, id))objc_msgSend)(menubar, "addItem:"_sel, appMenuItem);
             
         id title = ((id(*)(id, SEL, id))objc_msgSend)("Hide "_str, "stringByAppendingString:"_sel, appName);
-        id item = ((id(*)(id, const char *, const char *))objc_msgSend)(title, "hide:", "h");
+        id item = create_menu_item(title, "hide:", "h");
         ((void(*)(id, SEL, id))objc_msgSend)(appMenu, "addItem:"_sel, item);
 
         item = create_menu_item("Hide Others"_str,"hideOtherApplications:", "h");
