@@ -31,7 +31,7 @@ cd ..
 mkdir stylesheets
 cd stylesheets
 
-cleancss --skip-rebase  -o app.min.css \
+cleancss -o app.min.css \
 	../../../src/assets/stylesheets/site.css \
 	../../../src/assets/stylesheets/card.css
 

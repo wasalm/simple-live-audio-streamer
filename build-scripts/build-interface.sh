@@ -30,7 +30,7 @@ uglifyjs \
 	../src/assets/scripts/bindings.js \
 	-c -m -o assets/scripts/app.min.js 
 
-cleancss --skip-rebase  -o assets/stylesheets/app.min.css \
+cleancss -o assets/stylesheets/app.min.css \
 	../src/assets/stylesheets/site.css \
 	../src/assets/stylesheets/main.css \
 	../src/assets/stylesheets/card-right.css \
