@@ -19,4 +19,5 @@ c++ -std=c++17 \
 	class/background-service.cpp \
 	bindings.cpp \
 	main.cpp \
+	-ferror-limit=2 \
 	-framework WebKit -o ../dist/main

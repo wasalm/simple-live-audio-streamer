@@ -117,6 +117,8 @@ std::string startStream(std::string input, Config * c, FilePaths * f,BackgroundS
 
     lighttpdConfigFile << "server.modules += (\"mod_setenv\")" << std::endl;
 
+    lighttpdConfigFile << "server.connections = 100" << std::endl;
+
     lighttpdConfigFile << "setenv.add-response-header += (" << std::endl;
     lighttpdConfigFile << "    \"Expires\" => \"0\"," << std::endl;
     lighttpdConfigFile << "    \"Cache-Control\" => \"no-store, no-cache, must-revalidate\"," << std::endl;
