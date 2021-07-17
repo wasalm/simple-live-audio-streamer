@@ -73,6 +73,7 @@ export it to *components/bundle/dist/bundle.app*
 
 Later the build scripts will replace the empty program with the correct binaries.
 
+
 ## Build scripts    
 Build scripts are in the folder build-scripts.
 
@@ -92,6 +93,34 @@ Bundle in a single app:
 
     build-app.sh
 
+## Build for both x86 and Apple Silicon
+On a Apple M1 computer, first run above scripts in terminal to build the arm version
+
+Rename the following packages:
+    
+    - components/binaries/ffmpeg to ffmpeg_arm
+    - components/binaries/lighttpd to lighttpd_arm
+    - components/backend/dist/main to main_arm
+
+In terminal run 
+
+    arch -x86_64 /bin/bash
+
+To enable x86 mode and compile again. Rename the following packages:
+    
+    - components/binaries/ffmpeg to ffmpeg_x86
+    - components/binaries/lighttpd to lighttpd_x86
+    - components/backend/dist/main to main_x86
+
+In the folder components/binaries/ run
+
+     lipo -create -output ffmpeg ffmpeg_x86 ffmpeg_arm
+     lipo -create -output lighttpd lighttpd_x86 lighttpd_arm
+
+In the folder components/backend/dist/ run
+
+     lipo -create -output main main_x86 main_arm
+
 ## Sources 
 In the code we use the following c++ libraries:
 
@@ -103,3 +132,7 @@ We combine the following libraries
 ### PStreams - POSIX Process I/O for C++
 
 See http://pstreams.sourceforge.net/
+
+### Universal Apps
+
+See https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary
