@@ -18,11 +18,32 @@ This program needs a prebuild copy of ffmpeg and lighttpd
 Please compile these binaries *statically* and place them inside components/binaries/
 
 ### FFmpeg
-To compile ffmpeg see https://github.com/albinoz/ffmpeg-static-OSX
+To compile FFmpeg use the following commands
 
-Copy the ffmpeg binary to components/binaries/
+    git clone --depth 1 https://github.com/FFmpeg/FFmpeg
+    ./configure \
+        --enable-static \
+        --disable-autodetect \
+        --disable-programs \
+        --disable-runtime-cpudetect \
+        --disable-doc \
+        --disable-everything \
+        --enable-decoder="aac,pcm*" \
+        --enable-encoder=aac \
+        --enable-parser=aac \
+        --enable-demuxer=mpegts,aac \
+        --enable-protocol=file,pipe,hls \
+        --enable-bsf=aac_adtstoasc,h264_mp4toannexb,hevc_mp4toannexb \
+        --enable-muxer=adts,latm,mpegts,segment,hls \
+        --enable-filter=pan,volume,aresample \
+        --enable-indev=avfoundation \
+        --disable-runtime-cpudetect \
+        --enable-pthreads \
+        --enable-ffmpeg \
+        --enable-small \
+        --enable-avfoundation
+    make -j4
 
-To test if a binary is build statically, use `otool -L ffmpeg` 
 
 ### Lighttpd
 To compile lighthttpd use
